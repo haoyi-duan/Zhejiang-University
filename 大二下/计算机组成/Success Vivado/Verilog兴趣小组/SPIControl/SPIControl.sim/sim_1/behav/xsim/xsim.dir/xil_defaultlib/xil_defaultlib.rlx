@@ -1,0 +1,11 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+F:/Desk/SPIControl/SPIControl.srcs/sim_1/new/sim.v,1618497349,verilog,,,,sim,,,,,,,,
+F:/Desk/SPIControl/SPIControl.srcs/sim_1/new/spi.v,1621600853,verilog,,,,spi,,,,,,,,
+F:/Desk/SPIControl/SPIControl.srcs/sources_1/ip/ROM/sim/ROM.v,1619278350,verilog,,F:/Desk/SPIControl/SPIControl.srcs/sources_1/new/SPIControl.v,,ROM,,,,,,,,
+F:/Desk/SPIControl/SPIControl.srcs/sources_1/new/SPIControl.v,1621568023,verilog,,F:/Desk/SPIControl/SPIControl.srcs/sim_1/new/spi.v,,SPIControl,,,,,,,,
+F:/Desk/SPIControl/SPIControl.srcs/sources_1/new/top.v,1619329124,verilog,,F:/Desk/SPIControl/SPIControl.srcs/sim_1/new/spi.v,,top,,,,,,,,
+F:/Desk/SPIControl/SPIControl.srcs/sources_1/new/yhf.v,1621601766,verilog,,F:/Desk/SPIControl/SPIControl.srcs/sim_1/new/spi.v,,yhf,,,,,,,,

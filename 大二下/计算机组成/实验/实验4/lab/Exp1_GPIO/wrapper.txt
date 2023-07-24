@@ -1,0 +1,79 @@
+//Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+//--------------------------------------------------------------------------------
+//Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+//Date        : Tue Mar 16 16:25:09 2021
+//Host        : LAPTOP-0HOK14LD running 64-bit major release  (build 9200)
+//Command     : generate_target Exp1_GPIO_wrapper.bd
+//Design      : Exp1_GPIO_wrapper
+//Purpose     : IP block netlist
+//--------------------------------------------------------------------------------
+`timescale 1 ps / 1 ps
+
+`timescale 1 ps / 1 ps
+
+module Exp1_GPIO_wrapper
+   (input clk_100mhz,
+    input RSTN,
+    input [15:0]SW,
+    input [3:0]KCOL,
+    output [4:0]KROW,
+    
+    output LEDCK,
+    output LEDCR,
+    output LEDDT,
+    output LEDEN,
+    
+    output SEGCK,
+    output SEGCR,
+    output SEGDT,
+    output SEGEN,
+    
+    output [3:0]AN,
+    output [7:0]SEGMENT,
+    output [7:0]LED,
+    output readn,
+    output CR,
+    
+    output Buzzer
+   );
+
+    wire [31:0]DIVCLKO;
+    wire [7:0]blink;
+    wire [4:0]State;
+    
+    assign Buzzer = DIVCLKO[25] & SW[8];
+    wire [63:0]LES = {12'h000, blink[3:0], 32'h00000000, blink[7:0], blink[7:0]};
+    wire [63:0]points = {DIVCLKO[31:0], DIVCLKO[31:13], blink[4:0], 8'h00};
+    wire [31:0]PData = {SW[13:0], SW[15:0], 2'b00};
+    wire [9:0]addr = {5'b00000, SW[3], DIVCLKO[27:24]};
+    wire wea = SW[4];
+    wire EN = 'b1;
+
+  Exp1_GPIO Exp1_GPIO_i
+       (.AN(AN),
+        .CR(CR),
+        .DIVCLKO(DIVCLKO),
+        .EN(EN),
+        .KCOL(KCOL),
+        .KROW(KROW),
+        .LED(LED),
+        .LEDCK(LEDCK),
+        .LEDCR(LEDCR),
+        .LEDDT(LEDDT),
+        .LEDEN(LEDEN),
+        .LES(LES),
+        .PData(PData),
+        .RSTN(RSTN),
+        .SEGCK(SEGCK),
+        .SEGCR(SEGCR),
+        .SEGDT(SEGDT),
+        .SEGEN(SEGEN),
+        .SEGMENT(SEGMENT),
+        .SW(SW),
+        .addr(addr),
+        .blink(blink),
+        .clk_100mhz(clk_100mhz),
+        .points(points),
+        .readn(readn),
+        .wea(wea));
+endmodule

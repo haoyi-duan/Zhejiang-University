@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Mar  4 23:08:08 2021
+# Process ID: 13224
+# Current directory: F:/Desk/OExp00/OExp00-Element
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4184 F:\Desk\OExp00\OExp00-Element\OExp00-Element.xpr
+# Log file: F:/Desk/OExp00/OExp00-Element/vivado.log
+# Journal file: F:/Desk/OExp00/OExp00-Element\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Desk/OExp00/OExp00-Element/OExp00-Element.xpr
+update_compile_order -fileset sources_1

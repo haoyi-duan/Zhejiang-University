@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Apr 17 10:35:25 2021
+# Process ID: 17352
+# Current directory: F:/Desk/float
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13192 F:\Desk\float\float.xpr
+# Log file: F:/Desk/float/vivado.log
+# Journal file: F:/Desk/float\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Desk/float/float.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xlinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 825.082 ; gain = 56.348
+update_compile_order -fileset sources_1
+close [ open F:/Desk/float/float.srcs/sources_1/new/top.v w ]
+add_files F:/Desk/float/float.srcs/sources_1/new/top.v
+update_compile_order -fileset sources_1
+set_property top top [current_fileset]
+update_compile_order -fileset sources_1
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name ROM -dir f:/Desk/float/float.srcs/sources_1/ip
+set_property -dict [list CONFIG.depth {16} CONFIG.data_width {32} CONFIG.Component_Name {ROM} CONFIG.memory_type {rom} CONFIG.coefficient_file {F:/Desk/float/RandomX.coe}] [get_ips ROM]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'ROM' to 'ROM' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'f:/Desk/float/RandomX.coe' provided. It will be converted relative to IP Instance files '../../../../RandomX.coe'
+generate_target {instantiation_template} [get_files f:/Desk/float/float.srcs/sources_1/ip/ROM/ROM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM'...
+set_property generate_synth_checkpoint false [get_files  f:/Desk/float/float.srcs/sources_1/ip/ROM/ROM.xci]
+generate_target all [get_files  f:/Desk/float/float.srcs/sources_1/ip/ROM/ROM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ROM'...
+export_ip_user_files -of_objects [get_files f:/Desk/float/float.srcs/sources_1/ip/ROM/ROM.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files f:/Desk/float/float.srcs/sources_1/ip/ROM/ROM.xci] -directory F:/Desk/float/float.ip_user_files/sim_scripts -ip_user_files_dir F:/Desk/float/float.ip_user_files -ipstatic_source_dir F:/Desk/float/float.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/Desk/float/float.cache/compile_simlib/modelsim} {questa=F:/Desk/float/float.cache/compile_simlib/questa} {riviera=F:/Desk/float/float.cache/compile_simlib/riviera} {activehdl=F:/Desk/float/float.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.data_width {16}] [get_ips ROM]
+generate_target all [get_files  f:/Desk/float/float.srcs/sources_1/ip/ROM/ROM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ROM'...
+export_ip_user_files -of_objects [get_files f:/Desk/float/float.srcs/sources_1/ip/ROM/ROM.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files f:/Desk/float/float.srcs/sources_1/ip/ROM/ROM.xci] -directory F:/Desk/float/float.ip_user_files/sim_scripts -ip_user_files_dir F:/Desk/float/float.ip_user_files -ipstatic_source_dir F:/Desk/float/float.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/Desk/float/float.cache/compile_simlib/modelsim} {questa=F:/Desk/float/float.cache/compile_simlib/questa} {riviera=F:/Desk/float/float.cache/compile_simlib/riviera} {activehdl=F:/Desk/float/float.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet

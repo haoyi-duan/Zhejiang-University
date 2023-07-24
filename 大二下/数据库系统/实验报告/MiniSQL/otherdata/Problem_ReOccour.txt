@@ -1,0 +1,69 @@
+create table CountryLanguage (
+  CountryCode char(3),
+  Language char(30),
+  IsOfficial char(1),
+  Percentage float,
+  primary key(CountryCode)
+);
+
+insert into CountryLanguage values ('ABW','Dutch','T',5.3);
+insert into CountryLanguage values ('AFG','Balochi','F',0.9);
+insert into CountryLanguage values ('AGO','Ambo','F',2.4);
+insert into CountryLanguage values ('AIA','English','T',0.0);
+insert into CountryLanguage values ('ALB','Albaniana','T',97.9);
+insert into CountryLanguage values ('AND','Catalan','T',32.3);
+insert into CountryLanguage values ('ANT','Dutch','T',0.0);
+insert into CountryLanguage values ('ARE','Arabic','T',42.0);
+insert into CountryLanguage values ('ARG','Indian Languages','F',0.3);
+insert into CountryLanguage values ('ARM','Armenian','T',93.4);
+insert into CountryLanguage values ('ASM','English','T',3.1);
+insert into CountryLanguage values ('ATG','Creole English','F',95.7);
+insert into CountryLanguage values ('AUS','Arabic','F',1.0);
+insert into CountryLanguage values ('AUT','Czech','F',0.2);
+insert into CountryLanguage values ('AZE','Armenian','F',2.0);
+insert into CountryLanguage values ('BDI','French','T',0.0);
+insert into CountryLanguage values ('BEL','Arabic','F',1.6);
+insert into CountryLanguage values ('BEN','Adja','F',11.1);
+insert into CountryLanguage values ('BFA','Busansi','F',3.5);
+insert into CountryLanguage values ('BGD','Bengali','T',97.7);
+insert into CountryLanguage values ('BGR','Bulgariana','T',83.2);
+insert into CountryLanguage values ('BHR','Arabic','T',67.7);
+insert into CountryLanguage values ('BHS','Creole English','F',89.7);
+insert into CountryLanguage values ('BIH','Serbo-Croatian','T',99.2);
+insert into CountryLanguage values ('BLZ','English','T',50.8);
+insert into CountryLanguage values ('BMU','English','T',100.0);
+insert into CountryLanguage values ('BOL','Aimar','T',3.2);
+insert into CountryLanguage values ('BRA','German','F',0.5);
+insert into CountryLanguage values ('BRB','Bajan','F',95.1);
+insert into CountryLanguage values ('BRN','Chinese','F',9.3);
+insert into CountryLanguage values ('BTN','Asami','F',15.2);
+insert into CountryLanguage values ('BWA','Khoekhoe','F',2.5);
+insert into CountryLanguage values ('CAF','Banda','F',23.5);
+insert into CountryLanguage values ('CAF','Sara','F',6.4);
+
+insert into CountryLanguage values ('CAN','Chinese','F',2.5);
+insert into CountryLanguage values ('CCK','English','T',0.0);
+insert into CountryLanguage values ('CHE','French','T',19.2);
+insert into CountryLanguage values ('CHE','Romansh','T',0.6);
+
+insert into CountryLanguage values ('CHL','Aimar','F',0.5);
+insert into CountryLanguage values ('CHN','Chinese','T',92.0);
+insert into CountryLanguage values ('CIV','Akan','F',30.0);
+insert into CountryLanguage values ('CMR','Bamileke-bamum','F',18.6);
+insert into CountryLanguage values ('COD','Boa','F',2.3);
+insert into CountryLanguage values ('COG','Kongo','F',51.5);
+insert into CountryLanguage values ('COK','English','F',0.0);
+insert into CountryLanguage values ('COL','Arawakan','F',0.1);
+insert into CountryLanguage values ('COM','Comorian','T',75.0);
+insert into CountryLanguage values ('CPV','Crioulo','F',100.0);
+insert into CountryLanguage values ('CRI','Chibcha','F',0.3);
+insert into CountryLanguage values ('CUB','Spanish','T',100.0);
+insert into CountryLanguage values ('CXR','Chinese','F',0.0);
+insert into CountryLanguage values ('CYM','English','T',0.0);
+insert into CountryLanguage values ('CYP','Turkish','T',22.4);
+insert into CountryLanguage values ('CZE','Slovak','F',3.1);
+insert into CountryLanguage values ('DEU','Southern Slavic Languages','F',1.4);
+insert into CountryLanguage values ('DEU','Turkish','F',2.6);
+
+insert into CountryLanguage values ('DJI','Arabic','T',10.6);
+insert into CountryLanguage values ('DMA','Creole English','F',100.0);

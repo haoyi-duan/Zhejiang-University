@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Mar 14 15:09:21 2021
+# Process ID: 16980
+# Current directory: F:/Desk/muxctrl
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent592 F:\Desk\muxctrl\muxctrl.xpr
+# Log file: F:/Desk/muxctrl/vivado.log
+# Journal file: F:/Desk/muxctrl\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Desk/muxctrl/muxctrl.xpr
+update_compile_order -fileset sources_1

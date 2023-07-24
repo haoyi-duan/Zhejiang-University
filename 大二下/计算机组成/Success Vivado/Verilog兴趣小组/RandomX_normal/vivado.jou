@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Oct 10 23:58:04 2021
+# Process ID: 25160
+# Current directory: F:/Desk/MyCollege/大二下/计算机组成/Success Vivado/Verilog兴趣小组/RandomX_normal
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23940 F:\Desk\MyCollege\大二下\计算机组成\Success Vivado\Verilog兴趣小组\RandomX_normal\RandomX_normal.xpr
+# Log file: F:/Desk/MyCollege/大二下/计算机组成/Success Vivado/Verilog兴趣小组/RandomX_normal/vivado.log
+# Journal file: F:/Desk/MyCollege/大二下/计算机组成/Success Vivado/Verilog兴趣小组/RandomX_normal\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:/Desk/MyCollege/大二下/计算机组成/Success Vivado/Verilog兴趣小组/RandomX_normal/RandomX_normal.xpr}
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1

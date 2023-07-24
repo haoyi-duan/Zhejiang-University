@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Apr  8 12:39:10 2021
+# Process ID: 29048
+# Current directory: F:/Desk/GPIO_5359
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24860 F:\Desk\GPIO_5359\GPIO_5359.xpr
+# Log file: F:/Desk/GPIO_5359/vivado.log
+# Journal file: F:/Desk/GPIO_5359\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Desk/GPIO_5359/GPIO_5359.xpr
+INFO: [Project 1-313] Project file moved from 'F:/Desk/Success Vivado/GPIO_5359' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Desk/GPIO_5359/GPIO_5359.srcs/sources_1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xlinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 859.801 ; gain = 99.875
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  8 12:40:41 2021...

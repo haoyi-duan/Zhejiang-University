@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jun 15 14:37:14 2021
+# Process ID: 2488
+# Current directory: F:/Desk/lab9/EXP09-15
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2976 F:\Desk\lab9\EXP09-15\OExp05_CPU.xpr
+# Log file: F:/Desk/lab9/EXP09-15/vivado.log
+# Journal file: F:/Desk/lab9/EXP09-15\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Desk/lab9/EXP09-15/OExp05_CPU.xpr
+INFO: [Project 1-313] Project file moved from 'F:/Desk/Success Vivado/EXP09-15' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xlinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:13 . Memory (MB): peak = 814.602 ; gain = 104.512
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Jun 15 14:38:51 2021] Launched impl_1...
+Run output will be captured here: F:/Desk/lab9/EXP09-15/OExp05_CPU.runs/impl_1/runme.log
+open_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 15 14:42:07 2021...

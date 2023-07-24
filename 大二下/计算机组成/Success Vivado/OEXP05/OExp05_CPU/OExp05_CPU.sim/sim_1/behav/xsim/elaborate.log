@@ -1,0 +1,48 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xlinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto ff1206c71c6743f9ba5f9aff85fa1e4f --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L dist_mem_gen_v8_0_12 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot OEXp05_CPU_behav xil_defaultlib.OEXp05_CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 10 for port addra [F:/Desk/Success Vivado/OEXP05/OExp05_CPU/OExp05_CPU.srcs/sources_1/new/OEXp05_CPU.v:118]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 10 for port ram_addr [F:/Desk/Success Vivado/OEXP05/OExp05_CPU/OExp05_CPU.srcs/sources_1/new/OEXp05_CPU.v:148]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RSCU9
+Compiling module xil_defaultlib.ALU_5359
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.MUX2T1_32
+Compiling module xil_defaultlib.MUX4T1_32
+Compiling module xil_defaultlib.REG32
+Compiling module xil_defaultlib.regs
+Compiling module xil_defaultlib.RSDP9
+Compiling module xil_defaultlib.CPUTEST
+Compiling module xil_defaultlib.RSCPU9
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="k...
+Compiling module xil_defaultlib.ROM
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="kin...
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.MIOBUS
+Compiling module xil_defaultlib.DSEGIO
+Compiling module xil_defaultlib.Display
+Compiling module xil_defaultlib.Disp2Hex
+Compiling module xil_defaultlib.GPIO
+Compiling module xil_defaultlib.PIO
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.Clkdiv
+Compiling module xil_defaultlib.Arraykeys
+Compiling module xil_defaultlib.EnterT32
+Compiling module unisims_ver.RB18_INTERNAL_VLOG(READ_WIDTH_A=...
+Compiling module unisims_ver.RAMB18E1(INIT_00=256'b0111111010...
+Compiling module unisims_ver.RAMB16_S1(INIT_00=256'b011111101...
+Compiling module xil_defaultlib.FONT8_16
+Compiling module xil_defaultlib.vga
+Compiling module xil_defaultlib.VGA_TEST
+Compiling module xil_defaultlib.OEXp05_CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot OEXp05_CPU_behav

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jun 15 22:06:53 2021
+# Process ID: 23324
+# Current directory: F:/Desk/lab/OExp02-IP2SOC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8884 F:\Desk\lab\OExp02-IP2SOC\OExp02-IP2SOC.xpr
+# Log file: F:/Desk/lab/OExp02-IP2SOC/vivado.log
+# Journal file: F:/Desk/lab/OExp02-IP2SOC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Desk/lab/OExp02-IP2SOC/OExp02-IP2SOC.xpr
+update_compile_order -fileset sources_1

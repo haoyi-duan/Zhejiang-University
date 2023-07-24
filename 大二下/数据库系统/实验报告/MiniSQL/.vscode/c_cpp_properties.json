@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "name": "GCC",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            //*You only need to add to the Include path array setting
+            //*if your program includes header files that are not in your workspace or in the standard library path
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.18362.0",
+            "compilerPath": "C:/Program Files/mingw64/bin/g++.exe",
+            //*The extension uses the compilerPath setting to infer the path to the C++ standard library header files.
+            //*When the extension knows where to find those files,
+            //*it can provide features like smart completions and Go to Definition navigation.
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerArgs": [],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}

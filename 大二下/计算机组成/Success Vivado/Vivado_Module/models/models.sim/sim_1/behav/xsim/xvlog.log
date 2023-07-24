@@ -1,0 +1,40 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/models/models.srcs/sources_1/imports/new/ADC32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADC32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/models/models.srcs/sources_1/imports/new/MUX2T1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2T1_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/models/models.srcs/sources_1/imports/Success Vivado/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip/MUX2T1_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2T1_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/models/models.srcs/sources_1/imports/Success Vivado/MUX2T1_64/MUX2T1_64.srcs/sources_1/new/MUX2T1_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2T1_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/models/models.srcs/sources_1/new/MUX2T1_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2T1_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/models/models.srcs/sources_1/imports/new/MUX4T1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX4T1_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/models/models.srcs/sources_1/imports/new/MUX4T1_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX4T1_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/models/models.srcs/sources_1/imports/new/MUX8T1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX8T1_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/models/models.srcs/sources_1/new/MUX8T1_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX8T1_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/models/models.srcs/sources_1/new/TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/models/models.srcs/sources_1/imports/new/adc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adc
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/models/models.srcs/sources_1/new/adc32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adc32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/models/models.srcs/sources_1/imports/new/add_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/models/models.srcs/sources_1/imports/new/addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/models/models.srcs/sources_1/imports/new/and32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module and32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/models/models.srcs/sources_1/imports/new/nor32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nor32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/models/models.srcs/sources_1/imports/new/or32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module or32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/models/models.srcs/sources_1/imports/new/or_bit_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module or_bit_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/models/models.srcs/sources_1/imports/new/xor32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xor32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/models/models.srcs/sim_1/new/top_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_sim

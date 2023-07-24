@@ -1,0 +1,133 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Mar 23 19:52:36 2021
+| Host         : LAPTOP-0HOK14LD running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file CSSTE_wrapper_control_sets_placed.rpt
+| Design       : CSSTE_wrapper
+| Device       : xc7k160t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    64 |
+| Unused register locations in slices containing registers |   107 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             166 |           68 |
+| No           | No                    | Yes                    |              42 |           24 |
+| No           | Yes                   | No                     |              60 |           23 |
+| Yes          | No                    | No                     |             151 |           71 |
+| Yes          | No                    | Yes                    |            1082 |          654 |
+| Yes          | Yes                   | No                     |              80 |           23 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------+-------------------------------------------------------+-------------------------------------------------+------------------+----------------+
+|                Clock Signal               |                     Enable Signal                     |                 Set/Reset Signal                | Slice Load Count | Bel Load Count |
++-------------------------------------------+-------------------------------------------------------+-------------------------------------------------+------------------+----------------+
+|  CSSTE_i/CLKBLOCK/U8/inst/clkdiv[6]       |                                                       |                                                 |                1 |              1 |
+|  CSSTE_i/DISPBLOCK/U6/inst/PT7SEG/sh_clk  |                                                       |                                                 |                2 |              2 |
+|  CSSTE_i/CLKBLOCK/U8/inst/clkdiv[6]       |                                                       | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |                1 |              2 |
+|  CSSTE_i/U1/inst/U1_1/ALUC_reg[2]_i_2_n_0 |                                                       |                                                 |                3 |              3 |
+|  CSSTE_i/VGATEST/U12/vgaclk               |                                                       |                                                 |                3 |              3 |
+|  clk_100mhz_IBUF_BUFG                     |                                                       | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |                1 |              3 |
+|  CSSTE_i/ARRARYBLOCK/U9/inst/clk1         | CSSTE_i/ARRARYBLOCK/U9/inst/pulse[3]_i_2_n_0          |                                                 |                1 |              4 |
+|  clk_100mhz_IBUF_BUFG                     |                                                       | CSSTE_i/VGATEST/U11/inst/strdata_reg[48]_0      |                2 |              4 |
+|  clk_100mhz_IBUF_BUFG                     |                                                       | CSSTE_i/VGATEST/U11/inst/strdata[28]            |                2 |              4 |
+|  CSSTE_i/CLKBLOCK/U8/inst/nCPUClk         |                                                       | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |                2 |              5 |
+|  CSSTE_i/CLKBLOCK/U8/inst/nCPUClk         |                                                       |                                                 |                2 |              6 |
+|  clk_100mhz_IBUF_BUFG                     | CSSTE_i/VGATEST/U11/inst/ascii_code[6]_i_2_n_0        | CSSTE_i/VGATEST/U11/inst/ascii_code[6]_i_1_n_0  |                3 |              6 |
+|  CSSTE_i/ARRARYBLOCK/U9/inst/clk1         |                                                       |                                                 |                4 |              9 |
+|  CSSTE_i/VGATEST/U12/vgaclk               |                                                       | CSSTE_i/VGATEST/U12/inst/h_count[9]_i_1_n_0     |                5 |             10 |
+|  CSSTE_i/VGATEST/U12/vgaclk               | CSSTE_i/VGATEST/U12/inst/v_count                      |                                                 |                5 |             10 |
+|  CSSTE_i/VGATEST/U12/vgaclk               |                                                       | CSSTE_i/VGATEST/U12/inst/rdn                    |                4 |             12 |
+|  CSSTE_i/GPIOBLOCK/U7/inst/PTLED/sh_clk   | CSSTE_i/GPIOBLOCK/U7/inst/PTLED/Q[16]_i_1_n_0         |                                                 |                6 |             17 |
+|  clk_100mhz_IBUF_BUFG                     | CSSTE_i/ARRARYBLOCK/U9/inst/SWO[15]_i_1_n_0           |                                                 |                8 |             17 |
+|  CSSTE_i/ARRARYBLOCK/U9/inst/clk1         | CSSTE_i/ARRARYBLOCK/U9/inst/sel                       | CSSTE_i/ARRARYBLOCK/U9/inst/counter0            |                6 |             21 |
+|  clk_100mhz_IBUF_BUFG                     | CSSTE_i/ARRARYBLOCK/U9/inst/counter1[0]_i_2_n_0       | CSSTE_i/ARRARYBLOCK/U9/inst/counter1[0]_i_1_n_0 |                6 |             21 |
+| ~CSSTE_i/CLKBLOCK/U8/inst/nCPUClk         | CSSTE_i/U4/inst/GPIO_W0200                            | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |                4 |             26 |
+|  clk_100mhz_IBUF_BUFG                     |                                                       | CSSTE_i/VGATEST/U11/inst/dout[4]_INST_0_i_1_n_0 |               10 |             30 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[4][31]_i_1_n_0      | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               20 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[10][31]_i_1_n_0     | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               17 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[16][31]_i_1_n_0     | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               20 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[3][31]_i_1_n_0      | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               22 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[8][31]_i_1_n_0      | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               28 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[20][31]_i_1_n_0     | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               17 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[31][31]_i_1_n_0     | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               25 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[25][31]_i_1_n_0     | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               27 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[30][31]_i_1_n_0     | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               25 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[9][31]_i_1_n_0      | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               30 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[19][31]_i_1_n_0     | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               14 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[23][31]_i_1_n_0     | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               25 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[7][31]_i_1_n_0      | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               20 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[6][31]_i_1_n_0      | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               20 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[11][31]_i_1_n_0     | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               15 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          |                                                       | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               20 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/nCPUClk         | CSSTE_i/U10/inst/counter0_Lock_1                      | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               13 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[21][31]_i_1_n_0     | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               17 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[24][31]_i_1_n_0     | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               17 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[22][31]_i_1_n_0     | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               14 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/clkdiv[6]       | CSSTE_i/U10/inst/counter0[31]                         | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               11 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/clkdiv[20]      |                                                       |                                                 |               13 |             32 |
+| ~CSSTE_i/CLKBLOCK/U8/inst/clkdiv[20]      |                                                       |                                                 |               14 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register                     | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               21 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[13][31]_i_1_n_0     | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               16 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[18][31]_i_1_n_0     | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               22 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[5][31]_i_1_n_0      | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               24 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[17][31]_i_1_n_0     | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               15 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[26][31]_i_1_n_0     | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               24 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[12][31]_i_1_n_0     | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               16 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[29][31]_i_1_n_0     | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               22 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[15][31]_i_1_n_0     | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               15 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[14][31]_i_1_n_0     | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               20 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[27][31]_i_1_n_0     | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               16 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[28][31]_i_1_n_0     | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               20 |             32 |
+|  clk_100mhz_IBUF_BUFG                     | CSSTE_i/ARRARYBLOCK/U9/inst/rst_counter               | CSSTE_i/ARRARYBLOCK/U9/inst/counter1[0]_i_1_n_0 |                8 |             32 |
+|  CSSTE_i/CLKBLOCK/U8/inst/CPUClk          | CSSTE_i/U1/inst/U1_2/DU2/register[2][31]_i_1_n_0      | CSSTE_i/ARRARYBLOCK/U9/inst/rst                 |               22 |             32 |
+| ~CSSTE_i/CLKBLOCK/U8/inst/nCPUClk         | CSSTE_i/U4/inst/GPIO_W0204                            |                                                 |               26 |             40 |
+| ~clk_100mhz_IBUF_BUFG                     | CSSTE_i/VGATEST/U11/inst/MEMBUF_reg_0_63_0_2_i_2_n_0  |                                                 |               11 |             44 |
+|  clk_100mhz_IBUF_BUFG                     | CSSTE_i/VGATEST/U11/inst/data_buf_reg_0_3_0_5_i_1_n_0 |                                                 |                6 |             48 |
+|  CSSTE_i/DISPBLOCK/U6/inst/PT7SEG/sh_clk  | CSSTE_i/DISPBLOCK/U6/inst/PT7SEG/Q[63]_i_1_n_0        |                                                 |               25 |             63 |
+|  clk_100mhz_IBUF_BUFG                     |                                                       |                                                 |               26 |             78 |
++-------------------------------------------+-------------------------------------------------------+-------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 2      |                     2 |
+| 3      |                     3 |
+| 4      |                     3 |
+| 5      |                     1 |
+| 6      |                     2 |
+| 9      |                     1 |
+| 10     |                     2 |
+| 12     |                     1 |
+| 16+    |                    48 |
++--------+-----------------------+
+
+

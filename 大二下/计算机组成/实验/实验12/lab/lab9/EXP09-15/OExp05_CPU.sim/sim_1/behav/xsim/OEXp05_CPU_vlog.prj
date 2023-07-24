@@ -1,0 +1,37 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../OExp05_CPU.srcs/sources_1/ip/RAM/sim/RAM.v" \
+"../../../../OExp05_CPU.srcs/sources_1/ip/ROM/sim/ROM.v" \
+"../../../../OExp05_CPU.srcs/sources_1/imports/sources_1/imports/RSDP9/ALU_5359/ALU_5359.v" \
+"../../../../OExp05_CPU.srcs/sources_1/imports/OExp05_CPU/IO/Arraykeys.v" \
+"../../../../OExp05_CPU.srcs/sources_1/imports/Pipeline DEBUG/CPUTEST.v" \
+"../../../../OExp05_CPU.srcs/sources_1/imports/OExp05_CPU/IO/Clkdiv.v" \
+"../../../../OExp05_CPU.srcs/sources_1/imports/VGA/Code2Inst.v" \
+"../../../../OExp05_CPU.srcs/sources_1/imports/OExp05_CPU/IO/Counter.v" \
+"../../../../OExp05_CPU.srcs/sources_1/imports/OExp05_CPU/IO/DSEGIO.v" \
+"../../../../OExp05_CPU.srcs/sources_1/imports/OExp05_CPU/IO/Disp2Hex.v" \
+"../../../../OExp05_CPU.srcs/sources_1/imports/OExp05_CPU/IO/Display.v" \
+"../../../../OExp05_CPU.srcs/sources_1/imports/OExp05_CPU/IO/EnterT32.v" \
+"../../../../OExp05_CPU.srcs/sources_1/imports/VGA/Font816.v" \
+"../../../../OExp05_CPU.srcs/sources_1/imports/OExp05_CPU/IO/GPIO.v" \
+"../../../../OExp05_CPU.srcs/sources_1/imports/sources_1/new/ImmGen.v" \
+"../../../../OExp05_CPU.srcs/sources_1/imports/OExp05_CPU/IO/MIOBUS.v" \
+"../../../../OExp05_CPU.srcs/sources_1/imports/OExp05_CPU/IO/PIO.v" \
+"../../../../OExp05_CPU.srcs/sources_1/imports/sources_1/new/REG32.v" \
+"../../../../OExp05_CPU.srcs/sources_1/new/REG_EX_MEM.v" \
+"../../../../OExp05_CPU.srcs/sources_1/new/REG_ID_EX.v" \
+"../../../../OExp05_CPU.srcs/sources_1/new/REG_IF_ID.v" \
+"../../../../OExp05_CPU.srcs/sources_1/new/REG_MEM_WB.v" \
+"../../../../OExp05_CPU.srcs/sources_1/new/RV32IPCU_C.v" \
+"../../../../OExp05_CPU.srcs/sources_1/new/RV32IPDP_C.v" \
+"../../../../OExp05_CPU.srcs/sources_1/new/RV32PCPU.v" \
+"../../../../OExp05_CPU.srcs/sources_1/imports/VGA/VGATEST.v" \
+"../../../../OExp05_CPU.srcs/sources_1/imports/sources_1/imports/RSDP9/regs.v" \
+"../../../../OExp05_CPU.srcs/sources_1/imports/VGA/vga.v" \
+"../../../../OExp05_CPU.srcs/sources_1/new/OEXp05_CPU.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

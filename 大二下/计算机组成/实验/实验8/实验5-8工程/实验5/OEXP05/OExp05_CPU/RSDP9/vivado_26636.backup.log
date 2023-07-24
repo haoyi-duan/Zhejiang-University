@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Apr 11 10:55:34 2021
+# Process ID: 26636
+# Current directory: F:/Desk/RSDP9
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13604 F:\Desk\RSDP9\RSDP9.xpr
+# Log file: F:/Desk/RSDP9/vivado.log
+# Journal file: F:/Desk/RSDP9\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Desk/RSDP9/RSDP9.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xlinx/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+import_files -norecurse {F:/Desk/RSDP9/regs.v F:/Desk/RSDP9/ALU_5359/ALU_5359.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 11 11:28:06 2021...

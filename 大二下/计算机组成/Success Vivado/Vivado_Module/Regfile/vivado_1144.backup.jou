@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Mar 30 13:42:30 2021
+# Process ID: 1144
+# Current directory: F:/Desk/Success Vivado/Regfile
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15100 F:\Desk\Success Vivado\Regfile\Regfile.xpr
+# Log file: F:/Desk/Success Vivado/Regfile/vivado.log
+# Journal file: F:/Desk/Success Vivado/Regfile\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:/Desk/Success Vivado/Regfile/Regfile.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source regs_sim.tcl
+close_sim

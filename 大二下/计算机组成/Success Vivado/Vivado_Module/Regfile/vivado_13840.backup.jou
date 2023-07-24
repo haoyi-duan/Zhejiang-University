@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Mar 30 16:26:02 2021
+# Process ID: 13840
+# Current directory: F:/Desk/Success Vivado/Regfile
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16648 F:\Desk\Success Vivado\Regfile\Regfile.xpr
+# Log file: F:/Desk/Success Vivado/Regfile/vivado.log
+# Journal file: F:/Desk/Success Vivado/Regfile\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:/Desk/Success Vivado/Regfile/Regfile.xpr}
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1

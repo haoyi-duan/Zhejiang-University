@@ -1,0 +1,30 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port STEP -pg 1 -y 280 -defaultsOSRD
+preplace port DIVO20 -pg 1 -y 110 -defaultsOSRD
+preplace port nCPUClk -pg 1 -y 280 -defaultsOSRD
+preplace port CPUClk -pg 1 -y 260 -defaultsOSRD
+preplace port rst -pg 1 -y 260 -defaultsOSRD
+preplace port clk_100mhz -pg 1 -y 240 -defaultsOSRD
+preplace port DIVO25 -pg 1 -y 90 -defaultsOSRD
+preplace port DIVO10 -pg 1 -y 170 -defaultsOSRD
+preplace portBus DIVO18T19 -pg 1 -y 130 -defaultsOSRD
+preplace portBus clkdiv -pg 1 -y 20 -defaultsOSRD
+preplace inst DIVTap -pg 1 -lvl 2 -y 140 -defaultsOSRD
+preplace inst U8 -pg 1 -lvl 1 -y 260 -defaultsOSRD
+preplace netloc DIVTap_DIVO25 1 2 1 NJ
+preplace netloc DIVTap_DIVO18T19 1 2 1 NJ
+preplace netloc clk_0_2 1 0 1 NJ
+preplace netloc DIVTap_DIVO10 1 2 1 NJ
+preplace netloc rst_0_1 1 0 1 NJ
+preplace netloc DIVTap_DIVO20 1 2 1 NJ
+preplace netloc U8_nCPUClk 1 1 2 NJ 280 NJ
+preplace netloc STEP_0_1 1 0 1 NJ
+preplace netloc U8_CPUClk 1 1 2 NJ 260 NJ
+preplace netloc U8_clkdiv 1 1 2 220 20 NJ
+levelinfo -pg 1 0 120 340 480 -top 0 -bot 330
+",
+}
+0

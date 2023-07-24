@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../models.srcs/sources_1/imports/new/ADC32.v" \
+"../../../../models.srcs/sources_1/imports/new/MUX2T1_32.v" \
+"../../../../models.srcs/sources_1/imports/Success Vivado/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip/MUX2T1_5.v" \
+"../../../../models.srcs/sources_1/imports/Success Vivado/MUX2T1_64/MUX2T1_64.srcs/sources_1/new/MUX2T1_64.v" \
+"../../../../models.srcs/sources_1/new/MUX2T1_8.v" \
+"../../../../models.srcs/sources_1/imports/new/MUX4T1_32.v" \
+"../../../../models.srcs/sources_1/imports/new/MUX4T1_5.v" \
+"../../../../models.srcs/sources_1/imports/new/MUX8T1_32.v" \
+"../../../../models.srcs/sources_1/new/MUX8T1_8.v" \
+"../../../../models.srcs/sources_1/new/TOP.v" \
+"../../../../models.srcs/sources_1/imports/new/adc.v" \
+"../../../../models.srcs/sources_1/new/adc32.v" \
+"../../../../models.srcs/sources_1/imports/new/add_32.v" \
+"../../../../models.srcs/sources_1/imports/new/addr.v" \
+"../../../../models.srcs/sources_1/imports/new/and32.v" \
+"../../../../models.srcs/sources_1/imports/new/nor32.v" \
+"../../../../models.srcs/sources_1/imports/new/or32.v" \
+"../../../../models.srcs/sources_1/imports/new/or_bit_32.v" \
+"../../../../models.srcs/sources_1/imports/new/xor32.v" \
+"../../../../models.srcs/sim_1/new/top_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

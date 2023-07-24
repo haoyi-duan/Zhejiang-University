@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Sep 21 09:15:32 2021
+# Process ID: 39416
+# Current directory: F:/Desk/MyCollege/大二下/计算机组成/实验/实验12/lab/lab12/EXP012
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent58872 F:\Desk\MyCollege\大二下\计算机组成\实验\实验12\lab\lab12\EXP012\OExp05_CPU.xpr
+# Log file: F:/Desk/MyCollege/大二下/计算机组成/实验/实验12/lab/lab12/EXP012/vivado.log
+# Journal file: F:/Desk/MyCollege/大二下/计算机组成/实验/实验12/lab/lab12/EXP012\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Desk/MyCollege/大二下/计算机组成/实验/实验12/lab/lab12/EXP012/OExp05_CPU.xpr
+INFO: [Project 1-313] Project file moved from 'F:/Desk/lab12/EXP012' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xlinx2020/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'RAM' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'RAM' (customized with software release 2017.4) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'ROM' is locked:
+* IP definition 'Distributed Memory Generator (8.0)' for IP 'ROM' (customized with software release 2017.4) has a different revision in the IP Catalog.
+INFO: [Project 1-230] Project 'OExp05_CPU.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 1114.074 ; gain = 0.000
+update_compile_order -fileset sources_1

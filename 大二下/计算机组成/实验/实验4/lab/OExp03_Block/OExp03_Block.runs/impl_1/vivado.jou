@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Mar 30 19:21:41 2021
+# Process ID: 21592
+# Current directory: F:/Desk/OExp03_Block/OExp03_Block.runs/impl_1
+# Command line: vivado.exe -log CSTE_RISCVEDF_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source CSTE_RISCVEDF_wrapper.tcl -notrace
+# Log file: F:/Desk/OExp03_Block/OExp03_Block.runs/impl_1/CSTE_RISCVEDF_wrapper.vdi
+# Journal file: F:/Desk/OExp03_Block/OExp03_Block.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source CSTE_RISCVEDF_wrapper.tcl -notrace

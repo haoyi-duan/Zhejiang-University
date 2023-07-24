@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Apr 15 10:29:25 2021
+# Process ID: 17752
+# Current directory: F:/Desk/Success Vivado/OExp05_CPU/OExp05_CPU.runs/synth_1
+# Command line: vivado.exe -log OEXp05_CPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source OEXp05_CPU.tcl
+# Log file: F:/Desk/Success Vivado/OExp05_CPU/OExp05_CPU.runs/synth_1/OEXp05_CPU.vds
+# Journal file: F:/Desk/Success Vivado/OExp05_CPU/OExp05_CPU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source OEXp05_CPU.tcl -notrace

@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Mar 11 13:30:03 2021
+# Process ID: 8524
+# Current directory: F:/Desk/ALU_5359
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15252 F:\Desk\ALU_5359\ALU_5359.xpr
+# Log file: F:/Desk/ALU_5359/vivado.log
+# Journal file: F:/Desk/ALU_5359\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Desk/ALU_5359/ALU_5359.xpr
+file mkdir F:/Desk/ALU_5359/ALU_5359.srcs/sources_1/new
+close [ open F:/Desk/ALU_5359/ALU_5359.srcs/sources_1/new/ALU_5359.v w ]
+add_files F:/Desk/ALU_5359/ALU_5359.srcs/sources_1/new/ALU_5359.v
+update_compile_order -fileset sources_1
+import_files -norecurse {F:/Desk/ALU_5359/addc_32/addc_32.srcs/sources_1/imports/new/adc.v F:/Desk/ALU_5359/and32/and32.srcs/sources_1/imports/new/and32.v F:/Desk/ALU_5359/addc_32/addc_32.srcs/sources_1/imports/new/ADC32.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ALU_5359 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse F:/Desk/ALU/ALU.srcs/sim_1/new/ALU_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ALU_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+source ALU_tb.tcl
+close_sim
+launch_simulation
+source ALU_tb.tcl
+close_sim
+launch_simulation
+source ALU_tb.tcl
+close_sim

@@ -1,0 +1,9 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+F:/Desk/float/float.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+F:/Desk/float/float.srcs/sim_1/new/sim.v,1618748801,verilog,,,,sim,,,,,,,,
+F:/Desk/float/float.srcs/sources_1/ip/ROM/sim/ROM.v,1618755453,verilog,,F:/Desk/float/float.srcs/sources_1/new/float8.v,,ROM,,,,,,,,
+F:/Desk/float/float.srcs/sources_1/new/float8.v,1618755220,verilog,,F:/Desk/float/float.srcs/sources_1/new/top.v,,float8,,,,,,,,
+F:/Desk/float/float.srcs/sources_1/new/top.v,1618748791,verilog,,F:/Desk/float/float.srcs/sim_1/new/sim.v,,top,,,,,,,,

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7k160tffg676-2L" LaunchTime="1617103100">
+  <File Type="PA-TCL" Name="CSTE_RISCVEDF_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="CSTE_RISCVEDF_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="CSTE_RISCVEDF_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="CSTE_RISCVEDF_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="CSTE_RISCVEDF_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="CSTE_RISCVEDF_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="CSTE_RISCVEDF_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="CSTE_RISCVEDF_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="CSTE_RISCVEDF_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/CSTE_RISCVEDF/CSTE_RISCVEDF.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/CSTE_RISCVEDF/hdl/CSTE_RISCVEDF_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/RISCV-DEMO9.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/D_mem.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="CSTE_RISCVEDF_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/OExp03_Block/CSTE_V20.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/CSTE_V20.xdc"/>
+        <Attr Name="ImportTime" Val="1615038257"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

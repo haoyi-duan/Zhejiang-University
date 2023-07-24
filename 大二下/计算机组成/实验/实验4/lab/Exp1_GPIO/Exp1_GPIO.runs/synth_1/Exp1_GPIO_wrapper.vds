@@ -1,0 +1,680 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Mar 16 16:43:11 2021
+# Process ID: 5060
+# Current directory: F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.runs/synth_1
+# Command line: vivado.exe -log Exp1_GPIO_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Exp1_GPIO_wrapper.tcl
+# Log file: F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.runs/synth_1/Exp1_GPIO_wrapper.vds
+# Journal file: F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Exp1_GPIO_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Desk/Success Vivado/Exp1_GPIO/ORGIP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xlinx/Vivado/2017.4/data/ip'.
+Command: synth_design -top Exp1_GPIO_wrapper -part xc7k160tffg676-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18548 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 404.652 ; gain = 97.910
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Exp1_GPIO_wrapper' [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/hdl/Exp1_GPIO_wrapper.v:14]
+INFO: [Synth 8-638] synthesizing module 'Exp1_GPIO' [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/synth/Exp1_GPIO.v:152]
+INFO: [Synth 8-638] synthesizing module 'Display_imp_1BAKVHZ' [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/synth/Exp1_GPIO.v:12]
+INFO: [Synth 8-638] synthesizing module 'Exp1_GPIO_DSEGIO_0_0' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_DSEGIO_0_0/synth/Exp1_GPIO_DSEGIO_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'DSEGIO' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/341e/DSEGIO.v:15]
+INFO: [Synth 8-256] done synthesizing module 'Exp1_GPIO_DSEGIO_0_0' (1#1) [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_DSEGIO_0_0/synth/Exp1_GPIO_DSEGIO_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'Exp1_GPIO_Display_0_0' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Display_0_0/synth/Exp1_GPIO_Display_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'Display' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/320e/Display.v:15]
+INFO: [Synth 8-256] done synthesizing module 'Exp1_GPIO_Display_0_0' (2#1) [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Display_0_0/synth/Exp1_GPIO_Display_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'Exp1_GPIO_Disp2Hex_0_0' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Disp2Hex_0_0/synth/Exp1_GPIO_Disp2Hex_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'Disp2Hex' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/320d/Disp2Hex.v:15]
+INFO: [Synth 8-256] done synthesizing module 'Exp1_GPIO_Disp2Hex_0_0' (3#1) [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Disp2Hex_0_0/synth/Exp1_GPIO_Disp2Hex_0_0.v:56]
+INFO: [Synth 8-256] done synthesizing module 'Display_imp_1BAKVHZ' (4#1) [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/synth/Exp1_GPIO.v:12]
+INFO: [Synth 8-638] synthesizing module 'GPIO_imp_1BJU264' [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/synth/Exp1_GPIO.v:365]
+INFO: [Synth 8-638] synthesizing module 'Exp1_GPIO_GPIO_0_0' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_GPIO_0_0/synth/Exp1_GPIO_GPIO_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'GPIO' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/f4e4/GPIO.v:15]
+INFO: [Synth 8-256] done synthesizing module 'Exp1_GPIO_GPIO_0_0' (5#1) [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_GPIO_0_0/synth/Exp1_GPIO_GPIO_0_0.v:56]
+WARNING: [Synth 8-350] instance 'U7' of module 'Exp1_GPIO_GPIO_0_0' requires 11 connections, but only 9 given [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/synth/Exp1_GPIO.v:412]
+INFO: [Synth 8-638] synthesizing module 'Exp1_GPIO_PIO_0_0' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_PIO_0_0/synth/Exp1_GPIO_PIO_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'PIO' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/509e/PIO.v:15]
+INFO: [Synth 8-256] done synthesizing module 'Exp1_GPIO_PIO_0_0' (6#1) [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_PIO_0_0/synth/Exp1_GPIO_PIO_0_0.v:56]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_imp_1BJU264' (7#1) [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/synth/Exp1_GPIO.v:365]
+WARNING: [Synth 8-350] instance 'GPIO' of module 'GPIO_imp_1BJU264' requires 11 connections, but only 10 given [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/synth/Exp1_GPIO.v:302]
+INFO: [Synth 8-638] synthesizing module 'Exp1_GPIO_EnterT32_0_0' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_EnterT32_0_0/synth/Exp1_GPIO_EnterT32_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'EnterT32' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/ebb1/EnterT32.v:15]
+INFO: [Synth 8-256] done synthesizing module 'Exp1_GPIO_EnterT32_0_0' (8#1) [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_EnterT32_0_0/synth/Exp1_GPIO_EnterT32_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'RAM_imp_1SJPJ9F' [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/synth/Exp1_GPIO.v:431]
+INFO: [Synth 8-638] synthesizing module 'Exp1_GPIO_blk_mem_gen_0_0' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_blk_mem_gen_0_0/synth/Exp1_GPIO_blk_mem_gen_0_0.vhd:69]
+	Parameter C_FAMILY bound to: kintex7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: NONE - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 1024 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 1024 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 1024 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 1024 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     2.95215 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/67d8/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_blk_mem_gen_0_0/synth/Exp1_GPIO_blk_mem_gen_0_0.vhd:232]
+INFO: [Synth 8-256] done synthesizing module 'Exp1_GPIO_blk_mem_gen_0_0' (17#1) [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_blk_mem_gen_0_0/synth/Exp1_GPIO_blk_mem_gen_0_0.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'Exp1_GPIO_util_vector_logic_0_0' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_util_vector_logic_0_0/synth/Exp1_GPIO_util_vector_logic_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'util_vector_logic_v2_0_1_util_vector_logic' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/2137/hdl/util_vector_logic_v2_0_vl_rfs.v:45]
+	Parameter C_OPERATION bound to: not - type: string 
+	Parameter C_SIZE bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'util_vector_logic_v2_0_1_util_vector_logic' (18#1) [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/2137/hdl/util_vector_logic_v2_0_vl_rfs.v:45]
+INFO: [Synth 8-256] done synthesizing module 'Exp1_GPIO_util_vector_logic_0_0' (19#1) [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_util_vector_logic_0_0/synth/Exp1_GPIO_util_vector_logic_0_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'RAM_imp_1SJPJ9F' (20#1) [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/synth/Exp1_GPIO.v:431]
+INFO: [Synth 8-638] synthesizing module 'Exp1_GPIO_dist_mem_gen_0_1' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_dist_mem_gen_0_1/synth/Exp1_GPIO_dist_mem_gen_0_1.vhd:66]
+	Parameter C_FAMILY bound to: kintex7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 1024 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: Exp1_GPIO_dist_mem_gen_0_1.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_12' declared at 'f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/d46a/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_12' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_dist_mem_gen_0_1/synth/Exp1_GPIO_dist_mem_gen_0_1.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'Exp1_GPIO_dist_mem_gen_0_1' (24#1) [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_dist_mem_gen_0_1/synth/Exp1_GPIO_dist_mem_gen_0_1.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'Exp1_GPIO_SWOUT_0_0' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_SWOUT_0_0/synth/Exp1_GPIO_SWOUT_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'SWOUT' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/f071/SWOUT.v:21]
+INFO: [Synth 8-256] done synthesizing module 'SWOUT' (25#1) [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/f071/SWOUT.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Exp1_GPIO_SWOUT_0_0' (26#1) [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_SWOUT_0_0/synth/Exp1_GPIO_SWOUT_0_0.v:56]
+WARNING: [Synth 8-350] instance 'SWTap' of module 'Exp1_GPIO_SWOUT_0_0' requires 9 connections, but only 6 given [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/synth/Exp1_GPIO.v:335]
+INFO: [Synth 8-638] synthesizing module 'Exp1_GPIO_Arraykeys_0_0' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/synth/Exp1_GPIO_Arraykeys_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'Arraykeys' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/b52a/Arraykeys.v:15]
+INFO: [Synth 8-256] done synthesizing module 'Exp1_GPIO_Arraykeys_0_0' (27#1) [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/synth/Exp1_GPIO_Arraykeys_0_0.v:56]
+WARNING: [Synth 8-350] instance 'U9' of module 'Exp1_GPIO_Arraykeys_0_0' requires 13 connections, but only 12 given [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/synth/Exp1_GPIO.v:342]
+INFO: [Synth 8-638] synthesizing module 'clk_imp_SYSXRJ' [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/synth/Exp1_GPIO.v:466]
+INFO: [Synth 8-638] synthesizing module 'Exp1_GPIO_DIVO_0_0' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_DIVO_0_0/synth/Exp1_GPIO_DIVO_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'DIVO' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/fac0/DIVO.v:21]
+INFO: [Synth 8-256] done synthesizing module 'DIVO' (28#1) [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/fac0/DIVO.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Exp1_GPIO_DIVO_0_0' (29#1) [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_DIVO_0_0/synth/Exp1_GPIO_DIVO_0_0.v:56]
+WARNING: [Synth 8-350] instance 'DIVTap' of module 'Exp1_GPIO_DIVO_0_0' requires 9 connections, but only 5 given [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/synth/Exp1_GPIO.v:509]
+INFO: [Synth 8-638] synthesizing module 'Exp1_GPIO_Clkdiv_0_0' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Clkdiv_0_0/synth/Exp1_GPIO_Clkdiv_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'Clkdiv' [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/d6be/Clkdiv.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Clkdiv' (30#1) [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/d6be/Clkdiv.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Exp1_GPIO_Clkdiv_0_0' (31#1) [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Clkdiv_0_0/synth/Exp1_GPIO_Clkdiv_0_0.v:56]
+INFO: [Synth 8-256] done synthesizing module 'clk_imp_SYSXRJ' (32#1) [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/synth/Exp1_GPIO.v:466]
+WARNING: [Synth 8-350] instance 'clk' of module 'clk_imp_SYSXRJ' requires 10 connections, but only 7 given [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/synth/Exp1_GPIO.v:355]
+INFO: [Synth 8-256] done synthesizing module 'Exp1_GPIO' (33#1) [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/synth/Exp1_GPIO.v:152]
+WARNING: [Synth 8-350] instance 'Exp1_GPIO_i' of module 'Exp1_GPIO' requires 27 connections, but only 26 given [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/hdl/Exp1_GPIO_wrapper.v:52]
+INFO: [Synth 8-256] done synthesizing module 'Exp1_GPIO_wrapper' (34#1) [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/hdl/Exp1_GPIO_wrapper.v:14]
+WARNING: [Synth 8-3331] design Clkdiv has unconnected port rst
+WARNING: [Synth 8-3331] design DIVO has unconnected port DIV[31]
+WARNING: [Synth 8-3331] design DIVO has unconnected port DIV[30]
+WARNING: [Synth 8-3331] design DIVO has unconnected port DIV[29]
+WARNING: [Synth 8-3331] design DIVO has unconnected port DIV[28]
+WARNING: [Synth 8-3331] design DIVO has unconnected port DIV[27]
+WARNING: [Synth 8-3331] design DIVO has unconnected port DIV[26]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[31]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[30]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[29]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[28]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[27]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[26]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[25]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[24]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[23]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[22]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[21]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[20]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[19]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[18]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[17]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[16]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[15]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[14]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[13]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[12]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[11]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[10]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[9]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[8]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[7]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[6]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[5]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[4]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[3]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[2]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[1]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[0]
+WARNING: [Synth 8-3331] design rom has unconnected port clk
+WARNING: [Synth 8-3331] design rom has unconnected port qspo_ce
+WARNING: [Synth 8-3331] design rom has unconnected port qspo_rst
+WARNING: [Synth 8-3331] design rom has unconnected port qspo_srst
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[31]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[30]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[29]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[28]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[27]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[26]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[25]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[24]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[23]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[22]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[21]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[20]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[19]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[18]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[17]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[16]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[15]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[14]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[13]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[12]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[11]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[10]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[9]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[8]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[7]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[6]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[5]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[4]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[3]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[2]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[1]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[0]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[31]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[30]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[29]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[28]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[27]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[26]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[25]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[24]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[23]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[22]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[21]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[20]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[19]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[18]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[17]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[16]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[15]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[14]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[13]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[12]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[11]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[10]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[9]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[8]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port qdpo[7]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:07 ; elapsed = 00:02:07 . Memory (MB): peak = 666.809 ; gain = 360.066
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:07 ; elapsed = 00:02:07 . Memory (MB): peak = 666.809 ; gain = 360.066
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7k160tffg676-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/constrs_1/new/constraints_GPIO.xdc]
+WARNING: [Vivado 12-584] No ports matched 'RDY'. [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/constrs_1/new/constraints_GPIO.xdc:46]
+Finished Parsing XDC File [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/constrs_1/new/constraints_GPIO.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/constrs_1/new/constraints_GPIO.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Exp1_GPIO_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/constrs_1/new/constraints_GPIO.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Exp1_GPIO_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Exp1_GPIO_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 743.281 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:24 ; elapsed = 00:02:25 . Memory (MB): peak = 743.281 ; gain = 436.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tffg676-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:24 ; elapsed = 00:02:25 . Memory (MB): peak = 743.281 ; gain = 436.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for Exp1_GPIO_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Exp1_GPIO_i/Display/U5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Exp1_GPIO_i/Display/U6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Exp1_GPIO_i/Display/U61. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Exp1_GPIO_i/GPIO/U7. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Exp1_GPIO_i/GPIO/U71. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Exp1_GPIO_i/M4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Exp1_GPIO_i/RAM/RAM_B. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Exp1_GPIO_i/RAM/util_vector_logic_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Exp1_GPIO_i/ROM_D. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Exp1_GPIO_i/SWTap. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Exp1_GPIO_i/U9. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Exp1_GPIO_i/clk/DIVTap. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Exp1_GPIO_i/clk/U8. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:24 ; elapsed = 00:02:25 . Memory (MB): peak = 743.281 ; gain = 436.539
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element clkdiv_reg was removed.  [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/d6be/Clkdiv.v:33]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:25 ; elapsed = 00:02:26 . Memory (MB): peak = 743.281 ; gain = 436.539
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Clkdiv 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element inst/clkdiv_reg was removed.  [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/d6be/Clkdiv.v:33]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:27 ; elapsed = 00:02:28 . Memory (MB): peak = 743.281 ; gain = 436.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------------+--------------------------------------------------------+---------------+----------------+
+|Module Name          | RTL Object                                             | Depth x Width | Implemented As | 
++---------------------+--------------------------------------------------------+---------------+----------------+
+|rom                  | rom[1023]                                              | 1024x32       | LUT            | 
+|dist_mem_gen_v8_0_12 | synth_options.dist_mem_inst/gen_rom.rom_inst/rom[1023] | 1024x32       | LUT            | 
++---------------------+--------------------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:40 ; elapsed = 00:02:41 . Memory (MB): peak = 813.379 ; gain = 506.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:40 ; elapsed = 00:02:41 . Memory (MB): peak = 813.602 ; gain = 506.859
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:40 ; elapsed = 00:02:41 . Memory (MB): peak = 835.535 ; gain = 528.793
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:41 ; elapsed = 00:02:43 . Memory (MB): peak = 835.535 ; gain = 528.793
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:41 ; elapsed = 00:02:43 . Memory (MB): peak = 835.535 ; gain = 528.793
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:41 ; elapsed = 00:02:43 . Memory (MB): peak = 835.535 ; gain = 528.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:41 ; elapsed = 00:02:43 . Memory (MB): peak = 835.535 ; gain = 528.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:41 ; elapsed = 00:02:43 . Memory (MB): peak = 835.535 ; gain = 528.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:41 ; elapsed = 00:02:43 . Memory (MB): peak = 835.535 ; gain = 528.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |EnterT32      |         1|
+|2     |Arraykeys     |         1|
+|3     |DSEGIO        |         1|
+|4     |Display       |         1|
+|5     |Disp2Hex      |         1|
+|6     |GPIO          |         1|
+|7     |PIO           |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |Arraykeys_bbox_6 |     1|
+|2     |DSEGIO_bbox_0    |     1|
+|3     |Disp2Hex_bbox_2  |     1|
+|4     |Display_bbox_1   |     1|
+|5     |EnterT32_bbox_5  |     1|
+|6     |GPIO_bbox_3      |     1|
+|7     |PIO_bbox_4       |     1|
+|8     |BUFG             |     1|
+|9     |CARRY4           |     8|
+|10    |LUT1             |     2|
+|11    |LUT2             |     3|
+|12    |LUT3             |     3|
+|13    |LUT4             |     5|
+|14    |LUT5             |    21|
+|15    |LUT6             |    29|
+|16    |RAMB36E1         |     1|
+|17    |FDRE             |    32|
+|18    |IBUF             |    22|
+|19    |OBUF             |    36|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------------+--------------------------------+------+
+|      |Instance                                           |Module                          |Cells |
++------+---------------------------------------------------+--------------------------------+------+
+|1     |top                                                |                                |   406|
+|2     |  Exp1_GPIO_i                                      |Exp1_GPIO                       |   346|
+|3     |    M4                                             |Exp1_GPIO_EnterT32_0_0          |    73|
+|4     |    ROM_D                                          |Exp1_GPIO_dist_mem_gen_0_1      |    58|
+|5     |      U0                                           |dist_mem_gen_v8_0_12            |    58|
+|6     |        \synth_options.dist_mem_inst               |dist_mem_gen_v8_0_12_synth      |    58|
+|7     |          \gen_rom.rom_inst                        |rom                             |    58|
+|8     |    SWTap                                          |Exp1_GPIO_SWOUT_0_0             |     0|
+|9     |    U9                                             |Exp1_GPIO_Arraykeys_0_0         |    37|
+|10    |    Display                                        |Display_imp_1BAKVHZ             |    65|
+|11    |      U5                                           |Exp1_GPIO_DSEGIO_0_0            |    49|
+|12    |      U6                                           |Exp1_GPIO_Display_0_0           |     4|
+|13    |      U61                                          |Exp1_GPIO_Disp2Hex_0_0          |    12|
+|14    |    GPIO                                           |GPIO_imp_1BJU264                |    68|
+|15    |      U7                                           |Exp1_GPIO_GPIO_0_0              |    36|
+|16    |      U71                                          |Exp1_GPIO_PIO_0_0               |    32|
+|17    |    RAM                                            |RAM_imp_1SJPJ9F                 |     2|
+|18    |      RAM_B                                        |Exp1_GPIO_blk_mem_gen_0_0       |     1|
+|19    |        U0                                         |blk_mem_gen_v8_4_1              |     1|
+|20    |          inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth        |     1|
+|21    |            \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                 |     1|
+|22    |              \valid.cstr                          |blk_mem_gen_generic_cstr        |     1|
+|23    |                \ramloop[0].ram.r                  |blk_mem_gen_prim_width          |     1|
+|24    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper        |     1|
+|25    |      util_vector_logic_0                          |Exp1_GPIO_util_vector_logic_0_0 |     1|
+|26    |    clk                                            |clk_imp_SYSXRJ                  |    43|
+|27    |      DIVTap                                       |Exp1_GPIO_DIVO_0_0              |     0|
+|28    |      U8                                           |Exp1_GPIO_Clkdiv_0_0            |    43|
+|29    |        inst                                       |Clkdiv                          |    43|
++------+---------------------------------------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:41 ; elapsed = 00:02:43 . Memory (MB): peak = 835.535 ; gain = 528.793
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 354 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:02:33 . Memory (MB): peak = 835.535 ; gain = 452.320
+Synthesis Optimization Complete : Time (s): cpu = 00:02:41 ; elapsed = 00:02:43 . Memory (MB): peak = 835.535 ; gain = 528.793
+INFO: [Project 1-571] Translating synthesized netlist
+Parsing EDIF File [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_EnterT32_0_0/EnterT32.edf]
+Finished Parsing EDIF File [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_EnterT32_0_0/EnterT32.edf]
+Parsing EDIF File [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf]
+Finished Parsing EDIF File [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf]
+Parsing EDIF File [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_DSEGIO_0_0/DSEGIO.edf]
+Finished Parsing EDIF File [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_DSEGIO_0_0/DSEGIO.edf]
+Parsing EDIF File [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Display_0_0/Display.edf]
+Finished Parsing EDIF File [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Display_0_0/Display.edf]
+Parsing EDIF File [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Disp2Hex_0_0/Disp2Hex.edf]
+Finished Parsing EDIF File [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Disp2Hex_0_0/Disp2Hex.edf]
+Parsing EDIF File [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_GPIO_0_0/GPIO.edf]
+Finished Parsing EDIF File [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_GPIO_0_0/GPIO.edf]
+Parsing EDIF File [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_PIO_0_0/PIO.edf]
+Finished Parsing EDIF File [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_PIO_0_0/PIO.edf]
+INFO: [Netlist 29-17] Analyzing 113 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/Display/U6/inst/SEGEN' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Display_0_0/Display.edf:4670]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/Display/U61/inst/AN[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Disp2Hex_0_0/Disp2Hex.edf:199]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/Display/U61/inst/AN[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Disp2Hex_0_0/Disp2Hex.edf:206]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/Display/U61/inst/AN[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Disp2Hex_0_0/Disp2Hex.edf:213]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/Display/U61/inst/AN[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Disp2Hex_0_0/Disp2Hex.edf:220]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/Display/U61/inst/SEGMENT[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Disp2Hex_0_0/Disp2Hex.edf:514]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/Display/U61/inst/SEGMENT[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Disp2Hex_0_0/Disp2Hex.edf:521]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/Display/U61/inst/SEGMENT[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Disp2Hex_0_0/Disp2Hex.edf:528]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/Display/U61/inst/SEGMENT[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Disp2Hex_0_0/Disp2Hex.edf:535]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/Display/U61/inst/SEGMENT[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Disp2Hex_0_0/Disp2Hex.edf:542]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/Display/U61/inst/SEGMENT[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Disp2Hex_0_0/Disp2Hex.edf:549]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/Display/U61/inst/SEGMENT[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Disp2Hex_0_0/Disp2Hex.edf:556]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/Display/U61/inst/SEGMENT[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Disp2Hex_0_0/Disp2Hex.edf:613]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/GPIO/U7/inst/LEDEN' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_GPIO_0_0/GPIO.edf:1136]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/GPIO/U71/inst/LED[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_PIO_0_0/PIO.edf:350]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/GPIO/U71/inst/LED[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_PIO_0_0/PIO.edf:357]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/GPIO/U71/inst/LED[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_PIO_0_0/PIO.edf:364]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/GPIO/U71/inst/LED[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_PIO_0_0/PIO.edf:371]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/GPIO/U71/inst/LED[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_PIO_0_0/PIO.edf:378]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/GPIO/U71/inst/LED[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_PIO_0_0/PIO.edf:385]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/GPIO/U71/inst/LED[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_PIO_0_0/PIO.edf:392]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/GPIO/U71/inst/LED[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_PIO_0_0/PIO.edf:399]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/M4/inst/readn' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_EnterT32_0_0/EnterT32.edf:2481]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/CR' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1006]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/KCOL[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1100]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/KCOL[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1112]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/KCOL[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1124]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/KCOL[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1137]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/KROW[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1160]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/KROW[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1167]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/KROW[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1174]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/KROW[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1181]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/KROW[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1188]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/RSTN' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1265]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/SW[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1440]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/SW[10]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1449]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/SW[11]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1458]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/SW[12]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1467]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/SW[13]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1476]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/SW[14]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1485]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/SW[15]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1494]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/SW[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1503]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/SW[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1512]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/SW[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1521]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/SW[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1530]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/SW[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1539]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/SW[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1548]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/SW[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1557]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/SW[8]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1566]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/SW[9]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:1575]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Exp1_GPIO_i/U9/inst/readn' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [f:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/Arraykeys.edf:2571]
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+74 Infos, 162 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:44 ; elapsed = 00:02:48 . Memory (MB): peak = 850.164 ; gain = 554.895
+INFO: [Common 17-1381] The checkpoint 'F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.runs/synth_1/Exp1_GPIO_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Exp1_GPIO_wrapper_utilization_synth.rpt -pb Exp1_GPIO_wrapper_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.130 . Memory (MB): peak = 850.164 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 16 16:46:08 2021...

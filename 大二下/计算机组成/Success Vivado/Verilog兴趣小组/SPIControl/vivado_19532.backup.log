@@ -1,0 +1,572 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri May 21 19:03:04 2021
+# Process ID: 19532
+# Current directory: f:/Desk/SPIControl
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8388 F:\Desk\SPIControl\SPIControl.xpr
+# Log file: f:/Desk/SPIControl/vivado.log
+# Journal file: f:/Desk/SPIControl\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Desk/SPIControl/SPIControl.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xlinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 855.688 ; gain = 99.805
+update_compile_order -fileset sources_1
+close [ open F:/Desk/SPIControl/SPIControl.srcs/sources_1/new/yhf.v w ]
+add_files F:/Desk/SPIControl/SPIControl.srcs/sources_1/new/yhf.v
+update_compile_order -fileset sources_1
+set_property top yhf [current_fileset]
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'spi' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim/RandomX.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj spi_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/SPIControl/SPIControl.srcs/sources_1/new/yhf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yhf
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/SPIControl/SPIControl.srcs/sim_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xlinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 48598e032bc74591a41af59d67744603 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot spi_behav xil_defaultlib.spi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.yhf
+Compiling module xil_defaultlib.spi
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot spi_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "spi_behav -key {Behavioral:sim_1:Functional:spi} -tclbatch {spi.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source spi.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'spi_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 910.043 ; gain = 13.785
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'spi' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim/RandomX.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj spi_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/SPIControl/SPIControl.srcs/sources_1/new/yhf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yhf
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/SPIControl/SPIControl.srcs/sim_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xlinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 48598e032bc74591a41af59d67744603 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot spi_behav xil_defaultlib.spi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.yhf
+Compiling module xil_defaultlib.spi
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot spi_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "spi_behav -key {Behavioral:sim_1:Functional:spi} -tclbatch {spi.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source spi.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'spi_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 921.102 ; gain = 0.000
+set_property top SPIControl [current_fileset]
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'spi' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim/RandomX.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj spi_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/SPIControl/SPIControl.srcs/sources_1/new/SPIControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SPIControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/SPIControl/SPIControl.srcs/sim_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xlinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 48598e032bc74591a41af59d67744603 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot spi_behav xil_defaultlib.spi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "F:/Desk/SPIControl/SPIControl.srcs/sources_1/new/SPIControl.v" Line 1. Module SPIControl doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SPIControl
+Compiling module xil_defaultlib.spi
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot spi_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "spi_behav -key {Behavioral:sim_1:Functional:spi} -tclbatch {spi.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source spi.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'spi_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 931.020 ; gain = 0.000
+set_property top yhf [current_fileset]
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'spi' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim/RandomX.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj spi_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/SPIControl/SPIControl.srcs/sources_1/new/yhf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yhf
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/SPIControl/SPIControl.srcs/sim_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xlinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 48598e032bc74591a41af59d67744603 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot spi_behav xil_defaultlib.spi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.yhf
+Compiling module xil_defaultlib.spi
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot spi_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "spi_behav -key {Behavioral:sim_1:Functional:spi} -tclbatch {spi.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source spi.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'spi_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 931.020 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'spi' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim/RandomX.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj spi_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/SPIControl/SPIControl.srcs/sources_1/new/yhf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yhf
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/SPIControl/SPIControl.srcs/sim_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xlinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 48598e032bc74591a41af59d67744603 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot spi_behav xil_defaultlib.spi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.yhf
+Compiling module xil_defaultlib.spi
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot spi_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "spi_behav -key {Behavioral:sim_1:Functional:spi} -tclbatch {spi.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source spi.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'spi_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 934.523 ; gain = 0.824
+set_property top SPIControl [current_fileset]
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'spi' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim/RandomX.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj spi_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/SPIControl/SPIControl.srcs/sources_1/new/SPIControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SPIControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/SPIControl/SPIControl.srcs/sim_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xlinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 48598e032bc74591a41af59d67744603 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot spi_behav xil_defaultlib.spi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "F:/Desk/SPIControl/SPIControl.srcs/sources_1/new/SPIControl.v" Line 1. Module SPIControl doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SPIControl
+Compiling module xil_defaultlib.spi
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot spi_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "spi_behav -key {Behavioral:sim_1:Functional:spi} -tclbatch {spi.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source spi.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'spi_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 936.410 ; gain = 0.234
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'spi' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim/RandomX.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj spi_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/SPIControl/SPIControl.srcs/sources_1/new/yhf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yhf
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/SPIControl/SPIControl.srcs/sim_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xlinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 48598e032bc74591a41af59d67744603 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot spi_behav xil_defaultlib.spi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.yhf
+Compiling module xil_defaultlib.spi
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot spi_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "spi_behav -key {Behavioral:sim_1:Functional:spi} -tclbatch {spi.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source spi.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'spi_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 945.785 ; gain = 0.000
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'spi' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim/RandomX.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj spi_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/SPIControl/SPIControl.srcs/sources_1/new/yhf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yhf
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/SPIControl/SPIControl.srcs/sim_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xlinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 48598e032bc74591a41af59d67744603 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot spi_behav xil_defaultlib.spi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.yhf
+Compiling module xil_defaultlib.spi
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot spi_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "spi_behav -key {Behavioral:sim_1:Functional:spi} -tclbatch {spi.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source spi.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'spi_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 950.035 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'spi' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim/RandomX.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj spi_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/SPIControl/SPIControl.srcs/sources_1/new/yhf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yhf
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/SPIControl/SPIControl.srcs/sim_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xlinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 48598e032bc74591a41af59d67744603 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot spi_behav xil_defaultlib.spi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.yhf
+Compiling module xil_defaultlib.spi
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot spi_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "spi_behav -key {Behavioral:sim_1:Functional:spi} -tclbatch {spi.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source spi.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'spi_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 950.715 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'spi' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim/RandomX.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj spi_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/SPIControl/SPIControl.srcs/sources_1/new/yhf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yhf
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/SPIControl/SPIControl.srcs/sim_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xlinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 48598e032bc74591a41af59d67744603 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot spi_behav xil_defaultlib.spi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.yhf
+Compiling module xil_defaultlib.spi
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot spi_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Desk/SPIControl/SPIControl.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "spi_behav -key {Behavioral:sim_1:Functional:spi} -tclbatch {spi.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source spi.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'spi_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 952.645 ; gain = 0.781

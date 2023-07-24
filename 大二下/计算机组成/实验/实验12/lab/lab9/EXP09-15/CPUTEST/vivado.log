@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Mar 30 14:00:11 2021
+# Process ID: 16136
+# Current directory: F:/Desk/OExp04_HDL/CPUTEST
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17676 F:\Desk\OExp04_HDL\CPUTEST\CPUTEST.xpr
+# Log file: F:/Desk/OExp04_HDL/CPUTEST/vivado.log
+# Journal file: F:/Desk/OExp04_HDL/CPUTEST\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Desk/OExp04_HDL/CPUTEST/CPUTEST.xpr
+INFO: [Project 1-313] Project file moved from 'F:/Desk/OExp04_BLOCK/CPUTEST' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Desk/OExp04_HDL/CPUTEST/CPUTEST.srcs/sources_1/new'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xlinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 870.352 ; gain = 74.398
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 30 14:00:52 2021...

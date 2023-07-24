@@ -1,0 +1,8 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+F:/Desk/addc_32/addc_32.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+F:/Desk/addc_32/addc_32.srcs/sim_1/imports/new/ADC_32_sim.v,1614945309,verilog,,,,ADC_32_sim,,,,,,,,
+F:/Desk/addc_32/addc_32.srcs/sources_1/imports/new/ADC32.v,1614943717,verilog,,F:/Desk/addc_32/addc_32.srcs/sources_1/imports/new/adc.v,,ADC32,,,,,,,,
+F:/Desk/addc_32/addc_32.srcs/sources_1/imports/new/adc.v,1614942098,verilog,,F:/Desk/addc_32/addc_32.srcs/sim_1/imports/new/ADC_32_sim.v,,adc,,,,,,,,

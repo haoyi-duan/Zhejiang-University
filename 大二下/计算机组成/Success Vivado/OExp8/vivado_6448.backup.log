@@ -1,0 +1,242 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed May 26 12:17:42 2021
+# Process ID: 6448
+# Current directory: F:/Desk/exp8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10436 F:\Desk\exp8\OExp05_CPU.xpr
+# Log file: F:/Desk/exp8/vivado.log
+# Journal file: F:/Desk/exp8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Desk/exp8/OExp05_CPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xlinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 884.031 ; gain = 91.742
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.coefficient_file {F:/Desk/exp8/coe/ArmInt.coe}] [get_ips ROM]
+INFO: [IP_Flow 19-3484] Absolute path of file 'f:/Desk/exp8/coe/ArmInt.coe' provided. It will be converted relative to IP Instance files '../../../../coe/ArmInt.coe'
+generate_target all [get_files  F:/Desk/exp8/OExp05_CPU.srcs/sources_1/ip/ROM/ROM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ROM'...
+export_ip_user_files -of_objects [get_files F:/Desk/exp8/OExp05_CPU.srcs/sources_1/ip/ROM/ROM.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files F:/Desk/exp8/OExp05_CPU.srcs/sources_1/ip/ROM/ROM.xci] -directory F:/Desk/exp8/OExp05_CPU.ip_user_files/sim_scripts -ip_user_files_dir F:/Desk/exp8/OExp05_CPU.ip_user_files -ipstatic_source_dir F:/Desk/exp8/OExp05_CPU.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/Desk/exp8/OExp05_CPU.cache/compile_simlib/modelsim} {questa=F:/Desk/exp8/OExp05_CPU.cache/compile_simlib/questa} {riviera=F:/Desk/exp8/OExp05_CPU.cache/compile_simlib/riviera} {activehdl=F:/Desk/exp8/OExp05_CPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+[Wed May 26 12:26:00 2021] Launched synth_1...
+Run output will be captured here: F:/Desk/exp8/OExp05_CPU.runs/synth_1/runme.log
+[Wed May 26 12:26:00 2021] Launched impl_1...
+Run output will be captured here: F:/Desk/exp8/OExp05_CPU.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+[Wed May 26 12:45:35 2021] Launched synth_1...
+Run output will be captured here: F:/Desk/exp8/OExp05_CPU.runs/synth_1/runme.log
+[Wed May 26 12:45:36 2021] Launched impl_1...
+Run output will be captured here: F:/Desk/exp8/OExp05_CPU.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+[Wed May 26 12:50:29 2021] Launched synth_1...
+Run output will be captured here: F:/Desk/exp8/OExp05_CPU.runs/synth_1/runme.log
+[Wed May 26 12:50:29 2021] Launched impl_1...
+Run output will be captured here: F:/Desk/exp8/OExp05_CPU.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Wed May 26 12:58:06 2021] Launched impl_1...
+Run output will be captured here: F:/Desk/exp8/OExp05_CPU.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+set_property PROGRAM.FILE {F:/Desk/exp8/OExp05_CPU.runs/impl_1/OEXp05_CPU.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {F:/Desk/exp8/OExp05_CPU.runs/impl_1/OEXp05_CPU.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1633.703 ; gain = 2.395
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+reset_run impl_1
+launch_runs impl_1 -jobs 16
+[Wed May 26 13:06:14 2021] Launched impl_1...
+Run output will be captured here: F:/Desk/exp8/OExp05_CPU.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Wed May 26 13:12:56 2021] Launched impl_1...
+Run output will be captured here: F:/Desk/exp8/OExp05_CPU.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+set_property PROGRAM.FILE {F:/Desk/exp8/OExp05_CPU.runs/impl_1/OEXp05_CPU.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {F:/Desk/exp8/OExp05_CPU.runs/impl_1/OEXp05_CPU.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1638.059 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1
+close_hw
+set_property -dict [list CONFIG.coefficient_file {F:/Desk/exp8/coe/LAB7DIY.coe}] [get_ips ROM]
+INFO: [IP_Flow 19-3484] Absolute path of file 'f:/Desk/exp8/coe/LAB7DIY.coe' provided. It will be converted relative to IP Instance files '../../../../coe/LAB7DIY.coe'
+generate_target all [get_files  F:/Desk/exp8/OExp05_CPU.srcs/sources_1/ip/ROM/ROM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ROM'...
+export_ip_user_files -of_objects [get_files F:/Desk/exp8/OExp05_CPU.srcs/sources_1/ip/ROM/ROM.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files F:/Desk/exp8/OExp05_CPU.srcs/sources_1/ip/ROM/ROM.xci] -directory F:/Desk/exp8/OExp05_CPU.ip_user_files/sim_scripts -ip_user_files_dir F:/Desk/exp8/OExp05_CPU.ip_user_files -ipstatic_source_dir F:/Desk/exp8/OExp05_CPU.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/Desk/exp8/OExp05_CPU.cache/compile_simlib/modelsim} {questa=F:/Desk/exp8/OExp05_CPU.cache/compile_simlib/questa} {riviera=F:/Desk/exp8/OExp05_CPU.cache/compile_simlib/riviera} {activehdl=F:/Desk/exp8/OExp05_CPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+[Wed May 26 13:18:28 2021] Launched synth_1...
+Run output will be captured here: F:/Desk/exp8/OExp05_CPU.runs/synth_1/runme.log
+[Wed May 26 13:18:28 2021] Launched impl_1...
+Run output will be captured here: F:/Desk/exp8/OExp05_CPU.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Wed May 26 13:26:03 2021] Launched impl_1...
+Run output will be captured here: F:/Desk/exp8/OExp05_CPU.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+set_property PROGRAM.FILE {F:/Desk/exp8/OExp05_CPU.runs/impl_1/OEXp05_CPU.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {F:/Desk/exp8/OExp05_CPU.runs/impl_1/OEXp05_CPU.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1641.523 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+set_property -dict [list CONFIG.coefficient_file {F:/Desk/exp8/coe/ArmInt.coe}] [get_ips ROM]
+INFO: [IP_Flow 19-3484] Absolute path of file 'f:/Desk/exp8/coe/ArmInt.coe' provided. It will be converted relative to IP Instance files '../../../../coe/ArmInt.coe'
+generate_target all [get_files  F:/Desk/exp8/OExp05_CPU.srcs/sources_1/ip/ROM/ROM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ROM'...
+export_ip_user_files -of_objects [get_files F:/Desk/exp8/OExp05_CPU.srcs/sources_1/ip/ROM/ROM.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files F:/Desk/exp8/OExp05_CPU.srcs/sources_1/ip/ROM/ROM.xci] -directory F:/Desk/exp8/OExp05_CPU.ip_user_files/sim_scripts -ip_user_files_dir F:/Desk/exp8/OExp05_CPU.ip_user_files -ipstatic_source_dir F:/Desk/exp8/OExp05_CPU.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/Desk/exp8/OExp05_CPU.cache/compile_simlib/modelsim} {questa=F:/Desk/exp8/OExp05_CPU.cache/compile_simlib/questa} {riviera=F:/Desk/exp8/OExp05_CPU.cache/compile_simlib/riviera} {activehdl=F:/Desk/exp8/OExp05_CPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+[Wed May 26 13:29:45 2021] Launched synth_1...
+Run output will be captured here: F:/Desk/exp8/OExp05_CPU.runs/synth_1/runme.log
+[Wed May 26 13:29:45 2021] Launched impl_1...
+Run output will be captured here: F:/Desk/exp8/OExp05_CPU.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Wed May 26 13:37:14 2021] Launched synth_1...
+Run output will be captured here: F:/Desk/exp8/OExp05_CPU.runs/synth_1/runme.log
+[Wed May 26 13:37:14 2021] Launched impl_1...
+Run output will be captured here: F:/Desk/exp8/OExp05_CPU.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+set_property PROGRAM.FILE {F:/Desk/exp8/OExp05_CPU.runs/impl_1/OEXp05_CPU.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {F:/Desk/exp8/OExp05_CPU.runs/impl_1/OEXp05_CPU.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1654.445 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 26 13:47:38 2021...

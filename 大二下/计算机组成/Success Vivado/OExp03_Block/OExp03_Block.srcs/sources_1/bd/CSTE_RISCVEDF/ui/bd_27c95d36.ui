@@ -1,0 +1,113 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port VSYNC -pg 1 -y 870 -defaultsOSRD
+preplace port LEDCK -pg 1 -y 680 -defaultsOSRD
+preplace port HSYNC -pg 1 -y 890 -defaultsOSRD
+preplace port SEGCR -pg 1 -y 380 -defaultsOSRD
+preplace port RSTN -pg 1 -y 1040 -defaultsOSRD
+preplace port RDY -pg 1 -y 980 -defaultsOSRD
+preplace port LEDDT -pg 1 -y 700 -defaultsOSRD
+preplace port LEDCR -pg 1 -y 720 -defaultsOSRD
+preplace port SEGEN -pg 1 -y 360 -defaultsOSRD
+preplace port Buzzer -pg 1 -y 1040 -defaultsOSRD
+preplace port readn -pg 1 -y 940 -defaultsOSRD
+preplace port clk_100mhz -pg 1 -y 660 -defaultsOSRD
+preplace port SEGDT -pg 1 -y 340 -defaultsOSRD
+preplace port SEGCK -pg 1 -y 320 -defaultsOSRD
+preplace port LEDEN -pg 1 -y 740 -defaultsOSRD
+preplace port CR -pg 1 -y 1000 -defaultsOSRD
+preplace portBus AN -pg 1 -y 400 -defaultsOSRD
+preplace portBus KCOL -pg 1 -y 1060 -defaultsOSRD
+preplace portBus Blue -pg 1 -y 850 -defaultsOSRD
+preplace portBus SEGMENT -pg 1 -y 420 -defaultsOSRD
+preplace portBus Red -pg 1 -y 810 -defaultsOSRD
+preplace portBus LED -pg 1 -y 760 -defaultsOSRD
+preplace portBus SW -pg 1 -y 1080 -defaultsOSRD
+preplace portBus Green -pg 1 -y 830 -defaultsOSRD
+preplace portBus KROW -pg 1 -y 960 -defaultsOSRD
+preplace inst CLKBLOCK -pg 1 -lvl 1 -y 680 -defaultsOSRD
+preplace inst GPIOBLOCK -pg 1 -lvl 7 -y 710 -defaultsOSRD
+preplace inst MEMARYBLOCK -pg 1 -lvl 3 -y 508 -defaultsOSRD
+preplace inst U1 -pg 1 -lvl 4 -y 500 -defaultsOSRD
+preplace inst DISPBLOCK -pg 1 -lvl 7 -y 370 -defaultsOSRD
+preplace inst ARRAYBLOCK -pg 1 -lvl 2 -y 1060 -defaultsOSRD
+preplace inst U10 -pg 1 -lvl 6 -y 290 -defaultsOSRD
+preplace inst U4 -pg 1 -lvl 5 -y 210 -defaultsOSRD
+preplace inst U11 -pg 1 -lvl 5 -y 850 -defaultsOSRD
+preplace netloc M4_readn 1 2 6 NJ 880 NJ 880 2360J 950 3000J 940 NJ 940 NJ
+preplace netloc ARRAYBLOCK_SWO 1 2 3 640J 130 NJ 130 2600
+preplace netloc U11_Red 1 5 3 NJ 810 NJ 810 NJ
+preplace netloc U11_VSYNC 1 5 3 NJ 870 NJ 870 NJ
+preplace netloc U8_clkdiv 1 1 6 340 360 NJ 360 NJ 360 2450J 480 NJ 480 3510
+preplace netloc CLKBLOCK_DIVO12 1 1 5 260J 10 NJ 10 NJ 10 NJ 10 3040
+preplace netloc CLKBLOCK_DIVO25 1 1 6 310J 350 NJ 350 NJ 350 2420J 530 NJ 530 N
+preplace netloc wea_1 1 2 3 740 240 NJ 240 2460J
+preplace netloc U10_counter2_OUT 1 5 2 3030J 150 3360
+preplace netloc U11_HSYNC 1 5 3 NJ 890 NJ 890 NJ
+preplace netloc U7_ledsout 1 7 1 NJ
+preplace netloc U6_segclrn 1 7 1 NJ
+preplace netloc TESTOTap_Buzzer 1 2 6 NJ 1040 NJ 1040 NJ 1040 NJ 1040 NJ 1040 NJ
+preplace netloc U10_counter1_OUT 1 5 2 3000J 140 3370
+preplace netloc KCOL_0_1 1 0 2 NJ 1060 NJ
+preplace netloc U1_TESTREG 1 4 1 2390
+preplace netloc U10_Counter 1 5 2 2960J 170 3460
+preplace netloc ARRAYBLOCK_rst 1 0 7 30 830 350J 800 700 650 1290 230 2590 420 2990 100 3470
+preplace netloc U1_ALE 1 2 3 760 270 NJ 270 2370
+preplace netloc ARRAYBLOCK_points 1 2 5 670J 260 NJ 260 2430J 500 NJ 500 3440
+preplace netloc U6_segsout 1 7 1 NJ
+preplace netloc U71_LED 1 7 1 NJ
+preplace netloc MEMARYBLOCK_MEM_Data 1 3 2 1250 640 2380J
+preplace netloc U11_Green 1 5 3 NJ 830 NJ 830 NJ
+preplace netloc xlslice_0_Dout 1 5 3 3070 50 NJ 50 3780
+preplace netloc U1_MIO 1 2 3 790 280 NJ 280 2350
+preplace netloc U1_WR 1 4 1 2500
+preplace netloc CLKBLOCK_DIVO18T19 1 1 6 290J 330 NJ 330 NJ 330 2400J 570 NJ 570 N
+preplace netloc clk_0_1 1 0 7 20 840 360 780 NJ 780 NJ 780 2580 560 3060 490 NJ
+preplace netloc SWO13_1 1 2 3 730 860 NJ 860 N
+preplace netloc U9_KRDY 1 2 6 NJ 920 NJ 920 2340J 970 NJ 970 NJ 970 3800J
+preplace netloc CLKBLOCK_nCPUClk 1 1 6 320J 200 NJ 200 NJ 200 2380 450 NJ 450 3500
+preplace netloc U4_CONT_W0208 1 5 1 3010
+preplace netloc U1_Addr 1 2 5 750 220 NJ 220 2520 540 NJ 540 3490J
+preplace netloc ARRAYBLOCK_BTN 1 2 3 630J 120 NJ 120 N
+preplace netloc U11_Blue 1 5 3 NJ 850 NJ 850 NJ
+preplace netloc CLKBLOCK_CPUClk 1 1 3 330J 630 NJ 630 1260
+preplace netloc U1_PC 1 2 5 800 376 1270 630 NJ 630 NJ 630 3480J
+preplace netloc U9_CR 1 2 6 710J 960 NJ 960 NJ 960 NJ 960 NJ 960 3780J
+preplace netloc U4_Peripheral 1 5 2 2980 410 3410
+preplace netloc RSTN_0_1 1 0 2 NJ 1040 NJ
+preplace netloc U1_Datao 1 4 3 2410 580 NJ 580 3520J
+preplace netloc U2_spo 1 3 4 1280 370 2480J 460 NJ 460 3450
+preplace netloc U7_LEDEN 1 7 1 NJ
+preplace netloc U9_KROW 1 2 6 NJ 900 NJ 900 2350J 980 NJ 980 NJ 980 3790J
+preplace netloc MEMARYBLOCK_douta 1 3 2 1260 300 NJ
+preplace netloc U61_SEGMENT 1 7 1 NJ
+preplace netloc ARRAYBLOCK_LES 1 2 5 650J 150 NJ 150 2580J 410 2970J 90 3490
+preplace netloc U7_ledclk 1 7 1 NJ
+preplace netloc ARRAYBLOCK_SWO0 1 2 5 660J 180 NJ 180 2360J 510 NJ 510 N
+preplace netloc U61_AN 1 7 1 NJ
+preplace netloc SW_0_1 1 0 2 NJ 1080 NJ
+preplace netloc addra_1 1 2 3 770 290 NJ 290 2560J
+preplace netloc ARRAYBLOCK_SWO1 1 2 5 680J 250 NJ 250 2490J 550 NJ 550 N
+preplace netloc U4_GPIO_W0200 1 5 2 2960 130 3390J
+preplace netloc U6_segclk 1 7 1 NJ
+preplace netloc U4_CPU_wait 1 4 1 2470
+preplace netloc ARRAYBLOCK_SWO14_0 1 2 3 770J 840 NJ 840 N
+preplace netloc ARRAYBLOCK_SWO2 1 0 3 40 820 NJ 820 620
+preplace netloc U6_SEGEN 1 7 1 NJ
+preplace netloc CLKBLOCK_DIVO06 1 1 5 270J 170 NJ 170 NJ 170 2540J 490 2960
+preplace netloc ARRAYBLOCK_blink 1 2 2 690J 640 1240
+preplace netloc U4_GPIO_W0204 1 5 2 2940J 70 3520
+preplace netloc CLKBLOCK_DIVO08 1 1 6 280J 190 NJ 190 NJ 190 2570J 430 3020J 110 3480
+preplace netloc U10_counter0_OUT 1 5 2 2950J 60 3380
+preplace netloc ARRAYBLOCK_SWO765_0 1 2 5 720J 210 NJ 210 2530J 520 NJ 520 3420
+preplace netloc U4_Data2CPU 1 4 3 2440 470 NJ 470 3430J
+preplace netloc MEMARYBLOCK_MEM_Addr 1 3 2 1230 650 2370J
+preplace netloc dina_1 1 2 3 780 310 NJ 310 2550J
+preplace netloc CLKBLOCK_DIVO20 1 1 6 300J 340 NJ 340 NJ 340 2510J 440 3050 120 3400
+preplace netloc U7_ledclrn 1 7 1 NJ
+levelinfo -pg 1 0 150 490 1090 2203 2770 3217 3650 3820 -top 0 -bot 1320
+",
+}
+0

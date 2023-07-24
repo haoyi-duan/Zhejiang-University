@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Oct 10 23:58:04 2021
+# Process ID: 25160
+# Current directory: F:/Desk/MyCollege/大二下/计算机组成/Success Vivado/Verilog兴趣小组/RandomX_normal
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23940 F:\Desk\MyCollege\大二下\计算机组成\Success Vivado\Verilog兴趣小组\RandomX_normal\RandomX_normal.xpr
+# Log file: F:/Desk/MyCollege/大二下/计算机组成/Success Vivado/Verilog兴趣小组/RandomX_normal/vivado.log
+# Journal file: F:/Desk/MyCollege/大二下/计算机组成/Success Vivado/Verilog兴趣小组/RandomX_normal\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:/Desk/MyCollege/大二下/计算机组成/Success Vivado/Verilog兴趣小组/RandomX_normal/RandomX_normal.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'F:/Desk/MyCollege/大二下/计算机组成/Success Vivado/Verilog兴趣小组/RandomX_normal'
+INFO: [Project 1-313] Project file moved from 'F:/Desk/Success Vivado/Verilog兴趣小组/RandomX_normal' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/Desk/MyCollege/大二下/计算机组成/Success Vivado/Verilog兴趣小组/OExp02-IP2SOC/coe/D_mem.coe', nor could it be found using path 'F:/Desk/Success Vivado/Verilog兴趣小组/OExp02-IP2SOC/coe/D_mem.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xlinx2020/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'RandomX_Rom' is locked:
+* IP definition 'Distributed Memory Generator (8.0)' for IP 'RandomX_Rom' (customized with software release 2017.4) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'ROM' is locked:
+* IP definition 'Distributed Memory Generator (8.0)' for IP 'ROM' (customized with software release 2017.4) has a different revision in the IP Catalog.
+INFO: [Project 1-230] Project 'RandomX_normal.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 1088.902 ; gain = 0.000
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 11 00:02:03 2021...

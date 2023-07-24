@@ -1,0 +1,125 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jun 15 14:40:08 2021
+# Process ID: 22700
+# Current directory: F:/Desk/lab11/EXP011/OExp05_CPU.runs/impl_1
+# Command line: vivado.exe -log OEXp05_CPU.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source OEXp05_CPU.tcl -notrace
+# Log file: F:/Desk/lab11/EXP011/OExp05_CPU.runs/impl_1/OEXp05_CPU.vdi
+# Journal file: F:/Desk/lab11/EXP011/OExp05_CPU.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source OEXp05_CPU.tcl -notrace
+Command: open_checkpoint OEXp05_CPU_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 232.602 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 927 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7k160tffg676-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'M4/readn' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:2395]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U6/SEGEN' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:152877]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/AN[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:154271]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/AN[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:154279]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/AN[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:154287]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/AN[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:154295]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/SEGMENT[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:154671]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/SEGMENT[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:154679]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/SEGMENT[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:154687]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/SEGMENT[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:154695]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/SEGMENT[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:154703]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/SEGMENT[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:154711]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/SEGMENT[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:154719]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/SEGMENT[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:154727]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U7/LEDEN' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:156176]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U71/LED[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:157450]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U71/LED[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:157458]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U71/LED[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:157466]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U71/LED[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:157474]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U71/LED[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:157482]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U71/LED[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:157490]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U71/LED[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:157498]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U71/LED[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:157506]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/CR' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:159497]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/KCOL[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161314]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/KCOL[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161327]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/KCOL[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161340]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/KCOL[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161354]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/KROW[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161363]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/KROW[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161371]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/KROW[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161379]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/KROW[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161387]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/KROW[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161395]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/RSTN' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:159610]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161475]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[10]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161575]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[11]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161585]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[12]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161595]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[13]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161605]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[14]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161615]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[15]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161625]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161485]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161495]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161505]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161515]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161525]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161535]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161545]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[8]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161555]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[9]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:161565]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/readn' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-34028-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:160627]
+Parsing XDC File [F:/Desk/lab11/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-22700-LAPTOP-0HOK14LD/dcp1/OEXp05_CPU.xdc]
+Finished Parsing XDC File [F:/Desk/lab11/EXP011/OExp05_CPU.runs/impl_1/.Xil/Vivado-22700-LAPTOP-0HOK14LD/dcp1/OEXp05_CPU.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 642.172 ; gain = 8.566
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 642.172 ; gain = 8.566
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 30 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+  RAM64M => RAM64M (inverted pins: WCLK) (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 20 instances
+  RAM64X1D => RAM64X1D (inverted pins: WCLK) (RAMD64E, RAMD64E): 4 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.4 (64-bit) build 2086221
+open_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 642.211 ; gain = 416.328
+Command: write_bitstream -force OEXp05_CPU.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k160t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xlinx/Vivado/2017.4/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC PDRC-153] Gated clock check: Net U1/U1_2/IFID/E[0] is a gated clock net sourced by a combinational pin U1/U1_2/IFID/ALUC_reg[2]_i_2/O, cell U1/U1_2/IFID/ALUC_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 2 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./OEXp05_CPU.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+19 Infos, 53 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:55 ; elapsed = 00:00:48 . Memory (MB): peak = 1183.121 ; gain = 540.910
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 15 14:41:25 2021...

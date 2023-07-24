@@ -1,0 +1,2 @@
+Breakpoint File Version 1.0
+44 true F:/Desk/MUX2T1_5/MUX2T1_5.srcs/sim_1/new/MUX2T1_5_sim.v

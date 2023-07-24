@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed May  5 15:37:18 2021
+# Process ID: 19564
+# Current directory: C:/Users/zhichao/Desktop/OExp05_CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18472 C:\Users\zhichao\Desktop\OExp05_CPU\OExp05_CPU.xpr
+# Log file: C:/Users/zhichao/Desktop/OExp05_CPU/vivado.log
+# Journal file: C:/Users/zhichao/Desktop/OExp05_CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/zhichao/Desktop/OExp05_CPU/OExp05_CPU.xpr
+INFO: [Project 1-313] Project file moved from 'F:/Desk/Success Vivado/OExp05_CPU' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May  5 15:40:47 2021...

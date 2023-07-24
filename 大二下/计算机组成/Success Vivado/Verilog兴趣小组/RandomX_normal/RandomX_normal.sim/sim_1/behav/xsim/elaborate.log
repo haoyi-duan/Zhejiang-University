@@ -1,0 +1,16 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xlinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d0d2704a753c4fe3a71f0b4741e158cb --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot randomx_sim_behav xil_defaultlib.randomx_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="k...
+Compiling module xil_defaultlib.RandomX_Rom
+Compiling module xil_defaultlib.RandomX_normal
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.randomx_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot randomx_sim_behav

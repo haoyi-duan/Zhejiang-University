@@ -1,0 +1,28 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+F:/Desk/models/models.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+F:/Desk/models/models.srcs/sim_1/new/MUX8T1_8_sim.v,1615709896,verilog,,,,MUX8T1_8_sim,,,,,,,,
+F:/Desk/models/models.srcs/sim_1/new/adc32_sim.v,1615707987,verilog,,,,adc32_sim,,,,,,,,
+F:/Desk/models/models.srcs/sim_1/new/or_bit_32_sim.v,1615708620,verilog,,,,or_bit_32_sim,,,,,,,,
+F:/Desk/models/models.srcs/sim_1/new/top_sim.v,1615712795,verilog,,,,top_sim,,,,,,,,
+F:/Desk/models/models.srcs/sources_1/imports/Success Vivado/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip/MUX2T1_5.v,1614912624,verilog,,F:/Desk/models/models.srcs/sources_1/imports/Success Vivado/MUX2T1_64/MUX2T1_64.srcs/sources_1/new/MUX2T1_64.v,,MUX2T1_5,,,,,,,,
+F:/Desk/models/models.srcs/sources_1/imports/Success Vivado/MUX2T1_64/MUX2T1_64.srcs/sources_1/new/MUX2T1_64.v,1615706813,verilog,,F:/Desk/models/models.srcs/sources_1/new/MUX2T1_8.v,,MUX2T1_64,,,,,,,,
+F:/Desk/models/models.srcs/sources_1/imports/new/ADC32.v,1614943717,verilog,,F:/Desk/models/models.srcs/sources_1/imports/new/MUX2T1_32.v,,ADC32,,,,,,,,
+F:/Desk/models/models.srcs/sources_1/imports/new/MUX2T1_32.v,1614915994,verilog,,F:/Desk/models/models.srcs/sources_1/imports/Success Vivado/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip/MUX2T1_5.v,,MUX2T1_32,,,,,,,,
+F:/Desk/models/models.srcs/sources_1/imports/new/MUX4T1_32.v,1614916485,verilog,,F:/Desk/models/models.srcs/sources_1/imports/new/MUX4T1_5.v,,MUX4T1_32,,,,,,,,
+F:/Desk/models/models.srcs/sources_1/imports/new/MUX4T1_5.v,1614916410,verilog,,F:/Desk/models/models.srcs/sources_1/imports/new/MUX8T1_32.v,,MUX4T1_5,,,,,,,,
+F:/Desk/models/models.srcs/sources_1/imports/new/MUX8T1_32.v,1614916656,verilog,,F:/Desk/models/models.srcs/sources_1/new/MUX8T1_8.v,,MUX8T1_32,,,,,,,,
+F:/Desk/models/models.srcs/sources_1/imports/new/adc.v,1614942098,verilog,,F:/Desk/models/models.srcs/sources_1/new/adc32.v,,adc,,,,,,,,
+F:/Desk/models/models.srcs/sources_1/imports/new/add_32.v,1614920894,verilog,,F:/Desk/models/models.srcs/sources_1/imports/new/addr.v,,add_32,,,,,,,,
+F:/Desk/models/models.srcs/sources_1/imports/new/addr.v,1614917406,verilog,,F:/Desk/models/models.srcs/sources_1/imports/new/and32.v,,addr,,,,,,,,
+F:/Desk/models/models.srcs/sources_1/imports/new/and32.v,1614945465,verilog,,F:/Desk/models/models.srcs/sources_1/imports/new/nor32.v,,and32,,,,,,,,
+F:/Desk/models/models.srcs/sources_1/imports/new/nor32.v,1614945795,verilog,,F:/Desk/models/models.srcs/sources_1/imports/new/or32.v,,nor32,,,,,,,,
+F:/Desk/models/models.srcs/sources_1/imports/new/or32.v,1614945737,verilog,,F:/Desk/models/models.srcs/sources_1/imports/new/or_bit_32.v,,or32,,,,,,,,
+F:/Desk/models/models.srcs/sources_1/imports/new/or_bit_32.v,1615713027,verilog,,F:/Desk/models/models.srcs/sources_1/imports/new/xor32.v,,or_bit_32,,,,,,,,
+F:/Desk/models/models.srcs/sources_1/imports/new/xor32.v,1614946291,verilog,,F:/Desk/models/models.srcs/sim_1/new/top_sim.v,,xor32,,,,,,,,
+F:/Desk/models/models.srcs/sources_1/new/MUX2T1_8.v,1615712974,verilog,,F:/Desk/models/models.srcs/sources_1/imports/new/MUX4T1_32.v,,MUX2T1_8,,,,,,,,
+F:/Desk/models/models.srcs/sources_1/new/MUX8T1_8.v,1615709544,verilog,,F:/Desk/models/models.srcs/sources_1/new/TOP.v,,MUX8T1_8,,,,,,,,
+F:/Desk/models/models.srcs/sources_1/new/TOP.v,1615712800,verilog,,F:/Desk/models/models.srcs/sources_1/imports/new/adc.v,,TOP,,,,,,,,
+F:/Desk/models/models.srcs/sources_1/new/adc32.v,1615707985,verilog,,F:/Desk/models/models.srcs/sources_1/imports/new/add_32.v,,adc32,,,,,,,,

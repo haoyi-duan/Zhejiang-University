@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Oct 10 23:57:56 2021
+# Process ID: 18480
+# Current directory: F:/Desk/MyCollege/大二下/计算机组成/Success Vivado/Verilog兴趣小组/SPIControl
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22364 F:\Desk\MyCollege\大二下\计算机组成\Success Vivado\Verilog兴趣小组\SPIControl\SPIControl.xpr
+# Log file: F:/Desk/MyCollege/大二下/计算机组成/Success Vivado/Verilog兴趣小组/SPIControl/vivado.log
+# Journal file: F:/Desk/MyCollege/大二下/计算机组成/Success Vivado/Verilog兴趣小组/SPIControl\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:/Desk/MyCollege/大二下/计算机组成/Success Vivado/Verilog兴趣小组/SPIControl/SPIControl.xpr}
+update_compile_order -fileset sources_1

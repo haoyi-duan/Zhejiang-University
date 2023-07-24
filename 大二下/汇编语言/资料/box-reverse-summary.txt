@@ -1,0 +1,407 @@
+             
+             大宇《仓库世家》游戏分析
+
+                             Written by Black White
+                             iceman@zju.edu.cn
+                             June 4, 2021.
+            
+
+1. 按以下步骤运行box游戏
+双击bochsdbg.exe -> Load -> 打开dos.bxrc
+点Start
+Bochs Enchanced Debugger -> Continue
+在Bochs for Windows - Display窗口选择菜单"1. soft-ice"
+cd \game\box
+play
+
+2. 选择游戏菜单"新游戏"敲回车, 屏幕出现"第001关"字样时, 不要再敲回车
+按ctrl+d呼出soft-ice, 并输入以下命令
+   bpint 21 ah=3d 
+   x
+前一条命令表示设一个int 21h/AH=3D断点, 当打开文件时中断;
+后一条命令表示让当前被调试的程序继续运行;
+在游戏中敲回车后bpint 21断点会起作用, 游戏停在地址+17F2:159A处:
+   17F2:1598 B43D            MOV     AH,3D
+   17F2:159A CD21            INT     21 ;Open a File
+   17F2:159C 7203            JB      15A1
+输入以下命令检查ds:dx指向的文件名是否为"lnk1.map":
+   d ds:dx
+观察数据窗, ds:dx指向的文件名为"C:\GAME\BOX\LNK1.MAP"
+由此可见游戏程序正在打开地图文件。
+接下去输入命令设一个int 21h/AH=3F断点, 表示读文件时中断:
+   bpint 21 ah=3f
+   x
+结果游戏程序仍旧停在17F2:159A处第2次打开地图文件, 不管它, 
+输入以下命令让游戏继续运行
+   x
+这次停在地址17F2:12B8, 游戏程序正在读取7个字节到24C3:25D9
+其中寄存器窗口中cx表示要读取的字节数, ds:dx=24C3:25D9指向
+buffer:
+   17F2:12B7 5B              POP     BX
+   17F2:12B8 CD21            INT     21 ;Read From File/Device
+   17F2:12BA 7202            JB      12BE
+   17F2:12BC 3BC1            CMP     AX,CX
+输入以下命令检查buffer:
+   d ds:dx
+再按F8执行这条int 21h指令, 发现buffer里面已经被填进去以下7个字节:
+   24C3:25D9  FD FB 3C 00 00 C4 09
+                             =====
+                             ^
+                             |
+                             +---------表示文件接下去还有09C4h个字节
+这7个字节只是文件头, 文件的正文在后续的09C4h字节中。
+所以接下去必然还会调用int 21h/AH=3F, 于是继续下命令:
+   x
+这次程序仍旧停在+17F2:12B8处, 输入以下命令观察读到buffer里面的09C4h个
+字节:
+   d ds:dx
+在数据窗会看到以下内容:
+61F0:0000 F0, 08, 80, C3, 04, 01, 80, 02, 01, 01, 81, 02, 03, 7F, 00, 7F
+          ------  ------------------------------------------------------
+          ^       ^
+          |       |
+          |       +---第1块数据的正文
+          +---第1块数据的长度
+输入以下命令禁止所有已设的中断:
+   bd *
+再输入以下硬件断点命令, 让游戏在读取byte ptr 61F0:[0]时中断:
+   bpmb 61F0:0 r
+   x
+其中bpmb表示breakpoint on memory byte, "r"表示当读的时候中断。
+结果游戏停在地址0AC0:7B26处:
+   0AC0:7B23 268A1F          MOV     BL,ES:[BX]
+   0AC0:7B26 30FF            XOR     BH,BH
+   0AC0:7B28 8B46F0          MOV     AX,[BP-10]
+   0AC0:7B2B 8B56F2          MOV     DX,[BP-0E]
+   0AC0:7B2E 050100          ADD     AX,0001
+   0AC0:7B31 83D200          ADC     DX,+00
+实际触发硬件断点的是上一条指令即0AC0:7B23处的mov bl, es:[bx]。
+观察这条指令的上下文可得以下程序段:
+   *AC0:7A35
+   AC0:7B1A  mov     ax,[bp-10]
+   AC0:7B1D  mov     bx,ax     ; bx=processed_len
+   AC0:7B1F  mov     es,[2b71] ; es=67B3h, es:bx->buf_1st_and_2nd_half
+   AC0:7B23  mov     bl,es:[bx]; BL=buf_1st[0]
+   AC0:7B26  xor     bh,bh     ; bx=buf_1st[0] 
+   AC0:7B28  mov     ax,[bp-10]; \ dx:ax = processed_len 
+   AC0:7B2B  mov     dx,[bp-0e]; /
+   AC0:7B2E  add     ax,0001   ;
+   AC0:7B31  adc     dx,+00    ; processed_len++ 
+   AC0:7B34  mov     dx,bx     ; dx=buf_1st[0]
+   AC0:7B36  mov     bx,ax     ; bx=buf_1st+1
+   AC0:7B38  mov     es,[2b71] ; es=67B3h
+   AC0:7B3C  mov     bl,es:[bx]; BL=buf_1st[1]
+   AC0:7B3F  xor     bh,bh     ; BX=buf_1st[1]
+   AC0:7B41  shl     bx,1
+   AC0:7B43  shl     bx,1
+   AC0:7B45  shl     bx,1
+   AC0:7B47  shl     bx,1
+   AC0:7B49  shl     bx,1
+   AC0:7B4B  shl     bx,1
+   AC0:7B4D  shl     bx,1
+   AC0:7B4F  shl     bx,1      ; BX=buf_1st[1]<<8
+   AC0:7B51  add     bx,dx     ; BX=word ptr buf[0]=1st_half_data_len(not including buf[0] & buf[1])
+   AC0:7B53  mov     ax,bx     ; AX=1st_half_data_len
+   AC0:7B55  cwd
+   AC0:7B56  add     ax,[bp-10];\ dx:ax=processed_len + 1st_half_data_len
+   AC0:7B59  adc     dx,[bp-0e];/
+   AC0:7B5C  add     ax,0002   ;\ dx:ax=processed_len + 1st_half_len
+   AC0:7B5F  adc     dx,+00    ;/      =processed_len + 1st_half_data_len + 2
+   AC0:7B62  mov     [bp-16],ax;\ [bp-16]:[bp-14] = 2nd_half_offset
+   AC0:7B65  mov     [bp-14],dx;/
+   AC0:7B68  mov     ax,[bp-16]
+   AC0:7B6B  mov     bx,ax
+   AC0:7B6D  mov     es,[2b71]
+   AC0:7B71  mov     bl,es:[bx]
+   AC0:7B74  xor     bh,bh
+   AC0:7B76  mov     ax,[bp-16]
+   AC0:7B79  mov     dx,[bp-14]
+   AC0:7B7C  add     ax,0001
+   AC0:7B7F  adc     dx,+00
+   AC0:7B82  mov     dx,bx
+   AC0:7B84  mov     bx,ax
+   AC0:7B86  mov     es,[2b71]
+   AC0:7B8A  mov     bl,es:[bx]
+   AC0:7B8D  xor     bh,bh
+   AC0:7B8F  shl     bx,1
+   AC0:7B91  shl     bx,1
+   AC0:7B93  shl     bx,1
+   AC0:7B95  shl     bx,1
+   AC0:7B97  shl     bx,1
+   AC0:7B99  shl     bx,1
+   AC0:7B9B  shl     bx,1
+   AC0:7B9D  shl     bx,1
+   AC0:7B9F  add     bx,dx
+   AC0:7BA1  mov     ax,bx     ; ax=word ptr buf_2nd[0]
+   AC0:7BA3  cwd
+   AC0:7BA4  add     ax,[bp-16]
+   AC0:7BA7  adc     dx,[bp-14]
+   AC0:7BAA  add     ax,0002
+   AC0:7BAD  adc     dx,+00    ; dx:ax=2nd_half_offset + 2nd_half_data_len + 2
+   AC0:7BB0  mov     [bp-10],ax;\ [bp-10]:[bp-0E]=next_buf_1st_and_2nd_offset
+   AC0:7BB3  mov     [bp-0e],dx;/
+   AC0:7BB6  mov     ax,[bp-10]
+   AC0:7BB9  mov     dx,[bp-0e]
+   AC0:7BBC  add     ax,0001
+   AC0:7BBF  adc     dx,+00
+   AC0:7BC2  call    20fd:03c9
+   AC0:7BC7  nop
+   AC0:7BC8  fdiv    qword ptr [2132]; /2.0
+   AC0:7BCC  int     3d
+   AC0:7BCE  call    20fd:044f
+   AC0:7BD3  nop
+   AC0:7BD4  fmul    qword ptr [2132]; *2.0
+   AC0:7BD8  call    20fd:03ed
+   AC0:7BDD  mov     [bp-10],ax;\ [bp-10]:[bp-0E]=(next_buf_1st_and_2nd_offset+1)/2*2; [!]
+   AC0:7BE0  mov     [bp-0e],dx;/ next_buf_1st_and_2nd_offset must be aligned on even address
+   AC0:7BE3  mov     bx,[bp-0c]; bx = buf_1st_half_offset/2
+   AC0:7BE6  shl     bx,1      ; bx = buf_1st_half_offset
+   AC0:7BE8  mov     si,19cc
+   AC0:7BEB  add     bx,[si+0a]; bx+=0
+   AC0:7BEE  mov     es,[si+02]; es=67B3h
+   AC0:7BF1  push    es;\
+   AC0:7BF2  push    bx;/ pSrc
+   AC0:7BF3  mov     ax,[bp-18]; ax = i
+   AC0:7BF6  shl     ax,1      ; ax = i*2
+   AC0:7BF8  add     ax,0c46   ; ax = 0C46h + i*2
+   AC0:7BFC  mov     bx,ax     ; bx = 0C46h + i*2, ds:bx->target_seg_address
+   AC0:7BFE  push    ds
+   AC0:7BFF  pop     es
+   AC0:7C00  push    es        ;\
+   AC0:7C01  push    bx        ;/ pTgtSeg
+   AC0:7C02  call    2441:0008 ; decompress()
+   AC0:7C07  mov     ax,[bp-10]
+   AC0:7C0A  mov     dx,[bp-0e]
+   AC0:7C0D  call    20fd:03c9
+   AC0:7C12  nop
+   AC0:7C13  fdiv    [2132]    ; next_buf_1st_and_2nd_offset / 2.0
+   AC0:7C17  int     3d
+   AC0:7C19  call    20fd:044f
+   AC0:7C1E  call    20fd:03dc
+   AC0:7C23  mov     [bp-0c],ax; [bp-0C]=buf_1st_half_offset/2
+   AC0:7C26  mov     ax,[bp-18]
+   AC0:7C29  inc     ax
+   AC0:7C2A  mov     [bp-18],ax; i++
+   AC0:7C2D  mov     ax,[bp-12]
+   AC0:7C30  cmp     ax,[bp-18]
+   AC0:7C33  jl      7C38
+   AC0:7C35  jmp     7B1A
+以上这段代码的作用是对地图数据进行解密,其中解密函数是2441:0008。
+把光标移到AC0:7C02,按F4(表示执行到此处), 再输入以下命令观察es:bx指向的内容:
+   d es:bx
+在数据窗可以看到以下内容:
+   24C3:0C48  74 67 6C 7C DA 6D 7E 79-5D 78 84 77 AB 76 54 76
+              =====
+              ^
+              |
+              +----存放解密地图数据的目标段地址
+输入以下命令观察6774:0里面的内容:
+   d 6774:0
+按F8执行AC0:7C02 call 2441:0008对地图数据进行解密, 此时在数据窗可以看到以下
+内容:
+   6774:0000  C3 26 01 00 01 00 01 00-01 00 01 00 02 00 01 00  
+                    ===== ===== ===== ===== ===== ===== ===== 
+                    第1关 第2关 第3关 第4关 第5关 第6关 第7关
+
+   6774:0010  01 00 02 00 03 00 00 00-00 00 00 00 00 00 00 00  
+              ===== ===== =====
+              第8关 第9关 第10关
+这些数据表示第i关(1<= i <= 10)的blk_size_level, blk_size_level=1时BLK尺寸
+最大(0x30 * 0x24像素), 而blk_size_level=4时BLK尺寸最小(0x10 * 0x0C像素)。
+用以下代码可以查出第i关的blk_width、blk_height、max_columns、max_rows:
+   设es=6774h, ds=24C3h
+   mov bx, i
+   shl bx, 1; AX = i*2
+   mov bx, es:[bx]; bx = 第i关的blk_size_level
+   shl bx, 1; BX = blk_size_level * 2
+   mov ax, ds:[9A8h+0Ah+bx]; AX=blk_width, 例如i=1时, ax=30h
+   mov dx, ds:[9A8h+14h+bx]; DX=blk_height, 例如i=1时, ax=24h
+   mov si, ds:[9A8h+1Eh+bx]; si=max_columns, 例如i=1时, si=0Dh, 表示每行13个BLK
+   mov di, ds:[9A8h+28h+bx]; di=max_rows, 例如i=1时, di=09h, 表示共9行
+输入以下命令对6774:2设硬件读断点:
+   bpmb 6774:2 r
+   x
+程序停在地址AC0:2AC5处:
+   0AC0:2AC2 268B07          MOV     AX,ES:[BX]
+   0AC0:2AC5 A3B60E          MOV     [0EB6],AX;  DS:0EB6=0001
+观察该地址下方的代码, 可以发现与计算blk_width、blk_height、max_columns、max_rows
+相关的代码:
+   0AC0:2AE6 A1B60E          MOV     AX,[0EB6]
+   0AC0:2AE9 D1E0            SHL     AX,1
+   0AC0:2AEB 050A00          ADD     AX,000A
+   0AC0:2AEE 8BF0            MOV     SI,AX
+   0AC0:2AF0 8B84A809        MOV     AX,[SI+09A8]
+   0AC0:2AF4 A3E20E          MOV     [0EE2],AX
+   0AC0:2AF7 A1B60E          MOV     AX,[0EB6]
+   0AC0:2AFA D1E0            SHL     AX,1
+   0AC0:2AFC 051400          ADD     AX,0014
+   0AC0:2AFF 8BF0            MOV     SI,AX
+   0AC0:2B01 8B84A809        MOV     AX,[SI+09A8]
+   0AC0:2B05 A3E40E          MOV     [0EE4],AX
+   0AC0:2B08 A1B60E          MOV     AX,[0EB6]
+   0AC0:2B0B D1E0            SHL     AX,1
+   0AC0:2B0D 051E00          ADD     AX,001E
+   0AC0:2B10 8BF0            MOV     SI,AX
+   0AC0:2B12 8B84A809        MOV     AX,[SI+09A8]
+   0AC0:2B16 A3E60E          MOV     [0EE6],AX
+   0AC0:2B19 A1B60E          MOV     AX,[0EB6]
+   0AC0:2B1C D1E0            SHL     AX,1   
+   0AC0:2B1E 052800          ADD     AX,0028
+   0AC0:2B21 8BF0            MOV     SI,AX
+   0AC0:2B23 8B84A809        MOV     AX,[SI+09A8]
+   0AC0:2B27 A3E80E          MOV     [0EE8],AX
+输入以下命令禁止所有断点:
+   bd *
+移动光标到AC0:2B39处, 按F8跟踪, 发现屏幕上已经画出了第1关的地图, 由此
+可见刚执行过的以下这条指令一定跟画地图有关:
+   0AC0:2B39 9A628AF217      CALL    17F2:8A62
+于是在此处按F2设一个软件断点, 再输入以下命令让游戏继续运行:
+   x
+接下去在游戏中按Esc退出第1关, 再重新选择"新游戏"进入第1关, 结果断在
+刚才设的断点处0AC0:2B39, 于是按F7跟踪进入, 继续按F8跟踪到17F2:8AF0
+处的retf, 再F8来到以下地址:
+   0AC0:4514 C7068C1BFFFF    MOV     WORD PTR [1B8C],FFFF
+继续F8, 每过一个call后都按F5观察一下屏幕有没有输出变化, 很快发现以下
+指令会实现清屏:
+   0AC0:4523 9A628AF217      CALL    17F2:8A62; 屏幕变黑
+再继续按多次F8, 来到这里:
+   0AC0:4538 9A721BF217      CALL    17F2:1B72; 屏幕变绿
+发现这个call是在循环里面, 循环出口是AC0:454B, 于是把光标移到
+AC0:454B, 按F4执行到此处, 看到以下代码:
+   0AC0:454B B88C1B          MOV     AX,1B8C
+   0AC0:454E 50              PUSH    AX
+   0AC0:454F 9A5B9DC00A      CALL    0AC0:9D5B
+   0AC0:4554 33C0            XOR     AX,AX
+   0AC0:4556 E91500          JMP     456E
+怀疑AC0:454F call AC0:9D5B会画地图, 于是F8执行到AC0:454F, 再F7跟踪进入。
+多次F8后看到以下这段代码:
+   AC0:9D8D mov ax, [0EE6]; max_columns=0Dh
+            imul word ptr [0EE2]; 30h
+            dec ax
+            mov [1E42], ax
+            mov ax, [0EE8]; max_rows = 9
+            imul word ptr [0EE4]; 24h
+            dec ax
+            mov [1E44], ax
+            mov ax, [1E44]
+            mov [1E46], ax
+            mov ax, [0EE4]
+            mov [1E48], ax
+            xor ax, ax
+            jmp 9F03
+   AC0:9DB4 mov ax, [1E4A]; physical_y=24h
+            call 20FD:03C8; fild
+            mov ax, [0EE4]; 24h
+            call 20FD:03C8; fild
+            nop
+            fdivp st(1), st
+            fadd [1FE2]; 00, 00, 80, 3F; 1.0; one reserved row on top
+            call 20FD:03DC; fistp, float to int, ax=2
+       9DD1 mov [1E4C], ax; y = 2
+            mov ax, [1E42]; ax=26F
+            mov [1E4E], ax; right_edge=26F
+            mov ax, [0EE2]; ax = initial_width_of_one_block = 30h
+            mov [1E50], ax; current_width_of_one_block = 30h
+            xor ax, ax
+       9DE2 jmp 9ED4
+       9DE5 nop
+   AC0:9DE6 mov ax, [1E52]; ax = physical_x = 60h
+            call 20FD:3C8 ; fild
+       9DEE mov ax, [0EE2]; 30h
+            call 20FD:3C8 ; fild
+       9DF7 fdivp st(1),st
+       9DFA fadd [1FE2]   ; one reserved column on the left, +1.0
+       9E03 mov [1E54], ax; x=3, x=1 for new row
+       9E06 mov ax, [190C]; ax=29h, total blocks on a row
+   AC0:9E09 imul word ptr [1E4C]; 29h * y, y=1
+   AC0:9E0D add ax, [1E54]; ax += x, x=3
+   AC0:9E11 imul word ptr [1910]; 0Bh, 每个坐标处都存放11个flag(0~10关, 0关不用)
+   AC0:9E15 add ax, [0EB2]; level=1,2,...
+   AC0:9E19 shl ax, 1     ; ax=3CA
+   AC0:9E1B mov bx, ax
+            mov si, 18FA
+            add bx, [si+0A]; 0
+            mov es, [si+2] ; 6774
+   AC0:9E26 mov ax, es:[bx]; ax=ROCK=0, flag at (x, y) on the map
+                           ; 取地图上的flag
+                           ; 坐标(x,y)处的flag在地图中的偏移地址计算公式为:
+                           ; (y * 0x29 + x) * 0x0B + (level_in_map * 2)
+            mov [1E56], ax ; current_flag
+            mov si, [1E56]
+            shl si, 1
+            inc word ptr [si+9F8]; current_flag_count++, 2+1=3
+            cmp word ptr [0EC6], 0; 1
+            mov ax, 0
+            jnz 9E41; yes
+       9E40 dec ax
+       9E41 mov bx, ax
+            ...
+       9E6C mov ax, 1E56; -> current_flag
+            push ax
+            mov ax, 1E52; -> physical_x e.g. 60h=30*2
+            push ax
+            mov ax, 1E4A; -> physical_y e.g. 00h
+            push ax
+       9E78 call AC0:8C28; draw_obj                
+       9E7D mov ax, 0029
+            imul word ptr [1E4C]
+            mov si, ax
+            add si, [1E54]
+            shl si, 1
+            mov ax, [1E56]
+            mov [si+005E], ax; fill current_flag_at_xy
+            cmp word ptr [0EC6], 0
+            jz 9E9D
+            jmp 9EA5
+       9E9D mov ax, A066
+            call 17F2:8A62
+            cmp word ptr [0EC6], 1
+            jz 9EAF
+            jmp 9ECD
+       9EA8 call AC0:8C28; draw a little block
+       9EAF mov ax, 0029
+            imul word ptr [1E4C]; y=1
+            mov si, ax
+            add si, [1E54]; x=2
+            shl si, 1; 56h
+            mov ax, [1E56]; ax=flag=0
+            mov [si+005E], ax; fill flag in the map?
+            cmp word ptr [0EC6], 0
+            jz 9E9D
+            jmp 9EA5
+       9EC5 mov ax, A066  ; [!]
+       9EC8 call 17F2:8A62; =>AC0:A066
+       9ECD mov ax, [1E50]; 30h
+       9ED0 add ax, [1E52]; ax=30+C0=F0
+       9ED4 mov [1E52], ax; physical_x = F0h
+            cmp word ptr [1E50], 0
+            jl 9EE1
+       9EDE jmp 9EF0
+       9EE1 mov ax, [1E4E]; ax=right_edge=26F
+            cmp ax, [1E52]; physical_x
+            jg 9EED
+       9EEA jmp 9DE6
+       9EED jmp 9EFC
+       9EF0 mov ax, [1E4E]; right_edge=26F
+            cmp ax, [1E52]; physical_x = 270h
+            jl 9EFC       ; exceed right edge
+            jmp 9DE6      ; block is within this row
+       9EFC mov ax, [1E48]; 24h
+            add ax, [1E4A]; 00h
+            mov [1E4A], ax; physical_y = 24h
+            ...
+       9F1F mov ax, [1E46]; ax=143h
+            cmp ax, [1E4A]; physical_y=24h
+            jl 9F2B       ; done with one screen
+       9F28 jmp 9DB4      ; within screen
+       9F2B jmp A063      ; => A08D
+根据这段代码就可以分析出地图数据的结构了, 特别是根据地址AC0:9E26处对
+flag偏移地址的计算公式描述, 我们可以得出地图数据是一个三维flag数组:
+   typedef union
+   {                              
+      word blk_size_level[0x0B];  
+      word flag[0x1D][0x29][0x0B];
+   } MAP;
+同时, 因为y=0对应的第0行flag数据是不用的, 所以刚好可以用来保存0~10关blk_size_level。
+
+----------------====== The End ======----------------

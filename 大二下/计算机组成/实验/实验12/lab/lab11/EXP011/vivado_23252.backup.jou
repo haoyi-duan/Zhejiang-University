@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jun 15 14:39:15 2021
+# Process ID: 23252
+# Current directory: F:/Desk/lab11/EXP011
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18632 F:\Desk\lab11\EXP011\OExp05_CPU.xpr
+# Log file: F:/Desk/lab11/EXP011/vivado.log
+# Journal file: F:/Desk/lab11/EXP011\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Desk/lab11/EXP011/OExp05_CPU.xpr
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+open_hw

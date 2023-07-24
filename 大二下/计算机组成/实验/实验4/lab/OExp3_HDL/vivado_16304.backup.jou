@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jun 15 22:06:59 2021
+# Process ID: 16304
+# Current directory: F:/Desk/lab/OExp3_HDL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27248 F:\Desk\lab\OExp3_HDL\OExp_HDL.xpr
+# Log file: F:/Desk/lab/OExp3_HDL/vivado.log
+# Journal file: F:/Desk/lab/OExp3_HDL\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Desk/lab/OExp3_HDL/OExp_HDL.xpr
+update_compile_order -fileset sources_1

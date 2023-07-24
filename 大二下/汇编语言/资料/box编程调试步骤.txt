@@ -1,0 +1,123 @@
+0. 先找到d:\tc\turboc.cfg, 点右键用editplus打开
+把它的内容改成如下所示:
+   -ID:\TC\INCLUDE
+   -LD:\TC\LIB
+改完后保存。(这一步修改是为了防止tcc编译时报找不到
+头文件及库文件错, 以后不需要再做)
+
+1. 用editplus打开box.c, ctrl+F搜索以下函数定义:
+      vga
+      copy_near_to_far, 
+      go_up
+用#if 0及#endif把这些函数括起来, 达到注释掉这些函
+数的效果;
+
+2. 在box.c的typedef语句后面补充以下语句:
+   extern void vga(void);
+   extern word copy_near_to_far(byte *p, byte far *bp, word n);
+   extern int go_up(void);
+表示这些函数的函数体定义在外面, 不在当前.c内;
+
+3. 在d:\masm里面新建一个汇编源程序asmfun.asm
+代码如下:
+;asmfun.asm
+public _vga, _copy_near_to_far, _go_up
+extrn _ox:word, _oy:word, _nx:word, _ny:word, _fx:word, _fy:word
+extrn _man_x:word, _man_y:word
+extrn _do_walk_or_push:near, _movedata:near
+PUSH_UP equ 0
+WALK_UP equ 4
+
+_TEXT	segment	byte public 'CODE'
+assume cs:_TEXT
+_go_up:
+   mov ax, _man_x
+   mov _ox, ax
+   mov _nx, ax
+   mov _fx, ax
+   ;
+   mov ax, _man_y
+   mov _oy, ax
+   dec ax
+   mov _ny, ax
+   dec ax
+   mov _fy, ax
+   ;
+   mov ax, PUSH_UP
+   push ax
+   mov ax, WALK_UP
+   push ax
+   call _do_walk_or_push
+   add sp, 4
+   ret
+
+_copy_near_to_far:
+   push bp
+   mov bp, sp
+   push si
+   push di
+   push es
+   mov si, [bp+4]; si=p, ds:si->src
+   ;mov di, [bp+6]
+   ;mov es, [bp+8]
+   les di, dword ptr [bp+6]
+   mov cx, [bp+0Ah]
+   push cx
+   push di
+   push es
+   push si
+   push ds
+   call _movedata
+   add sp, 10
+   ;mov ax, cx
+   ;rep movsb
+   mov ax, [bp+0Ah]
+   pop es
+   pop di
+   pop si
+   pop bp
+   ret
+
+_vga:
+   mov ax, 0012h
+   int 10h
+   ;
+   mov al, 5
+   mov dx, 3CEh
+   out dx, al
+   mov al, 0
+   inc dx; DX=3CFh
+   out dx, al
+   ;
+   mov al, 8
+   mov dx, 3CEh
+   out dx, al
+   inc dx
+   mov al, 0FFh
+   out dx, al
+   ;
+   mov al, 3
+   mov dx, 3CEh
+   out dx, al
+   inc dx
+   mov al, 0
+   out dx, al
+   ret
+_TEXT ends
+end
+
+
+4. 用以下命令把asmfun.asm编译成asmfun.obj (/ml表示编译时保留大小写):
+masm /ml asmfun;
+
+5. 用以下命令把asmfun.obj拷到\tc中:
+copy asmfun.obj \tc
+
+6. 用以下命令把box.c及asmfun.obj编译成box.exe (-v 表示编译时加入调试信息):
+tcc -v box.c asmfun.obj
+
+7. 用以下命令对box.exe进行调试:
+td box.exe
+在TD中找到调用上述三个函数其中之一如copy_near_to_far()的语句, 并在此语句处
+按F2设断点, 再选菜单Run->Run会触发断点, 按Alt+V->CPU切换到汇编模式, 再F7跟
+踪进入即可对copy_near_to_far进行调试;

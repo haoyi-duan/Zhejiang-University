@@ -1,0 +1,16 @@
+create table student2(
+	id int,
+	name char(12) unique ,
+	score float,
+	primary key(id) 
+);
+insert into student2 values(1080109995,'name9995',66.5);
+insert into student2 values(1080109996,'name9996',98.0);
+insert into student2 values(1080109997,'name9997',65.0);
+insert into student2 values(1080109998,'name9998',57.5);
+insert into student2 values(1080109999,'name9999',70.5);
+insert into student2 values(1080110000,'name10000',58.5);
+
+delete from student2 where score>66.5;
+
+insert into student2 values(1080109999,'name9999',70.5);

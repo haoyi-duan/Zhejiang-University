@@ -1,0 +1,96 @@
+{
+   ExpandedHierarchyInLayout: "/RAM",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port LEDCK -pg 1 -y 1080 -defaultsOSRD
+preplace port SEGCR -pg 1 -y 470 -defaultsOSRD
+preplace port RSTN -pg 1 -y 250 -defaultsOSRD
+preplace port EN -pg 1 -y 700 -defaultsOSRD
+preplace port RDY -pg 1 -y 210 -defaultsOSRD
+preplace port LEDDT -pg 1 -y 1100 -defaultsOSRD
+preplace port LEDCR -pg 1 -y 1120 -defaultsOSRD
+preplace port SEGEN -pg 1 -y 450 -defaultsOSRD
+preplace port readn -pg 1 -y 130 -defaultsOSRD
+preplace port clk_100mhz -pg 1 -y 310 -defaultsOSRD
+preplace port SEGDT -pg 1 -y 430 -defaultsOSRD
+preplace port SEGCK -pg 1 -y 410 -defaultsOSRD
+preplace port LEDEN -pg 1 -y 1140 -defaultsOSRD
+preplace port CR -pg 1 -y 230 -defaultsOSRD
+preplace portBus AN -pg 1 -y 370 -defaultsOSRD
+preplace portBus PData -pg 1 -y 740 -defaultsOSRD
+preplace portBus KCOL -pg 1 -y 270 -defaultsOSRD
+preplace portBus DIVCLKO -pg 1 -y 250 -defaultsOSRD
+preplace portBus SEGMENT -pg 1 -y 390 -defaultsOSRD
+preplace portBus LED -pg 1 -y 930 -defaultsOSRD
+preplace portBus blink -pg 1 -y 190 -defaultsOSRD
+preplace portBus LES -pg 1 -y 460 -defaultsOSRD
+preplace portBus SW -pg 1 -y 350 -defaultsOSRD
+preplace portBus points -pg 1 -y 440 -defaultsOSRD
+preplace portBus wea -pg 1 -y 840 -defaultsOSRD
+preplace portBus addr -pg 1 -y 860 -defaultsOSRD
+preplace portBus KROW -pg 1 -y 290 -defaultsOSRD -left
+preplace inst RAM -pg 1 -lvl 4 -y 812 -defaultsOSRD
+preplace inst SWTap -pg 1 -lvl 2 -y 120 -defaultsOSRD
+preplace inst U9 -pg 1 -lvl 1 -y 290 -defaultsOSRD
+preplace inst RAM|util_vector_logic_0 -pg 1 -lvl 1 -y 912 -defaultsOSRD
+preplace inst ROM_D -pg 1 -lvl 2 -y 910 -defaultsOSRD
+preplace inst Display -pg 1 -lvl 5 -y 470 -defaultsOSRD
+preplace inst RAM|RAM_B -pg 1 -lvl 2 -y 842 -defaultsOSRD
+preplace inst clk -pg 1 -lvl 3 -y 570 -defaultsOSRD
+preplace inst GPIO -pg 1 -lvl 5 -y 940 -defaultsOSRD
+preplace inst M4 -pg 1 -lvl 3 -y 160 -defaultsOSRD
+preplace netloc SWOUT_0_SWO15 1 2 1 860
+preplace netloc M4_readn 1 0 6 -10J 180 530J 240 810J 40 1200 130 NJ 130 NJ
+preplace netloc RAM|BRAM_PORTA_0_1 1 0 2 NJ 792 N
+preplace netloc RAM|RAM_B_douta 1 1 2 1720 942 NJ
+preplace netloc rst_1 1 1 4 NJ 350 790 400 N 400 2080
+preplace netloc U7_ledsout 1 5 1 2540J
+preplace netloc U6_segclrn 1 5 1 2570J
+preplace netloc clk_clkdiv 1 3 3 1210 480 2050J 250 NJ
+preplace netloc KCOL_0_1 1 0 1 NJ
+preplace netloc wea_0_1 1 0 4 -20J 790 NJ 790 NJ 790 1230
+preplace netloc Start_1 1 3 2 N 570 2050
+preplace netloc U6_segsout 1 5 1 2550J
+preplace netloc RAM|Op1_0_1 1 0 1 NJ
+preplace netloc SWOUT_0_SWO0 1 2 3 840 290 NJ 290 2060J
+preplace netloc U71_LED 1 5 1 2570J
+preplace netloc SWOUT_0_SWO1 1 2 3 820 10 NJ 10 2120J
+preplace netloc U9_KCODE 1 1 2 520J 250 850
+preplace netloc U9_SWO 1 1 1 510
+preplace netloc clk_DIVO25 1 3 2 1230 600 N
+preplace netloc M4_blink 1 3 3 NJ 190 NJ 190 NJ
+preplace netloc RAM|dina_0_1 1 0 2 NJ 852 N
+preplace netloc points_0_1 1 0 5 -20J 410 NJ 410 NJ 410 NJ 410 2090J
+preplace netloc RAM_Dout 1 4 1 2070
+preplace netloc clk_0_1 1 0 5 -20 400 NJ 400 780 450 1220 450 2130
+preplace netloc RAM|addra_0_1 1 0 2 NJ 832 1700
+preplace netloc Scan10_1 1 3 2 1230 560 N
+preplace netloc STEP_1 1 2 1 800
+preplace netloc U9_KRDY 1 1 5 500J 260 870 280 1200J 210 NJ 210 NJ
+preplace netloc RAM|wea_0_1 1 0 2 NJ 812 1690
+preplace netloc RAM|util_vector_logic_0_Res 1 1 1 1710
+preplace netloc U9_CR 1 1 5 530J 300 NJ 300 1220J 230 NJ 230 NJ
+preplace netloc EN_0_1 1 0 5 -20J 690 NJ 690 NJ 690 N 690 2140
+preplace netloc LES_0_1 1 0 5 -10J 420 NJ 420 NJ 420 NJ 420 NJ
+preplace netloc RSTN_0_1 1 0 1 NJ
+preplace netloc U7_LEDEN 1 5 1 2520J
+preplace netloc U9_KROW 1 0 1 NJ
+preplace netloc U61_SEGMENT 1 5 1 2530J
+preplace netloc U7_ledclk 1 5 1 2560J
+preplace netloc U61_AN 1 5 1 2520J
+preplace netloc SW_0_1 1 0 1 NJ
+preplace netloc U6_segclk 1 5 1 2540J
+preplace netloc M4_Bi 1 3 2 N 170 2100
+preplace netloc U6_SEGEN 1 5 1 2560J
+preplace netloc SWOUT_0_SWO765 1 2 3 770 20 NJ 20 2150J
+preplace netloc addra_0_1 1 0 4 NJ 860 520 810 NJ 810 1210
+preplace netloc M4_Ai 1 3 2 N 150 2110
+preplace netloc PData_0_1 1 0 5 -10J 710 NJ 710 NJ 710 NJ 710 2040J
+preplace netloc U9_BTNO 1 1 2 NJ 290 830
+preplace netloc dina_1 1 2 3 820 830 1200J 500 NJ
+preplace netloc U7_ledclrn 1 5 1 2530J
+levelinfo -pg 1 -40 380 650 1070 1460 2398 2590 -top 0 -bot 1230
+levelinfo -hier RAM * 1540 1820 *
+",
+}
+0

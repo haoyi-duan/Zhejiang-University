@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jun  2 13:57:48 2021
+# Process ID: 16160
+# Current directory: F:/Desk/Success Vivado/EXP09-15
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21344 F:\Desk\Success Vivado\EXP09-15\OExp05_CPU.xpr
+# Log file: F:/Desk/Success Vivado/EXP09-15/vivado.log
+# Journal file: F:/Desk/Success Vivado/EXP09-15\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:/Desk/Success Vivado/EXP09-15/OExp05_CPU.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source OEXp05_CPU.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top RV32IPDP_C [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source sim.tcl
+close_sim
+launch_simulation
+source sim.tcl
+close_sim

@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Apr 15 21:26:44 2021
+# Process ID: 21752
+# Current directory: F:/Desk/Success Vivado/Verilog兴趣小组/RandomX_normal
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11476 F:\Desk\Success Vivado\Verilog兴趣小组\RandomX_normal\RandomX_normal.xpr
+# Log file: F:/Desk/Success Vivado/Verilog兴趣小组/RandomX_normal/vivado.log
+# Journal file: F:/Desk/Success Vivado/Verilog兴趣小组/RandomX_normal\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:/Desk/Success Vivado/Verilog兴趣小组/RandomX_normal/RandomX_normal.xpr}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{F:/Desk/Success Vivado/Verilog兴趣小组/RandomX_normal/RandomX_normal.srcs/sources_1/new/G.v}}] -no_script -reset -force -quiet
+remove_files  {{F:/Desk/Success Vivado/Verilog兴趣小组/RandomX_normal/RandomX_normal.srcs/sources_1/new/G.v}}
+file delete -force {F:/Desk/Success Vivado/Verilog兴趣小组/RandomX_normal/RandomX_normal.srcs/sources_1/new/G.v}
+launch_simulation
+source randomx_sim.tcl

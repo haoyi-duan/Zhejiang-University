@@ -1,0 +1,365 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Mar 10 22:03:45 2021
+# Process ID: 3464
+# Current directory: F:/Desk/or_bit_32
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23536 F:\Desk\or_bit_32\or_bit_32.xpr
+# Log file: F:/Desk/or_bit_32/vivado.log
+# Journal file: F:/Desk/or_bit_32\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Desk/or_bit_32/or_bit_32.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Desk/or_bit_32/or_bit_32.srcs/sources_1/imports/new'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xlinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 855.734 ; gain = 102.832
+update_compile_order -fileset sources_1
+file mkdir F:/Desk/or_bit_32/or_bit_32.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open F:/Desk/or_bit_32/or_bit_32.srcs/sim_1/new/or_bit_32.v w ]
+add_files -fileset sim_1 F:/Desk/or_bit_32/or_bit_32.srcs/sim_1/new/or_bit_32.v
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open F:/Desk/or_bit_32/or_bit_32.srcs/sim_1/new/or_32_sim.v w ]
+add_files -fileset sim_1 F:/Desk/or_bit_32/or_bit_32.srcs/sim_1/new/or_32_sim.v
+update_compile_order -fileset sim_1
+set_property top or_32_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'or_32_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj or_32_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/or_bit_32/or_bit_32.srcs/sources_1/imports/new/or_bit_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module or_bit_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/or_bit_32/or_bit_32.srcs/sim_1/new/or_32_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module or_32_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xlinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 96b2ee53c96049e7ae2d7fbca398bcdc --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot or_32_sim_behav xil_defaultlib.or_32_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.or_bit_32
+Compiling module xil_defaultlib.or_32_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot or_32_sim_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim/xsim.dir/or_32_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar 10 22:13:38 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "or_32_sim_behav -key {Behavioral:sim_1:Functional:or_32_sim} -tclbatch {or_32_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source or_32_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'or_32_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 925.105 ; gain = 16.141
+add_bp {F:/Desk/or_bit_32/or_bit_32.srcs/sim_1/new/or_32_sim.v} 36
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'or_32_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj or_32_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/or_bit_32/or_bit_32.srcs/sources_1/imports/new/or_bit_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module or_bit_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/or_bit_32/or_bit_32.srcs/sim_1/new/or_32_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module or_32_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xlinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 96b2ee53c96049e7ae2d7fbca398bcdc --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot or_32_sim_behav xil_defaultlib.or_32_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.or_bit_32
+Compiling module xil_defaultlib.or_32_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot or_32_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "or_32_sim_behav -key {Behavioral:sim_1:Functional:or_32_sim} -tclbatch {or_32_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source or_32_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 100 ns : File "F:/Desk/or_bit_32/or_bit_32.srcs/sim_1/new/or_32_sim.v" Line 36
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'or_32_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'or_32_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj or_32_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/or_bit_32/or_bit_32.srcs/sources_1/imports/new/or_bit_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module or_bit_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/or_bit_32/or_bit_32.srcs/sim_1/new/or_32_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module or_32_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xlinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 96b2ee53c96049e7ae2d7fbca398bcdc --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot or_32_sim_behav xil_defaultlib.or_32_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.or_bit_32
+Compiling module xil_defaultlib.or_32_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot or_32_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "or_32_sim_behav -key {Behavioral:sim_1:Functional:or_32_sim} -tclbatch {or_32_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source or_32_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 100 ns : File "F:/Desk/or_bit_32/or_bit_32.srcs/sim_1/new/or_32_sim.v" Line 36
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'or_32_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+add_bp {F:/Desk/or_bit_32/or_bit_32.srcs/sources_1/imports/new/or_bit_32.v} 27
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'or_32_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj or_32_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/or_bit_32/or_bit_32.srcs/sources_1/imports/new/or_bit_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module or_bit_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/or_bit_32/or_bit_32.srcs/sim_1/new/or_32_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module or_32_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xlinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 96b2ee53c96049e7ae2d7fbca398bcdc --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot or_32_sim_behav xil_defaultlib.or_32_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.or_bit_32
+Compiling module xil_defaultlib.or_32_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot or_32_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "or_32_sim_behav -key {Behavioral:sim_1:Functional:or_32_sim} -tclbatch {or_32_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source or_32_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 0 fs : File "F:/Desk/or_bit_32/or_bit_32.srcs/sources_1/imports/new/or_bit_32.v" Line 27
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'or_32_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'or_32_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj or_32_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xlinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 96b2ee53c96049e7ae2d7fbca398bcdc --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot or_32_sim_behav xil_defaultlib.or_32_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "or_32_sim_behav -key {Behavioral:sim_1:Functional:or_32_sim} -tclbatch {or_32_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source or_32_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 0 fs : File "F:/Desk/or_bit_32/or_bit_32.srcs/sources_1/imports/new/or_bit_32.v" Line 27
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'or_32_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'or_32_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj or_32_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/or_bit_32/or_bit_32.srcs/sources_1/imports/new/or_bit_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module or_bit_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/or_bit_32/or_bit_32.srcs/sim_1/new/or_32_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module or_32_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xlinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 96b2ee53c96049e7ae2d7fbca398bcdc --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot or_32_sim_behav xil_defaultlib.or_32_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.or_bit_32
+Compiling module xil_defaultlib.or_32_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot or_32_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Desk/or_bit_32/or_bit_32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "or_32_sim_behav -key {Behavioral:sim_1:Functional:or_32_sim} -tclbatch {or_32_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source or_32_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 0 fs : File "F:/Desk/or_bit_32/or_bit_32.srcs/sources_1/imports/new/or_bit_32.v" Line 27
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'or_32_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+ipx::package_project -root_dir f:/desk/or_bit_32/or_bit_32.srcs -vendor xilinx.com -library user -taxonomy /UserIP
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  {f:/desk/or_bit_32/or_bit_32.srcs f:/Desk/or_bit_32/or_bit_32.srcs/sources_1/imports/new} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/desk/or_bit_32/or_bit_32.srcs'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'f:/Desk/or_bit_32/or_bit_32.srcs/sources_1/imports/new'. The path is contained within another repository.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:or_bit_32:1.0'. The one found in IP location 'f:/desk/or_bit_32/or_bit_32.srcs' will take precedence over the same IP in location f:/desk/or_bit_32/or_bit_32.srcs/sources_1/imports/new
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 10 22:33:01 2021...

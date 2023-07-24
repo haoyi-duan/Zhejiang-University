@@ -1,0 +1,10 @@
+K.Weng 3 physical 5 math 5 biology 5
+T.Dixon 5 math 1 english 4 history 3 geography 2 chinese 5
+V.Chu 4 english 3 math 4 chemistry 5 geography 4
+L.Tson 2 math 2 history 3
+L.Lee 3 physical 4 chinese 3 biology 4
+I.Young 4 chinese 2 chemistry 5 biology 4 geography 5
+K.Hiro 4 physical 2 english 2 math 5 biology 4
+G.Ping 3 math 4 english 4 chemistry 5
+H.Gu 2 chinese 3 biology 4
+J.Jon 6 physical 4 math 3 english 5 chinese 4 biology 5 database 5

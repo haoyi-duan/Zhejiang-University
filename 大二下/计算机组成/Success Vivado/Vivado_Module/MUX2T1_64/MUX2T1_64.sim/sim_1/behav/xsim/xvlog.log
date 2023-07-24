@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/MUX2T1_64/MUX2T1_64.srcs/sources_1/new/MUX2T1_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2T1_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/MUX2T1_64/MUX2T1_64.srcs/sim_1/new/MUX8sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX8sim

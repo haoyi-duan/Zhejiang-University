@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Mar 16 23:19:42 2021
+# Process ID: 18952
+# Current directory: F:/Desk/Success Vivado/PIO_5359/PIO_5359.runs/impl_1
+# Command line: vivado.exe -log PIO_5359.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source PIO_5359.tcl -notrace
+# Log file: F:/Desk/Success Vivado/PIO_5359/PIO_5359.runs/impl_1/PIO_5359.vdi
+# Journal file: F:/Desk/Success Vivado/PIO_5359/PIO_5359.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source PIO_5359.tcl -notrace

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7k160tffg676-2L" LaunchTime="1616495029">
+  <File Type="PA-TCL" Name="CSTE_RISCVEDF.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="CSTE_RISCVEDF_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="CSTE_RISCVEDF_reports.tcl"/>
+  <File Type="RDS-RDS" Name="CSTE_RISCVEDF.vds"/>
+  <File Type="RDS-UTIL" Name="CSTE_RISCVEDF_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="CSTE_RISCVEDF_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="CSTE_RISCVEDF.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="CSTE_RISCVEDF_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="CSTE_RISCVEDF_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/ORGIP/EnterT32/EnterT32.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IPCORE/ORGIP/EnterT32/EnterT32.edf"/>
+        <Attr Name="ImportTime" Val="1614413795"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ORGIP/ArrayKeys/Arraykeys.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IPCORE/ORGIP/ArrayKeys/Arraykeys.edf"/>
+        <Attr Name="ImportTime" Val="1614519068"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ORGIP/PIO/PIO.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IPCORE/ORGIP/PIO/PIO.edf"/>
+        <Attr Name="ImportTime" Val="1615435525"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ORGIP/GPIO/GPIO.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IPCORE/ORGIP/GPIO/GPIO.edf"/>
+        <Attr Name="ImportTime" Val="1615435102"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ORGIP/Disp2Hex/Disp2Hex.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IPCORE/ORGIP/Disp2Hex/Disp2Hex.edf"/>
+        <Attr Name="ImportTime" Val="1614414497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ORGIP/Display/Display.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IPCORE/ORGIP/Display/Display.edf"/>
+        <Attr Name="ImportTime" Val="1614413002"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ORGIP/DSEGIO/DSEGIO.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IPCORE/ORGIP/DSEGIO/DSEGIO.edf"/>
+        <Attr Name="ImportTime" Val="1616122293"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ORGIP/MIOBUS/MIOBUS.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IPCORE/ORGIP/MIOBUS/MIOBUS.edf"/>
+        <Attr Name="ImportTime" Val="1615437745"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/RAM_B/RAM_B.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/ROM_D/ROM_D.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ORGIP/RSCPUE/RCPU9/RSCPU9.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IPCORE/ORGIP/RSCPUE/RCPU9/RSCPU9.edf"/>
+        <Attr Name="ImportTime" Val="1616216104"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ORGIP/ArrayKeys/Arraykeys.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IPCORE/ORGIP/ArrayKeys/Arraykeys.v"/>
+        <Attr Name="ImportTime" Val="1614519150"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ORGIP/CLKDIV/Clkdiv.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IPCORE/ORGIP/CLKDIV/Clkdiv.v"/>
+        <Attr Name="ImportTime" Val="1615519620"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ORGIP/Counter/Counter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IPCORE/ORGIP/Counter/Counter.v"/>
+        <Attr Name="ImportTime" Val="1616304797"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ORGIP/DSEGIO/DSEGIO.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IPCORE/ORGIP/DSEGIO/DSEGIO.v"/>
+        <Attr Name="ImportTime" Val="1616122309"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ORGIP/Disp2Hex/Disp2Hex.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IPCORE/ORGIP/Disp2Hex/Disp2Hex.v"/>
+        <Attr Name="ImportTime" Val="1614414524"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ORGIP/Display/Display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IPCORE/ORGIP/Display/Display.v"/>
+        <Attr Name="ImportTime" Val="1614413102"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ORGIP/EnterT32/EnterT32.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IPCORE/ORGIP/EnterT32/EnterT32.v"/>
+        <Attr Name="ImportTime" Val="1614413826"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VGA/Font816.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IPCORE/ORGIP/VGA/Font816.v"/>
+        <Attr Name="ImportTime" Val="1615025789"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ORGIP/GPIO/GPIO.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IPCORE/ORGIP/GPIO/GPIO.v"/>
+        <Attr Name="ImportTime" Val="1615435152"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ORGIP/MIOBUS/MIOBUS.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IPCORE/ORGIP/MIOBUS/MIOBUS.v"/>
+        <Attr Name="ImportTime" Val="1615437770"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ORGIP/PIO/PIO.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IPCORE/ORGIP/PIO/PIO.v"/>
+        <Attr Name="ImportTime" Val="1615435537"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ORGIP/RSCPUE/RCPU9/RSCPU9.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IPCORE/ORGIP/RSCPUE/RCPU9/RSCPU9.v"/>
+        <Attr Name="ImportTime" Val="1616216124"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ORGIP/VGA/VGATEST.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IPCORE/ORGIP/VGA/VGATEST.v"/>
+        <Attr Name="ImportTime" Val="1616084758"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VGA/vga.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IPCORE/ORGIP/VGA/vga.v"/>
+        <Attr Name="ImportTime" Val="1615359708"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CSTE_RISCVEDF.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/RISCV-DEMO9.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/D_mem.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="CSTE_RISCVEDF"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/OExp_HDL/CSTE_V20.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/CSTE_V20.xdc"/>
+        <Attr Name="ImportTime" Val="1615038257"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

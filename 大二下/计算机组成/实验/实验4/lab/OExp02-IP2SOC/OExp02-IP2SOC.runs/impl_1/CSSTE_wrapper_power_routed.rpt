@@ -1,0 +1,223 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date             : Tue Mar 23 19:53:22 2021
+| Host             : LAPTOP-0HOK14LD running 64-bit major release  (build 9200)
+| Command          : report_power -file CSSTE_wrapper_power_routed.rpt -pb CSSTE_wrapper_power_summary_routed.pb -rpx CSSTE_wrapper_power_routed.rpx
+| Design           : CSSTE_wrapper
+| Device           : xc7k160tffg676-2L
+| Design State     : routed
+| Grade            : extended
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+----------------------------------+
+| Total On-Chip Power (W)  | 57.148 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                     |
+| Power Budget Margin (W)  | NA                               |
+| Dynamic (W)              | 55.086                           |
+| Device Static (W)        | 2.062                            |
+| Effective TJA (C/W)      | 1.9                              |
+| Max Ambient (C)          | 0.0                              |
+| Junction Temperature (C) | 125.0                            |
+| Confidence Level         | Low                              |
+| Setting File             | ---                              |
+| Simulation Activity File | ---                              |
+| Design Nets Matched      | NA                               |
++--------------------------+----------------------------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Slice Logic              |     7.261 |     4800 |       --- |             --- |
+|   LUT as Logic           |     6.761 |     2254 |    101400 |            2.22 |
+|   CARRY4                 |     0.227 |       70 |     25350 |            0.28 |
+|   Register               |     0.148 |     1581 |    202800 |            0.78 |
+|   LUT as Distributed RAM |     0.060 |       68 |     35000 |            0.19 |
+|   F7/F8 Muxes            |     0.036 |      667 |    101400 |            0.66 |
+|   BUFG                   |     0.029 |        2 |        32 |            6.25 |
+|   Others                 |     0.000 |       35 |       --- |             --- |
+| Signals                  |    10.179 |     3427 |       --- |             --- |
+| Block RAM                |     0.335 |      1.5 |       325 |            0.46 |
+| I/O                      |    37.311 |       73 |       400 |           18.25 |
+| Static Power             |     2.062 |          |           |                 |
+| Total                    |    57.148 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |    19.599 |      17.836 |      1.763 |
+| Vccaux    |       1.800 |     1.533 |       1.425 |      0.108 |
+| Vcco33    |       3.300 |    10.130 |      10.129 |      0.001 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.669 |       0.668 |      0.001 |
+| Vcco15    |       1.500 |     0.020 |       0.019 |      0.001 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.090 |       0.028 |      0.062 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.9                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 3.4                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++--------------------------------------------------+-----------+
+| Name                                             | Power (W) |
++--------------------------------------------------+-----------+
+| CSSTE_wrapper                                    |    55.086 |
+|   CSSTE_i                                        |    17.476 |
+|     ARRARYBLOCK                                  |     0.351 |
+|       M4                                         |     0.021 |
+|         inst                                     |     0.021 |
+|       SWOTap                                     |     0.000 |
+|       U9                                         |     0.330 |
+|         inst                                     |     0.330 |
+|     CLKBLOCK                                     |     1.184 |
+|       DIVOTap                                    |     0.000 |
+|       U8                                         |     1.184 |
+|         inst                                     |     1.184 |
+|     DISPBLOCK                                    |     2.710 |
+|       U5                                         |     0.694 |
+|         inst                                     |     0.694 |
+|       U6                                         |     1.728 |
+|         inst                                     |     1.728 |
+|           PT7SEG                                 |     1.693 |
+|       U61                                        |     0.288 |
+|         inst                                     |     0.288 |
+|     GPIOBLOCK                                    |     0.116 |
+|       U7                                         |     0.116 |
+|         inst                                     |     0.116 |
+|           PTLED                                  |     0.116 |
+|       U71                                        |    <0.001 |
+|         inst                                     |    <0.001 |
+|       xlslice_0                                  |     0.000 |
+|     RAM_B                                        |     0.319 |
+|       U3                                         |     0.319 |
+|         U0                                       |     0.319 |
+|           inst_blk_mem_gen                       |     0.319 |
+|             gnbram.gnativebmg.native_blk_mem_gen |     0.319 |
+|               valid.cstr                         |     0.319 |
+|                 ramloop[0].ram.r                 |     0.319 |
+|                   prim_init.ram                  |     0.319 |
+|     ROM_D                                        |     2.981 |
+|       PCWA                                       |     0.000 |
+|       U2                                         |     2.981 |
+|         U0                                       |     2.981 |
+|           synth_options.dist_mem_inst            |     2.981 |
+|             gen_rom.rom_inst                     |     2.981 |
+|     TESTOTap                                     |     0.003 |
+|     U1                                           |     5.740 |
+|       inst                                       |     5.740 |
+|         U1_1                                     |     0.162 |
+|         U1_2                                     |     5.568 |
+|           DU1                                    |     0.005 |
+|           DU2                                    |     3.613 |
+|     U10                                          |     1.015 |
+|       inst                                       |     1.015 |
+|     U4                                           |     0.272 |
+|       inst                                       |     0.272 |
+|     VGATEST                                      |     2.786 |
+|       U11                                        |     2.122 |
+|         inst                                     |     2.122 |
+|           FONT_8X16                              |     0.162 |
+|           MEMBUF_reg_0_63_0_2                    |     0.004 |
+|           MEMBUF_reg_0_63_12_14                  |     0.005 |
+|           MEMBUF_reg_0_63_15_17                  |     0.006 |
+|           MEMBUF_reg_0_63_18_20                  |     0.006 |
+|           MEMBUF_reg_0_63_21_23                  |     0.007 |
+|           MEMBUF_reg_0_63_24_26                  |     0.005 |
+|           MEMBUF_reg_0_63_27_29                  |     0.009 |
+|           MEMBUF_reg_0_63_30_30                  |     0.000 |
+|           MEMBUF_reg_0_63_31_31                  |     0.004 |
+|           MEMBUF_reg_0_63_3_5                    |     0.006 |
+|           MEMBUF_reg_0_63_6_8                    |    <0.001 |
+|           MEMBUF_reg_0_63_9_11                   |     0.002 |
+|           data_buf_reg_0_3_0_5                   |     0.008 |
+|           data_buf_reg_0_3_12_17                 |     0.006 |
+|           data_buf_reg_0_3_18_23                 |     0.007 |
+|           data_buf_reg_0_3_24_29                 |     0.007 |
+|           data_buf_reg_0_3_30_31                 |     0.002 |
+|           data_buf_reg_0_3_6_11                  |     0.003 |
+|       U12                                        |     0.664 |
+|         inst                                     |     0.627 |
++--------------------------------------------------+-----------+
+
+

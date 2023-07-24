@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jun 22 15:23:35 2021
+# Process ID: 41512
+# Current directory: F:/Desk/Success Vivado/OEXP05/OExp05_CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32392 F:\Desk\Success Vivado\OEXP05\OExp05_CPU\OExp05_CPU.xpr
+# Log file: F:/Desk/Success Vivado/OEXP05/OExp05_CPU/vivado.log
+# Journal file: F:/Desk/Success Vivado/OEXP05/OExp05_CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:/Desk/Success Vivado/OEXP05/OExp05_CPU/OExp05_CPU.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xlinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:09 . Memory (MB): peak = 879.656 ; gain = 138.559
+update_compile_order -fileset sources_1
+set_property top OEXp05_CPU [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Jun 22 15:24:23 2021] Launched synth_1...
+Run output will be captured here: F:/Desk/Success Vivado/OEXP05/OExp05_CPU/OExp05_CPU.runs/synth_1/runme.log
+[Tue Jun 22 15:24:23 2021] Launched impl_1...
+Run output will be captured here: F:/Desk/Success Vivado/OEXP05/OExp05_CPU/OExp05_CPU.runs/impl_1/runme.log
+open_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 22 15:33:29 2021...

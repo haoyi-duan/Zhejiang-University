@@ -1,0 +1,1634 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Mar 22 18:29:15 2021" VIVADOVERSION="2017.4">
+
+  <SYSTEMINFO ARCH="kintex7" DEVICE="7k160t" NAME="CSSTE" PACKAGE="ffg676" SPEEDGRADE="-2L"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" NAME="CR" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_CR">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ARRARYBLOCK_U9" PORT="CR"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="RDY" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_KRDY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ARRARYBLOCK_U9" PORT="KRDY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="SW" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_SW">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ARRARYBLOCK_U9" PORT="SW"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_100mhz" SIGIS="clk" SIGNAME="External_Ports_clk_100mhz">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ARRARYBLOCK_M4" PORT="clk"/>
+        <CONNECTION INSTANCE="ARRARYBLOCK_U9" PORT="clk"/>
+        <CONNECTION INSTANCE="CLKBLOCK_U8" PORT="clk"/>
+        <CONNECTION INSTANCE="VGATEST_U12" PORT="clk"/>
+        <CONNECTION INSTANCE="VGATEST_U11" PORT="clk"/>
+        <CONNECTION INSTANCE="DISPBLOCK_U6" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="KCOL" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_KCOL">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ARRARYBLOCK_U9" PORT="KCOL"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="4" NAME="KROW" RIGHT="0" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_KROW">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ARRARYBLOCK_U9" PORT="KROW"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="RSTN" SIGIS="undef" SIGNAME="External_Ports_RSTN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ARRARYBLOCK_U9" PORT="RSTN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="readn" SIGIS="undef" SIGNAME="ARRARYBLOCK_M4_readn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ARRARYBLOCK_M4" PORT="readn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SEGEN" SIGIS="undef" SIGNAME="DISPBLOCK_U6_SEGEN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="DISPBLOCK_U6" PORT="SEGEN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SEGCK" SIGIS="undef" SIGNAME="DISPBLOCK_U6_segclk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="DISPBLOCK_U6" PORT="segclk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SEGCR" SIGIS="undef" SIGNAME="DISPBLOCK_U6_segclrn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="DISPBLOCK_U6" PORT="segclrn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SEGDT" SIGIS="undef" SIGNAME="DISPBLOCK_U6_segsout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="DISPBLOCK_U6" PORT="segsout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="AN" RIGHT="0" SIGIS="undef" SIGNAME="DISPBLOCK_U61_AN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="DISPBLOCK_U61" PORT="AN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="SEGMENT" RIGHT="0" SIGIS="undef" SIGNAME="DISPBLOCK_U61_SEGMENT">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="DISPBLOCK_U61" PORT="SEGMENT"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="LEDEN" SIGIS="undef" SIGNAME="GPIOBLOCK_U7_LEDEN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="GPIOBLOCK_U7" PORT="LEDEN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="LEDCK" SIGIS="undef" SIGNAME="GPIOBLOCK_U7_ledclk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="GPIOBLOCK_U7" PORT="ledclk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="LEDCR" SIGIS="undef" SIGNAME="GPIOBLOCK_U7_ledclrn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="GPIOBLOCK_U7" PORT="ledclrn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="LEDDT" SIGIS="undef" SIGNAME="GPIOBLOCK_U7_ledsout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="GPIOBLOCK_U7" PORT="ledsout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="LED" RIGHT="0" SIGIS="undef" SIGNAME="GPIOBLOCK_U71_LED">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="GPIOBLOCK_U71" PORT="LED"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="Blue" RIGHT="0" SIGIS="undef" SIGNAME="VGATEST_U12_B">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VGATEST_U12" PORT="B"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="Green" RIGHT="0" SIGIS="undef" SIGNAME="VGATEST_U12_G">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VGATEST_U12" PORT="G"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="HSYNC" SIGIS="undef" SIGNAME="VGATEST_U12_HS">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VGATEST_U12" PORT="HS"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="Red" RIGHT="0" SIGIS="undef" SIGNAME="VGATEST_U12_R">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VGATEST_U12" PORT="R"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="VSYNC" SIGIS="undef" SIGNAME="VGATEST_U12_VS">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VGATEST_U12" PORT="VS"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Buzzer" SIGIS="undef" SIGNAME="TESTOTap_Buzzer">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="TESTOTap" PORT="Buzzer"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/ARRARYBLOCK/M4" HWVERSION="1.0" INSTANCE="ARRARYBLOCK_M4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="EnterT32" VLNV="ZJUCLIP:user:EnterT32:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_EnterT32_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_100mhz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100mhz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_KCODE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_U9" PORT="KCODE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="DRDY" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_KRDY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_U9" PORT="KRDY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="BTN" RIGHT="0" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_BTNO">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_U9" PORT="BTNO"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ArrayKey" SIGIS="undef" SIGNAME="ARRARYBLOCK_SWOTap_SWO15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_SWOTap" PORT="SWO15"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="TEST" RIGHT="0" SIGIS="undef" SIGNAME="ARRARYBLOCK_SWOTap_SWO765">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_SWOTap" PORT="SWO765"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="UP16" SIGIS="undef" SIGNAME="ARRARYBLOCK_SWOTap_SWO1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_SWOTap" PORT="SWO1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Text" SIGIS="undef" SIGNAME="ARRARYBLOCK_SWOTap_SWO0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_SWOTap" PORT="SWO0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="readn" SIGIS="undef" SIGNAME="ARRARYBLOCK_M4_readn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="readn"/>
+            <CONNECTION INSTANCE="ARRARYBLOCK_U9" PORT="readn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="Ai" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="Bi" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="7" NAME="blink" RIGHT="0" SIGIS="undef" SIGNAME="ARRARYBLOCK_M4_blink">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U1" PORT="TNI"/>
+            <CONNECTION INSTANCE="TESTOTap" PORT="blink"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/ARRARYBLOCK/SWOTap" HWVERSION="1.0" INSTANCE="ARRARYBLOCK_SWOTap" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="SWOUT" VLNV="ZJUCLIP:user:SWOUT:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_SWOUT_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="SWI" RIGHT="0" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_SWO">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_U9" PORT="SWO"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SWO15" SIGIS="undef" SIGNAME="ARRARYBLOCK_SWOTap_SWO15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_M4" PORT="ArrayKey"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SWO14" SIGIS="undef" SIGNAME="ARRARYBLOCK_SWOTap_SWO14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="VGATEST_U11" PORT="SWO14"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="SWO765" RIGHT="0" SIGIS="undef" SIGNAME="ARRARYBLOCK_SWOTap_SWO765">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DISPBLOCK_U5" PORT="Test"/>
+            <CONNECTION INSTANCE="ARRARYBLOCK_M4" PORT="TEST"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="SWO43" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="SWO2" SIGIS="undef" SIGNAME="ARRARYBLOCK_SWOTap_SWO2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLKBLOCK_U8" PORT="STEP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SWO1" SIGIS="undef" SIGNAME="ARRARYBLOCK_SWOTap_SWO1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DISPBLOCK_U61" PORT="Scan2"/>
+            <CONNECTION INSTANCE="ARRARYBLOCK_M4" PORT="UP16"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SWO0" SIGIS="undef" SIGNAME="ARRARYBLOCK_SWOTap_SWO0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DISPBLOCK_U61" PORT="Text"/>
+            <CONNECTION INSTANCE="DISPBLOCK_U6" PORT="Text"/>
+            <CONNECTION INSTANCE="ARRARYBLOCK_M4" PORT="Text"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="5" NAME="SWO13T8" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/ARRARYBLOCK/U9" HWVERSION="1.0" INSTANCE="ARRARYBLOCK_U9" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Arraykeys" VLNV="ZJUCLIP:user:Arraykeys:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_Arraykeys_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_100mhz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100mhz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RSTN" SIGIS="undef" SIGNAME="External_Ports_RSTN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RSTN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="readn" SIGIS="undef" SIGNAME="ARRARYBLOCK_M4_readn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_M4" PORT="readn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="KCOL" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_KCOL">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="KCOL"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="KROW" RIGHT="0" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_KROW">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="KROW"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="SW" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_SW">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SW"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="KCODE" RIGHT="0" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_KCODE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_M4" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="KRDY" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_KRDY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RDY"/>
+            <CONNECTION INSTANCE="ARRARYBLOCK_M4" PORT="DRDY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="pulse" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="3" NAME="BTNO" RIGHT="0" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_BTNO">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="BTN"/>
+            <CONNECTION INSTANCE="ARRARYBLOCK_M4" PORT="BTN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="SWO" RIGHT="0" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_SWO">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="SW"/>
+            <CONNECTION INSTANCE="TESTOTap" PORT="SWO"/>
+            <CONNECTION INSTANCE="ARRARYBLOCK_SWOTap" PORT="SWI"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CR" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_CR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="rst" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U1" PORT="reset"/>
+            <CONNECTION INSTANCE="U4" PORT="rst"/>
+            <CONNECTION INSTANCE="U10" PORT="rst"/>
+            <CONNECTION INSTANCE="GPIOBLOCK_U7" PORT="rst"/>
+            <CONNECTION INSTANCE="GPIOBLOCK_U71" PORT="rst"/>
+            <CONNECTION INSTANCE="DISPBLOCK_U6" PORT="rst"/>
+            <CONNECTION INSTANCE="DISPBLOCK_U5" PORT="rst"/>
+            <CONNECTION INSTANCE="CLKBLOCK_U8" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="AKEY" TYPE="TARGET" VLNV="ZJCLIP:user:KEY:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="RSTN" PHYSICAL="RSTN"/>
+            <PORTMAP LOGICAL="KCOL" PHYSICAL="KCOL"/>
+            <PORTMAP LOGICAL="KROW" PHYSICAL="KROW"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE FULLNAME="/CLKBLOCK/DIVOTap" HWVERSION="1.0" INSTANCE="CLKBLOCK_DIVOTap" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="DIVO" VLNV="ZJUCLIP:user:DIVO:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_DIVO_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="DIV" RIGHT="0" SIGIS="undef" SIGNAME="CLKBLOCK_U8_clkdiv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLKBLOCK_U8" PORT="clkdiv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="DIVO31T24" SIGIS="undef"/>
+        <PORT DIR="O" NAME="DIVO25" SIGIS="undef" SIGNAME="CLKBLOCK_DIVOTap_DIVO25">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DISPBLOCK_U61" PORT="flash"/>
+            <CONNECTION INSTANCE="DISPBLOCK_U6" PORT="flash"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="DIVO20" SIGIS="undef" SIGNAME="CLKBLOCK_DIVOTap_DIVO20">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="clk1"/>
+            <CONNECTION INSTANCE="GPIOBLOCK_U7" PORT="Start"/>
+            <CONNECTION INSTANCE="DISPBLOCK_U6" PORT="mapup"/>
+            <CONNECTION INSTANCE="DISPBLOCK_U6" PORT="Start"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="DIVO18T19" RIGHT="0" SIGIS="undef" SIGNAME="CLKBLOCK_DIVOTap_DIVO18T19">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DISPBLOCK_U61" PORT="Scan10"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="DIVO12" SIGIS="undef" SIGNAME="CLKBLOCK_DIVOTap_DIVO12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="clk2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="DIVO10" SIGIS="undef"/>
+        <PORT DIR="O" NAME="DIVO08" SIGIS="undef"/>
+        <PORT DIR="O" NAME="DIVO06" SIGIS="undef" SIGNAME="CLKBLOCK_DIVOTap_DIVO06">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="clk0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="16" NAME="Other" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/CLKBLOCK/U8" HWVERSION="1.0" INSTANCE="CLKBLOCK_U8" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Clkdiv" VLNV="ZJUCLIP:user:Clkdiv:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_Clkdiv_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_100mhz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100mhz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="ARRARYBLOCK_U9_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_U9" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="STEP" SIGIS="undef" SIGNAME="ARRARYBLOCK_SWOTap_SWO2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_SWOTap" PORT="SWO2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="nclk" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="clkdiv" RIGHT="0" SIGIS="undef" SIGNAME="CLKBLOCK_U8_clkdiv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TESTOTap" PORT="DIVO"/>
+            <CONNECTION INSTANCE="DISPBLOCK_U5" PORT="data6"/>
+            <CONNECTION INSTANCE="CLKBLOCK_DIVOTap" PORT="DIV"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CPUClk" SIGIS="undef" SIGNAME="CLKBLOCK_U8_CPUClk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U1" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="nCPUClk" SIGIS="undef" SIGNAME="CLKBLOCK_U8_nCPUClk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="clk"/>
+            <CONNECTION INSTANCE="U4" PORT="clk"/>
+            <CONNECTION INSTANCE="GPIOBLOCK_U7" PORT="clk"/>
+            <CONNECTION INSTANCE="GPIOBLOCK_U71" PORT="clk"/>
+            <CONNECTION INSTANCE="DISPBLOCK_U5" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/DISPBLOCK/U5" HWVERSION="1.0" INSTANCE="DISPBLOCK_U5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="DSEGIO" VLNV="ZJUCLIP:user:DSEGIO:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_DSEGIO_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="CLKBLOCK_U8_nCPUClk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLKBLOCK_U8" PORT="nCPUClk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_U9" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="U4_GPIO_W0204">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="GPIO_W0204"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A0" SIGIS="undef" SIGNAME="TESTOTap_ZERO">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TESTOTap" PORT="ZERO"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="Test" RIGHT="0" SIGIS="undef" SIGNAME="ARRARYBLOCK_SWOTap_SWO765">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_SWOTap" PORT="SWO765"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="points" RIGHT="0" SIGIS="undef" SIGNAME="TESTOTap_points">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TESTOTap" PORT="points"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="LES" RIGHT="0" SIGIS="undef" SIGNAME="TESTOTap_LES">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TESTOTap" PORT="LES"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="Data0" RIGHT="0" SIGIS="undef" SIGNAME="U4_Peripheral">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="Peripheral"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="data1" RIGHT="0" SIGIS="undef" SIGNAME="U1_PC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U1" PORT="PC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="data2" RIGHT="0" SIGIS="undef" SIGNAME="ROM_D_U2_spo">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ROM_D_U2" PORT="spo"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="data3" RIGHT="0" SIGIS="undef" SIGNAME="U1_Addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U1" PORT="Addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="data4" RIGHT="0" SIGIS="undef" SIGNAME="U4_Data2CPU">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="Data2CPU"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="data5" RIGHT="0" SIGIS="undef" SIGNAME="U1_Datao">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U1" PORT="Datao"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="data6" RIGHT="0" SIGIS="undef" SIGNAME="CLKBLOCK_U8_clkdiv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLKBLOCK_U8" PORT="clkdiv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="data7" RIGHT="0" SIGIS="undef" SIGNAME="U10_counter_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="counter_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="Disp" RIGHT="0" SIGIS="undef" SIGNAME="DISPBLOCK_U5_Disp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DISPBLOCK_U61" PORT="Hexs"/>
+            <CONNECTION INSTANCE="DISPBLOCK_U6" PORT="Hexs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="point" RIGHT="0" SIGIS="undef" SIGNAME="DISPBLOCK_U5_point">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DISPBLOCK_U61" PORT="points"/>
+            <CONNECTION INSTANCE="DISPBLOCK_U6" PORT="points"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="LE" RIGHT="0" SIGIS="undef" SIGNAME="DISPBLOCK_U5_LE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DISPBLOCK_U61" PORT="LES"/>
+            <CONNECTION INSTANCE="DISPBLOCK_U6" PORT="LES"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="mapup" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="DISP" TYPE="INITIATOR" VLNV="ZJUCLIP:user:DISP:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="Disp" PHYSICAL="Disp"/>
+            <PORTMAP LOGICAL="point" PHYSICAL="point"/>
+            <PORTMAP LOGICAL="LE" PHYSICAL="LE"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="Si" TYPE="TARGET" VLNV="ZJUCLIP:user:Si:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="clk" PHYSICAL="clk"/>
+            <PORTMAP LOGICAL="rst" PHYSICAL="rst"/>
+            <PORTMAP LOGICAL="EN" PHYSICAL="EN"/>
+            <PORTMAP LOGICAL="A0" PHYSICAL="A0"/>
+            <PORTMAP LOGICAL="Test" PHYSICAL="Test"/>
+            <PORTMAP LOGICAL="points" PHYSICAL="points"/>
+            <PORTMAP LOGICAL="LES" PHYSICAL="LES"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE FULLNAME="/DISPBLOCK/U6" HWVERSION="1.0" INSTANCE="DISPBLOCK_U6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Display" VLNV="ZJUCLIP:user:Display:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_Display_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_100mhz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100mhz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_U9" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Start" SIGIS="undef" SIGNAME="CLKBLOCK_DIVOTap_DIVO20">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLKBLOCK_DIVOTap" PORT="DIVO20"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Text" SIGIS="undef" SIGNAME="ARRARYBLOCK_SWOTap_SWO0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_SWOTap" PORT="SWO0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="flash" SIGIS="undef" SIGNAME="CLKBLOCK_DIVOTap_DIVO25">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLKBLOCK_DIVOTap" PORT="DIVO25"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="Hexs" RIGHT="0" SIGIS="undef" SIGNAME="DISPBLOCK_U5_Disp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DISPBLOCK_U5" PORT="Disp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="points" RIGHT="0" SIGIS="undef" SIGNAME="DISPBLOCK_U5_point">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DISPBLOCK_U5" PORT="point"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="LES" RIGHT="0" SIGIS="undef" SIGNAME="DISPBLOCK_U5_LE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DISPBLOCK_U5" PORT="LE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="mapup" SIGIS="undef" SIGNAME="CLKBLOCK_DIVOTap_DIVO20">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLKBLOCK_DIVOTap" PORT="DIVO20"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="segclk" SIGIS="undef" SIGNAME="DISPBLOCK_U6_segclk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SEGCK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="segsout" SIGIS="undef" SIGNAME="DISPBLOCK_U6_segsout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SEGDT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SEGEN" SIGIS="undef" SIGNAME="DISPBLOCK_U6_SEGEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SEGEN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="segclrn" SIGIS="undef" SIGNAME="DISPBLOCK_U6_segclrn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SEGCR"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/DISPBLOCK/U61" HWVERSION="1.0" INSTANCE="DISPBLOCK_U61" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Disp2Hex" VLNV="ZJUCLIP:user:Disp2Hex:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_Disp2Hex_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="Hexs" RIGHT="0" SIGIS="undef" SIGNAME="DISPBLOCK_U5_Disp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DISPBLOCK_U5" PORT="Disp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Scan2" SIGIS="undef" SIGNAME="ARRARYBLOCK_SWOTap_SWO1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_SWOTap" PORT="SWO1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="Scan10" RIGHT="0" SIGIS="undef" SIGNAME="CLKBLOCK_DIVOTap_DIVO18T19">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLKBLOCK_DIVOTap" PORT="DIVO18T19"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="points" RIGHT="0" SIGIS="undef" SIGNAME="DISPBLOCK_U5_point">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DISPBLOCK_U5" PORT="point"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="LES" RIGHT="0" SIGIS="undef" SIGNAME="DISPBLOCK_U5_LE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DISPBLOCK_U5" PORT="LE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Text" SIGIS="undef" SIGNAME="ARRARYBLOCK_SWOTap_SWO0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_SWOTap" PORT="SWO0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="flash" SIGIS="undef" SIGNAME="CLKBLOCK_DIVOTap_DIVO25">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLKBLOCK_DIVOTap" PORT="DIVO25"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="AN" RIGHT="0" SIGIS="undef" SIGNAME="DISPBLOCK_U61_AN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="SEGMENT" RIGHT="0" SIGIS="undef" SIGNAME="DISPBLOCK_U61_SEGMENT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SEGMENT"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/GPIOBLOCK/U7" HWVERSION="1.0" INSTANCE="GPIOBLOCK_U7" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="GPIO" VLNV="ZJUCLIP:user:GPIO:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_GPIO_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="CLKBLOCK_U8_nCPUClk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLKBLOCK_U8" PORT="nCPUClk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_U9" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Start" SIGIS="undef" SIGNAME="CLKBLOCK_DIVOTap_DIVO20">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLKBLOCK_DIVOTap" PORT="DIVO20"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="U4_GPIO_W0200">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="GPIO_W0200"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="Datai" RIGHT="0" SIGIS="undef" SIGNAME="U4_Peripheral">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="Peripheral"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="LEDo" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="ledclk" SIGIS="undef" SIGNAME="GPIOBLOCK_U7_ledclk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LEDCK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ledsout" SIGIS="undef" SIGNAME="GPIOBLOCK_U7_ledsout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LEDDT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ledclrn" SIGIS="undef" SIGNAME="GPIOBLOCK_U7_ledclrn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LEDCR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="LEDEN" SIGIS="undef" SIGNAME="GPIOBLOCK_U7_LEDEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LEDEN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="GPIOf0" RIGHT="0" SIGIS="undef" SIGNAME="GPIOBLOCK_U7_GPIOf0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIOBLOCK_xlslice_0" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/GPIOBLOCK/U71" HWVERSION="1.0" INSTANCE="GPIOBLOCK_U71" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="PIO" VLNV="ZJUCLIP:user:PIO:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_PIO_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="CLKBLOCK_U8_nCPUClk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLKBLOCK_U8" PORT="nCPUClk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_U9" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="U4_GPIO_W0200">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="GPIO_W0200"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="Datai" RIGHT="0" SIGIS="undef" SIGNAME="U4_Peripheral">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="Peripheral"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="LED" RIGHT="0" SIGIS="undef" SIGNAME="GPIOBLOCK_U71_LED">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LED"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="GPIOf0" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/GPIOBLOCK/xlslice_0" HWVERSION="1.0" INSTANCE="GPIOBLOCK_xlslice_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="1"/>
+        <PARAMETER NAME="DIN_TO" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_xlslice_0_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="GPIOBLOCK_U7_GPIOf0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIOBLOCK_U7" PORT="GPIOf0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="GPIOBLOCK_xlslice_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="counter_ch"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/RAM_B/U3" HWVERSION="8.4" INSTANCE="RAM_B_U3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="MEMORY" MODTYPE="blk_mem_gen" VLNV="xilinx.com:ip:blk_mem_gen:8.4">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=blk_mem_gen;v=v8_4;d=pg058-blk-mem-gen.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_FAMILY" VALUE="kintex7"/>
+        <PARAMETER NAME="C_XDEVICEFAMILY" VALUE="kintex7"/>
+        <PARAMETER NAME="C_ELABORATION_DIR" VALUE="./"/>
+        <PARAMETER NAME="C_INTERFACE_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_TYPE" VALUE="1"/>
+        <PARAMETER NAME="C_AXI_SLAVE_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BRAM_BLOCK" VALUE="0"/>
+        <PARAMETER NAME="C_ENABLE_32BIT_ADDRESS" VALUE="0"/>
+        <PARAMETER NAME="C_CTRL_ECC_ALGO" VALUE="NONE"/>
+        <PARAMETER NAME="C_HAS_AXI_ID" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_ID_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="C_MEM_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_BYTE_SIZE" VALUE="9"/>
+        <PARAMETER NAME="C_ALGORITHM" VALUE="1"/>
+        <PARAMETER NAME="C_PRIM_TYPE" VALUE="1"/>
+        <PARAMETER NAME="C_LOAD_INIT_FILE" VALUE="1"/>
+        <PARAMETER NAME="C_INIT_FILE_NAME" VALUE="CSSTE_blk_mem_gen_0_1.mif"/>
+        <PARAMETER NAME="C_INIT_FILE" VALUE="NONE"/>
+        <PARAMETER NAME="C_USE_DEFAULT_DATA" VALUE="0"/>
+        <PARAMETER NAME="C_DEFAULT_DATA" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_RSTA" VALUE="0"/>
+        <PARAMETER NAME="C_RST_PRIORITY_A" VALUE="CE"/>
+        <PARAMETER NAME="C_RSTRAM_A" VALUE="0"/>
+        <PARAMETER NAME="C_INITA_VAL" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_ENA" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_REGCEA" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BYTE_WEA" VALUE="0"/>
+        <PARAMETER NAME="C_WEA_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_WRITE_MODE_A" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="C_WRITE_WIDTH_A" VALUE="32"/>
+        <PARAMETER NAME="C_READ_WIDTH_A" VALUE="32"/>
+        <PARAMETER NAME="C_WRITE_DEPTH_A" VALUE="1024"/>
+        <PARAMETER NAME="C_READ_DEPTH_A" VALUE="1024"/>
+        <PARAMETER NAME="C_ADDRA_WIDTH" VALUE="10"/>
+        <PARAMETER NAME="C_HAS_RSTB" VALUE="0"/>
+        <PARAMETER NAME="C_RST_PRIORITY_B" VALUE="CE"/>
+        <PARAMETER NAME="C_RSTRAM_B" VALUE="0"/>
+        <PARAMETER NAME="C_INITB_VAL" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_ENB" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_REGCEB" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BYTE_WEB" VALUE="0"/>
+        <PARAMETER NAME="C_WEB_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_WRITE_MODE_B" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="C_WRITE_WIDTH_B" VALUE="32"/>
+        <PARAMETER NAME="C_READ_WIDTH_B" VALUE="32"/>
+        <PARAMETER NAME="C_WRITE_DEPTH_B" VALUE="1024"/>
+        <PARAMETER NAME="C_READ_DEPTH_B" VALUE="1024"/>
+        <PARAMETER NAME="C_ADDRB_WIDTH" VALUE="10"/>
+        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_A" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_B" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_A" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_B" VALUE="0"/>
+        <PARAMETER NAME="C_MUX_PIPELINE_STAGES" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SOFTECC_INPUT_REGS_A" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SOFTECC_OUTPUT_REGS_B" VALUE="0"/>
+        <PARAMETER NAME="C_USE_SOFTECC" VALUE="0"/>
+        <PARAMETER NAME="C_USE_ECC" VALUE="0"/>
+        <PARAMETER NAME="C_EN_ECC_PIPE" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_INJECTERR" VALUE="0"/>
+        <PARAMETER NAME="C_SIM_COLLISION_CHECK" VALUE="ALL"/>
+        <PARAMETER NAME="C_COMMON_CLK" VALUE="0"/>
+        <PARAMETER NAME="C_DISABLE_WARN_BHV_COLL" VALUE="0"/>
+        <PARAMETER NAME="C_EN_SLEEP_PIN" VALUE="0"/>
+        <PARAMETER NAME="C_USE_URAM" VALUE="0"/>
+        <PARAMETER NAME="C_EN_RDADDRA_CHG" VALUE="0"/>
+        <PARAMETER NAME="C_EN_RDADDRB_CHG" VALUE="0"/>
+        <PARAMETER NAME="C_EN_DEEPSLEEP_PIN" VALUE="0"/>
+        <PARAMETER NAME="C_EN_SHUTDOWN_PIN" VALUE="0"/>
+        <PARAMETER NAME="C_EN_SAFETY_CKT" VALUE="0"/>
+        <PARAMETER NAME="C_DISABLE_WARN_BHV_RANGE" VALUE="0"/>
+        <PARAMETER NAME="C_COUNT_36K_BRAM" VALUE="1"/>
+        <PARAMETER NAME="C_COUNT_18K_BRAM" VALUE="0"/>
+        <PARAMETER NAME="C_EST_POWER_SUMMARY" VALUE="Estimated Power for IP     :     2.95215 mW"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_blk_mem_gen_0_1"/>
+        <PARAMETER NAME="Interface_Type" VALUE="Native"/>
+        <PARAMETER NAME="AXI_Type" VALUE="AXI4_Full"/>
+        <PARAMETER NAME="AXI_Slave_Type" VALUE="Memory_Slave"/>
+        <PARAMETER NAME="Use_AXI_ID" VALUE="false"/>
+        <PARAMETER NAME="AXI_ID_Width" VALUE="4"/>
+        <PARAMETER NAME="Memory_Type" VALUE="Single_Port_RAM"/>
+        <PARAMETER NAME="PRIM_type_to_Implement" VALUE="BRAM"/>
+        <PARAMETER NAME="Enable_32bit_Address" VALUE="false"/>
+        <PARAMETER NAME="ecctype" VALUE="No_ECC"/>
+        <PARAMETER NAME="ECC" VALUE="false"/>
+        <PARAMETER NAME="softecc" VALUE="false"/>
+        <PARAMETER NAME="EN_SLEEP_PIN" VALUE="false"/>
+        <PARAMETER NAME="EN_DEEPSLEEP_PIN" VALUE="false"/>
+        <PARAMETER NAME="EN_SHUTDOWN_PIN" VALUE="false"/>
+        <PARAMETER NAME="EN_ECC_PIPE" VALUE="false"/>
+        <PARAMETER NAME="RD_ADDR_CHNG_A" VALUE="false"/>
+        <PARAMETER NAME="RD_ADDR_CHNG_B" VALUE="false"/>
+        <PARAMETER NAME="Use_Error_Injection_Pins" VALUE="false"/>
+        <PARAMETER NAME="Error_Injection_Type" VALUE="Single_Bit_Error_Injection"/>
+        <PARAMETER NAME="Use_Byte_Write_Enable" VALUE="false"/>
+        <PARAMETER NAME="Byte_Size" VALUE="9"/>
+        <PARAMETER NAME="Algorithm" VALUE="Minimum_Area"/>
+        <PARAMETER NAME="Primitive" VALUE="8kx2"/>
+        <PARAMETER NAME="Assume_Synchronous_Clk" VALUE="false"/>
+        <PARAMETER NAME="Write_Width_A" VALUE="32"/>
+        <PARAMETER NAME="Write_Depth_A" VALUE="1024"/>
+        <PARAMETER NAME="Read_Width_A" VALUE="32"/>
+        <PARAMETER NAME="Operating_Mode_A" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="Enable_A" VALUE="Always_Enabled"/>
+        <PARAMETER NAME="Write_Width_B" VALUE="32"/>
+        <PARAMETER NAME="Read_Width_B" VALUE="32"/>
+        <PARAMETER NAME="Operating_Mode_B" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="Enable_B" VALUE="Always_Enabled"/>
+        <PARAMETER NAME="Register_PortA_Output_of_Memory_Primitives" VALUE="false"/>
+        <PARAMETER NAME="Register_PortA_Output_of_Memory_Core" VALUE="false"/>
+        <PARAMETER NAME="Use_REGCEA_Pin" VALUE="false"/>
+        <PARAMETER NAME="Register_PortB_Output_of_Memory_Primitives" VALUE="false"/>
+        <PARAMETER NAME="Register_PortB_Output_of_Memory_Core" VALUE="false"/>
+        <PARAMETER NAME="Use_REGCEB_Pin" VALUE="false"/>
+        <PARAMETER NAME="register_porta_input_of_softecc" VALUE="false"/>
+        <PARAMETER NAME="register_portb_output_of_softecc" VALUE="false"/>
+        <PARAMETER NAME="Pipeline_Stages" VALUE="0"/>
+        <PARAMETER NAME="Load_Init_File" VALUE="true"/>
+        <PARAMETER NAME="Coe_File" VALUE="../../../../../../coe/D_mem.coe"/>
+        <PARAMETER NAME="Fill_Remaining_Memory_Locations" VALUE="false"/>
+        <PARAMETER NAME="Remaining_Memory_Locations" VALUE="0"/>
+        <PARAMETER NAME="Use_RSTA_Pin" VALUE="false"/>
+        <PARAMETER NAME="Reset_Memory_Latch_A" VALUE="false"/>
+        <PARAMETER NAME="Reset_Priority_A" VALUE="CE"/>
+        <PARAMETER NAME="Output_Reset_Value_A" VALUE="0"/>
+        <PARAMETER NAME="Use_RSTB_Pin" VALUE="false"/>
+        <PARAMETER NAME="Reset_Memory_Latch_B" VALUE="false"/>
+        <PARAMETER NAME="Reset_Priority_B" VALUE="CE"/>
+        <PARAMETER NAME="Output_Reset_Value_B" VALUE="0"/>
+        <PARAMETER NAME="Reset_Type" VALUE="SYNC"/>
+        <PARAMETER NAME="Additional_Inputs_for_Power_Estimation" VALUE="false"/>
+        <PARAMETER NAME="Port_A_Clock" VALUE="100"/>
+        <PARAMETER NAME="Port_A_Write_Rate" VALUE="50"/>
+        <PARAMETER NAME="Port_B_Clock" VALUE="0"/>
+        <PARAMETER NAME="Port_B_Write_Rate" VALUE="0"/>
+        <PARAMETER NAME="Port_A_Enable_Rate" VALUE="100"/>
+        <PARAMETER NAME="Port_B_Enable_Rate" VALUE="0"/>
+        <PARAMETER NAME="Collision_Warnings" VALUE="ALL"/>
+        <PARAMETER NAME="Disable_Collision_Warnings" VALUE="false"/>
+        <PARAMETER NAME="Disable_Out_of_Range_Warnings" VALUE="false"/>
+        <PARAMETER NAME="use_bram_block" VALUE="Stand_Alone"/>
+        <PARAMETER NAME="MEM_FILE" VALUE="NONE"/>
+        <PARAMETER NAME="CTRL_ECC_ALGO" VALUE="NONE"/>
+        <PARAMETER NAME="EN_SAFETY_CKT" VALUE="false"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clka" SIGIS="clk" SIGNAME="U1_ALE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U1" PORT="ALE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="wea" RIGHT="0" SIGIS="undef" SIGNAME="U4_data_ram_we">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="data_ram_we"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="9" NAME="addra" RIGHT="0" SIGIS="undef" SIGNAME="U4_ram_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="ram_addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="dina" RIGHT="0" SIGIS="undef" SIGNAME="U4_ram_data_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="ram_data_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="douta" RIGHT="0" SIGIS="undef" SIGNAME="RAM_B_U3_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="ram_data_out"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="BRAM_PORTA" TYPE="TARGET" VLNV="xilinx.com:interface:bram:1.0">
+          <PARAMETER NAME="MEM_SIZE" VALUE="8192"/>
+          <PARAMETER NAME="MEM_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
+          <PARAMETER NAME="MASTER_TYPE" VALUE="OTHER"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ADDR" PHYSICAL="addra"/>
+            <PORTMAP LOGICAL="CLK" PHYSICAL="clka"/>
+            <PORTMAP LOGICAL="DIN" PHYSICAL="dina"/>
+            <PORTMAP LOGICAL="DOUT" PHYSICAL="douta"/>
+            <PORTMAP LOGICAL="WE" PHYSICAL="wea"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE FULLNAME="/ROM_D/PCWA" HWVERSION="1.0" INSTANCE="ROM_D_PCWA" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="11"/>
+        <PARAMETER NAME="DIN_TO" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_xlslice_0_1"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="10"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="U1_PC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U1" PORT="PC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="9" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="ROM_D_PCWA_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ROM_D_U2" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/ROM_D/U2" HWVERSION="8.0" INSTANCE="ROM_D_U2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dist_mem_gen" VLNV="xilinx.com:ip:dist_mem_gen:8.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=dist_mem_gen;v=v8_0;d=pg063-dist-mem-gen.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_FAMILY" VALUE="kintex7"/>
+        <PARAMETER NAME="C_ADDR_WIDTH" VALUE="10"/>
+        <PARAMETER NAME="C_DEFAULT_DATA" VALUE="0"/>
+        <PARAMETER NAME="C_DEPTH" VALUE="1024"/>
+        <PARAMETER NAME="C_HAS_CLK" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_D" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_DPO" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_DPRA" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_I_CE" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QDPO" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QDPO_CE" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QDPO_CLK" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QDPO_RST" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QDPO_SRST" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QSPO" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QSPO_CE" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QSPO_RST" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QSPO_SRST" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SPO" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_WE" VALUE="0"/>
+        <PARAMETER NAME="C_MEM_INIT_FILE" VALUE="CSSTE_dist_mem_gen_0_0.mif"/>
+        <PARAMETER NAME="C_ELABORATION_DIR" VALUE="./"/>
+        <PARAMETER NAME="C_MEM_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_PIPELINE_STAGES" VALUE="0"/>
+        <PARAMETER NAME="C_QCE_JOINED" VALUE="0"/>
+        <PARAMETER NAME="C_QUALIFY_WE" VALUE="0"/>
+        <PARAMETER NAME="C_READ_MIF" VALUE="1"/>
+        <PARAMETER NAME="C_REG_A_D_INPUTS" VALUE="0"/>
+        <PARAMETER NAME="C_REG_DPRA_INPUT" VALUE="0"/>
+        <PARAMETER NAME="C_SYNC_ENABLE" VALUE="1"/>
+        <PARAMETER NAME="C_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_PARSER_TYPE" VALUE="1"/>
+        <PARAMETER NAME="depth" VALUE="1024"/>
+        <PARAMETER NAME="data_width" VALUE="32"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_dist_mem_gen_0_0"/>
+        <PARAMETER NAME="memory_type" VALUE="rom"/>
+        <PARAMETER NAME="input_options" VALUE="non_registered"/>
+        <PARAMETER NAME="input_clock_enable" VALUE="false"/>
+        <PARAMETER NAME="qualify_we_with_i_ce" VALUE="false"/>
+        <PARAMETER NAME="dual_port_address" VALUE="non_registered"/>
+        <PARAMETER NAME="simple_dual_port_address" VALUE="non_registered"/>
+        <PARAMETER NAME="output_options" VALUE="non_registered"/>
+        <PARAMETER NAME="Pipeline_Stages" VALUE="0"/>
+        <PARAMETER NAME="common_output_clk" VALUE="false"/>
+        <PARAMETER NAME="single_port_output_clock_enable" VALUE="false"/>
+        <PARAMETER NAME="common_output_ce" VALUE="false"/>
+        <PARAMETER NAME="dual_port_output_clock_enable" VALUE="false"/>
+        <PARAMETER NAME="simple_dual_port_output_clock_enable" VALUE="false"/>
+        <PARAMETER NAME="coefficient_file" VALUE="../../../../../../coe/MSCPUE31_sign.coe"/>
+        <PARAMETER NAME="default_data_radix" VALUE="16"/>
+        <PARAMETER NAME="default_data" VALUE="0"/>
+        <PARAMETER NAME="reset_qspo" VALUE="false"/>
+        <PARAMETER NAME="reset_qdpo" VALUE="false"/>
+        <PARAMETER NAME="reset_qsdpo" VALUE="false"/>
+        <PARAMETER NAME="sync_reset_qspo" VALUE="false"/>
+        <PARAMETER NAME="sync_reset_qdpo" VALUE="false"/>
+        <PARAMETER NAME="sync_reset_qsdpo" VALUE="false"/>
+        <PARAMETER NAME="ce_overrides" VALUE="ce_overrides_sync_controls"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="9" NAME="a" RIGHT="0" SIGIS="undef" SIGNAME="ROM_D_PCWA_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ROM_D_PCWA" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="spo" RIGHT="0" SIGIS="undef" SIGNAME="ROM_D_U2_spo">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U1" PORT="INST"/>
+            <CONNECTION INSTANCE="VGATEST_U11" PORT="MEM_Data"/>
+            <CONNECTION INSTANCE="DISPBLOCK_U5" PORT="data2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/TESTOTap" HWVERSION="1.0" INSTANCE="TESTOTap" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="TESTO" VLNV="ZJUCLIP:user:TESTO:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_TESTO_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="SWO" RIGHT="0" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_SWO">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_U9" PORT="SWO"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="DIVO" RIGHT="0" SIGIS="undef" SIGNAME="CLKBLOCK_U8_clkdiv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLKBLOCK_U8" PORT="clkdiv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="blink" RIGHT="0" SIGIS="undef" SIGNAME="ARRARYBLOCK_M4_blink">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_M4" PORT="blink"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Buzzer" SIGIS="undef" SIGNAME="TESTOTap_Buzzer">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Buzzer"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="points" RIGHT="0" SIGIS="undef" SIGNAME="TESTOTap_points">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DISPBLOCK_U5" PORT="points"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="LES" RIGHT="0" SIGIS="undef" SIGNAME="TESTOTap_LES">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DISPBLOCK_U5" PORT="LES"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="PData" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="9" NAME="addr" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="wea" SIGIS="undef"/>
+        <PORT DIR="O" NAME="ONE" SIGIS="undef" SIGNAME="TESTOTap_ONE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U1" PORT="Ready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ZERO" SIGIS="undef" SIGNAME="TESTOTap_ZERO">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DISPBLOCK_U5" PORT="A0"/>
+            <CONNECTION INSTANCE="VGATEST_U12" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="TESTiN" TYPE="TARGET" VLNV="ZJUCLIP:user:TESTi:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="blink" PHYSICAL="blink"/>
+            <PORTMAP LOGICAL="DIVO" PHYSICAL="DIVO"/>
+            <PORTMAP LOGICAL="SWO" PHYSICAL="SWO"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE FULLNAME="/U1" HWVERSION="1.0" INSTANCE="U1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MSCPUE" VLNV="ZJUCLIP:user:MSCPUE:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_MSCPUE_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="CLKBLOCK_U8_CPUClk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLKBLOCK_U8" PORT="CPUClk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_U9" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="TESTOTap_ONE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TESTOTap" PORT="ONE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="Datai" RIGHT="0" SIGIS="undef" SIGNAME="U4_Data2CPU">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="Data2CPU"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="Datao" RIGHT="0" SIGIS="undef" SIGNAME="U1_Datao">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="Data4CPU"/>
+            <CONNECTION INSTANCE="DISPBLOCK_U5" PORT="data5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="Addr" RIGHT="0" SIGIS="undef" SIGNAME="U1_Addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="Addr_bus"/>
+            <CONNECTION INSTANCE="DISPBLOCK_U5" PORT="data3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="PC" RIGHT="0" SIGIS="undef" SIGNAME="U1_PC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ROM_D_PCWA" PORT="Din"/>
+            <CONNECTION INSTANCE="DISPBLOCK_U5" PORT="data1"/>
+            <CONNECTION INSTANCE="VGATEST_U11" PORT="MEM_Addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="INST" RIGHT="0" SIGIS="undef" SIGNAME="ROM_D_U2_spo">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ROM_D_U2" PORT="spo"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="TNI" RIGHT="0" SIGIS="undef" SIGNAME="ARRARYBLOCK_M4_blink">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_M4" PORT="blink"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ALE" SIGIS="undef" SIGNAME="U1_ALE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_B_U3" PORT="clka"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="MIO" SIGIS="undef"/>
+        <PORT DIR="O" NAME="WR" SIGIS="undef" SIGNAME="U1_WR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="mem_w"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="6" NAME="Debug_addr" RIGHT="0" SIGIS="undef" SIGNAME="VGATEST_U11_Debug_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="VGATEST_U11" PORT="Debug_addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="Debug_data" RIGHT="0" SIGIS="undef" SIGNAME="U1_Debug_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="VGATEST_U11" PORT="Debug_data"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="PCCODE" TYPE="TARGET" VLNV="ZJUCLIP:user:PCCODE:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="INST" PHYSICAL="INST"/>
+            <PORTMAP LOGICAL="PC" PHYSICAL="PC"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="CPUBUS" TYPE="INITIATOR" VLNV="ZJUCLIP:user:CPUB:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="Ready" PHYSICAL="Ready"/>
+            <PORTMAP LOGICAL="Datai" PHYSICAL="Datai"/>
+            <PORTMAP LOGICAL="Datao" PHYSICAL="Datao"/>
+            <PORTMAP LOGICAL="Addr" PHYSICAL="Addr"/>
+            <PORTMAP LOGICAL="WR" PHYSICAL="WR"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="TESTREG" TYPE="INITIATOR" VLNV="ZJUCLIP:user:DEBUG:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="Debug_addr" PHYSICAL="Debug_addr"/>
+            <PORTMAP LOGICAL="Debug_data" PHYSICAL="Debug_data"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE FULLNAME="/U10" HWVERSION="1.0" INSTANCE="U10" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Counter" VLNV="ZJUCLIP:user:Counter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_Counter_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="CLKBLOCK_U8_nCPUClk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLKBLOCK_U8" PORT="nCPUClk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_U9" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk0" SIGIS="undef" SIGNAME="CLKBLOCK_DIVOTap_DIVO06">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLKBLOCK_DIVOTap" PORT="DIVO06"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk1" SIGIS="undef" SIGNAME="CLKBLOCK_DIVOTap_DIVO20">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLKBLOCK_DIVOTap" PORT="DIVO20"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk2" SIGIS="undef" SIGNAME="CLKBLOCK_DIVOTap_DIVO12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLKBLOCK_DIVOTap" PORT="DIVO12"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="counter_we" SIGIS="undef" SIGNAME="U4_CONT_W0208">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="CONT_W0208"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="counter_val" RIGHT="0" SIGIS="undef" SIGNAME="U4_Peripheral">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="Peripheral"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="counter_ch" RIGHT="0" SIGIS="undef" SIGNAME="GPIOBLOCK_xlslice_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIOBLOCK_xlslice_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="counter0_OUT" SIGIS="undef" SIGNAME="U10_counter0_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="C0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="counter1_OUT" SIGIS="undef" SIGNAME="U10_counter1_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="C1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="counter2_OUT" SIGIS="undef" SIGNAME="U10_counter2_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="C2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="counter_out" RIGHT="0" SIGIS="undef" SIGNAME="U10_counter_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="Counter"/>
+            <CONNECTION INSTANCE="DISPBLOCK_U5" PORT="data7"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/U4" HWVERSION="1.0" INSTANCE="U4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MIOBUS" VLNV="ZJUCLIP:user:MIOBUS:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_MIOBUS_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="CLKBLOCK_U8_nCPUClk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLKBLOCK_U8" PORT="nCPUClk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_U9" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="BTN" RIGHT="0" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_BTNO">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_U9" PORT="BTNO"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="SW" RIGHT="0" SIGIS="undef" SIGNAME="ARRARYBLOCK_U9_SWO">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_U9" PORT="SWO"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="mem_w" SIGIS="undef" SIGNAME="U1_WR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U1" PORT="WR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="Data4CPU" RIGHT="0" SIGIS="undef" SIGNAME="U1_Datao">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U1" PORT="Datao"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="Addr_bus" RIGHT="0" SIGIS="undef" SIGNAME="U1_Addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U1" PORT="Addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="ram_data_out" RIGHT="0" SIGIS="undef" SIGNAME="RAM_B_U3_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_B_U3" PORT="douta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="Counter" RIGHT="0" SIGIS="undef" SIGNAME="U10_counter_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="counter_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="C0" SIGIS="undef" SIGNAME="U10_counter0_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="counter0_OUT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="C1" SIGIS="undef" SIGNAME="U10_counter1_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="counter1_OUT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="C2" SIGIS="undef" SIGNAME="U10_counter2_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="counter2_OUT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CPU_wait" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="Data2CPU" RIGHT="0" SIGIS="undef" SIGNAME="U4_Data2CPU">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U1" PORT="Datai"/>
+            <CONNECTION INSTANCE="DISPBLOCK_U5" PORT="data4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="ram_data_in" RIGHT="0" SIGIS="undef" SIGNAME="U4_ram_data_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_B_U3" PORT="dina"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="9" NAME="ram_addr" RIGHT="0" SIGIS="undef" SIGNAME="U4_ram_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_B_U3" PORT="addra"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="data_ram_we" SIGIS="undef" SIGNAME="U4_data_ram_we">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_B_U3" PORT="wea"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="GPIO_W0200" SIGIS="undef" SIGNAME="U4_GPIO_W0200">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIOBLOCK_U7" PORT="EN"/>
+            <CONNECTION INSTANCE="GPIOBLOCK_U71" PORT="EN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="GPIO_W0204" SIGIS="undef" SIGNAME="U4_GPIO_W0204">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DISPBLOCK_U5" PORT="EN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CONT_W0208" SIGIS="undef" SIGNAME="U4_CONT_W0208">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="counter_we"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="Peripheral" RIGHT="0" SIGIS="undef" SIGNAME="U4_Peripheral">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="counter_val"/>
+            <CONNECTION INSTANCE="GPIOBLOCK_U7" PORT="Datai"/>
+            <CONNECTION INSTANCE="GPIOBLOCK_U71" PORT="Datai"/>
+            <CONNECTION INSTANCE="DISPBLOCK_U5" PORT="Data0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="MIO" TYPE="TARGET" VLNV="ZJUCLIP:user:MI:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="clk" PHYSICAL="clk"/>
+            <PORTMAP LOGICAL="rst" PHYSICAL="rst"/>
+            <PORTMAP LOGICAL="BTN" PHYSICAL="BTN"/>
+            <PORTMAP LOGICAL="SW" PHYSICAL="SW"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="MCPUBUS" TYPE="TARGET" VLNV="ZJUCLIP:user:CPUBUS:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="mem_w" PHYSICAL="mem_w"/>
+            <PORTMAP LOGICAL="Data4CPU" PHYSICAL="Data4CPU"/>
+            <PORTMAP LOGICAL="Addr_bus" PHYSICAL="Addr_bus"/>
+            <PORTMAP LOGICAL="CPU_wait" PHYSICAL="CPU_wait"/>
+            <PORTMAP LOGICAL="Data2CPU" PHYSICAL="Data2CPU"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="RAMBUS" TYPE="TARGET" VLNV="ZJUCLIP:user:RAMBUS:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ram_data_out" PHYSICAL="ram_data_out"/>
+            <PORTMAP LOGICAL="ram_data_in" PHYSICAL="ram_data_in"/>
+            <PORTMAP LOGICAL="ram_addr" PHYSICAL="ram_addr"/>
+            <PORTMAP LOGICAL="data_ram_we" PHYSICAL="data_ram_we"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="MIOUT" TYPE="INITIATOR" VLNV="ZJUCLIP:user:IOUT:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="GPIO_W0200" PHYSICAL="GPIO_W0200"/>
+            <PORTMAP LOGICAL="GPIO_W0204" PHYSICAL="GPIO_W0204"/>
+            <PORTMAP LOGICAL="CONT_W0208" PHYSICAL="CONT_W0208"/>
+            <PORTMAP LOGICAL="Peripheral" PHYSICAL="Peripheral"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="Counter" TYPE="INITIATOR" VLNV="ZJUCLIP:user:Counter:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="Counter" PHYSICAL="Counter"/>
+            <PORTMAP LOGICAL="C0" PHYSICAL="C0"/>
+            <PORTMAP LOGICAL="C1" PHYSICAL="C1"/>
+            <PORTMAP LOGICAL="C2" PHYSICAL="C2"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE FULLNAME="/VGATEST/U11" HWVERSION="1.0" INSTANCE="VGATEST_U11" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="vga_debug" VLNV="ZJUCLIP:user:vga_debug:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_vga_debug_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_100mhz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100mhz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="9" NAME="PCol" RIGHT="0" SIGIS="undef" SIGNAME="VGATEST_U12_PCol">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="VGATEST_U12" PORT="PCol"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="9" NAME="PRow" RIGHT="0" SIGIS="undef" SIGNAME="VGATEST_U12_PRow">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="VGATEST_U12" PORT="PRow"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SWO14" SIGIS="undef" SIGNAME="ARRARYBLOCK_SWOTap_SWO14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARRARYBLOCK_SWOTap" PORT="SWO14"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="Debug_data" RIGHT="0" SIGIS="undef" SIGNAME="U1_Debug_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U1" PORT="Debug_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="MEM_Addr" RIGHT="0" SIGIS="undef" SIGNAME="U1_PC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U1" PORT="PC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="MEM_Data" RIGHT="0" SIGIS="undef" SIGNAME="ROM_D_U2_spo">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ROM_D_U2" PORT="spo"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="6" NAME="Debug_addr" RIGHT="0" SIGIS="undef" SIGNAME="VGATEST_U11_Debug_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U1" PORT="Debug_addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="VGATEST_U11_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="VGATEST_U12" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="TEST" TYPE="TARGET" VLNV="ZJUCLIP:user:DEBUG:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="Debug_addr" PHYSICAL="Debug_addr"/>
+            <PORTMAP LOGICAL="Debug_data" PHYSICAL="Debug_data"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE FULLNAME="/VGATEST/U12" HWVERSION="1.0" INSTANCE="VGATEST_U12" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="vga" VLNV="ZJUCLIP:user:vga:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_vga_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_100mhz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100mhz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="TESTOTap_ZERO">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TESTOTap" PORT="ZERO"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="VGATEST_U11_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="VGATEST_U11" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="9" NAME="PCol" RIGHT="0" SIGIS="undef" SIGNAME="VGATEST_U12_PCol">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="VGATEST_U11" PORT="PCol"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="9" NAME="PRow" RIGHT="0" SIGIS="undef" SIGNAME="VGATEST_U12_PRow">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="VGATEST_U11" PORT="PRow"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="rdn" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="3" NAME="R" RIGHT="0" SIGIS="undef" SIGNAME="VGATEST_U12_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Red"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="G" RIGHT="0" SIGIS="undef" SIGNAME="VGATEST_U12_G">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Green"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="VGATEST_U12_B">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Blue"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="HS" SIGIS="undef" SIGNAME="VGATEST_U12_HS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="HSYNC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="VS" SIGIS="undef" SIGNAME="VGATEST_U12_VS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="VSYNC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="vgaclk" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

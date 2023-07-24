@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jun 23 14:26:55 2021
+# Process ID: 15136
+# Current directory: F:/Desk/EXP04/EXP04.runs/synth_1
+# Command line: vivado.exe -log IPSOC_HDL.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source IPSOC_HDL.tcl
+# Log file: F:/Desk/EXP04/EXP04.runs/synth_1/IPSOC_HDL.vds
+# Journal file: F:/Desk/EXP04/EXP04.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source IPSOC_HDL.tcl -notrace

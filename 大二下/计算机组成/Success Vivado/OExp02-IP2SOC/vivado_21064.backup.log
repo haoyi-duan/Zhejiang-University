@@ -1,0 +1,141 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Mar 23 19:48:08 2021
+# Process ID: 21064
+# Current directory: F:/Desk/Success Vivado/OExp02-IP2SOC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7920 F:\Desk\Success Vivado\OExp02-IP2SOC\OExp02-IP2SOC.xpr
+# Log file: F:/Desk/Success Vivado/OExp02-IP2SOC/vivado.log
+# Journal file: F:/Desk/Success Vivado/OExp02-IP2SOC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.xpr}
+INFO: [Project 1-313] Project file moved from 'F:/Desk/OExp02-IP2SOC' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Desk/Success Vivado/OExp02-IP2SOC/IPCORE'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xlinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 887.707 ; gain = 130.289
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Mar 23 19:48:43 2021] Launched impl_1...
+Run output will be captured here: F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1
+launch_runs impl_1 -jobs 16
+[Tue Mar 23 19:51:30 2021] Launched impl_1...
+Run output will be captured here: F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Mar 23 19:55:11 2021] Launched impl_1...
+Run output will be captured here: F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 779 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7k160tffg676-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/M4/inst/readn' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:2403]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/CR' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:5229]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/KCOL[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7046]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/KCOL[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7059]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/KCOL[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7072]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/KCOL[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7086]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/KROW[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7095]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/KROW[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7103]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/KROW[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7111]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/KROW[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7119]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/KROW[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7127]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/RSTN' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:5342]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/SW[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7207]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/SW[10]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7307]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/SW[11]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7317]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/SW[12]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7327]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/SW[13]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7337]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/SW[14]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7347]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/SW[15]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7357]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/SW[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7217]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/SW[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7227]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/SW[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7237]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/SW[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7247]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/SW[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7257]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/SW[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7267]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/SW[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7277]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/SW[8]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7287]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/SW[9]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:7297]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/ARRARYBLOCK/U9/inst/readn' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:6359]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/DISPBLOCK/U6/inst/SEGEN' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:24441]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/DISPBLOCK/U61/inst/AN[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:26190]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/DISPBLOCK/U61/inst/AN[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:26198]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/DISPBLOCK/U61/inst/AN[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:26206]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/DISPBLOCK/U61/inst/AN[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:26214]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/DISPBLOCK/U61/inst/SEGMENT[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:26590]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/DISPBLOCK/U61/inst/SEGMENT[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:26598]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/DISPBLOCK/U61/inst/SEGMENT[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:26606]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/DISPBLOCK/U61/inst/SEGMENT[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:26614]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/DISPBLOCK/U61/inst/SEGMENT[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:26622]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/DISPBLOCK/U61/inst/SEGMENT[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:26630]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/DISPBLOCK/U61/inst/SEGMENT[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:26638]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/DISPBLOCK/U61/inst/SEGMENT[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:26646]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/GPIOBLOCK/U7/inst/LEDEN' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:30979]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/GPIOBLOCK/U71/inst/LED[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:32670]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/GPIOBLOCK/U71/inst/LED[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:32678]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/GPIOBLOCK/U71/inst/LED[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:32686]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/GPIOBLOCK/U71/inst/LED[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:32694]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/GPIOBLOCK/U71/inst/LED[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:32702]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/GPIOBLOCK/U71/inst/LED[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:32710]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/GPIOBLOCK/U71/inst/LED[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:32718]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'CSSTE_i/GPIOBLOCK/U71/inst/LED[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/.Xil/Vivado-2268-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.edf:32726]
+Parsing XDC File [F:/Desk/Success Vivado/OExp02-IP2SOC/.Xil/Vivado-21064-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.xdc]
+Finished Parsing XDC File [F:/Desk/Success Vivado/OExp02-IP2SOC/.Xil/Vivado-21064-LAPTOP-0HOK14LD/dcp2/CSSTE_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.597 . Memory (MB): peak = 1931.609 ; gain = 7.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.598 . Memory (MB): peak = 1931.609 ; gain = 7.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+  RAM64M => RAM64M (inverted pins: WCLK) (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 10 instances
+  RAM64X1D => RAM64X1D (inverted pins: WCLK) (RAMD64E, RAMD64E): 2 instances
+
+open_run: Time (s): cpu = 00:00:28 ; elapsed = 00:00:18 . Memory (MB): peak = 2083.848 ; gain = 502.238
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {F:/Desk/Success Vivado/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/CSSTE_wrapper.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2543.910 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 23 20:21:52 2021...

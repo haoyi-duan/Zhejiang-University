@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jun 22 10:47:49 2021
+# Process ID: 25916
+# Current directory: F:/Desk/MyCollege/大二下/计算机组成/Success Vivado/OExp04_HDL/OExp04_HDL.runs/synth_1
+# Command line: vivado.exe -log IPSOC_HDL.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source IPSOC_HDL.tcl
+# Log file: F:/Desk/MyCollege/大二下/计算机组成/Success Vivado/OExp04_HDL/OExp04_HDL.runs/synth_1/IPSOC_HDL.vds
+# Journal file: F:/Desk/MyCollege/大二下/计算机组成/Success Vivado/OExp04_HDL/OExp04_HDL.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source IPSOC_HDL.tcl -notrace

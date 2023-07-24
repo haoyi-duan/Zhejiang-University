@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Apr 17 10:36:38 2021
+# Process ID: 17888
+# Current directory: F:/Desk/Success Vivado/Verilog兴趣小组/RandomX_normal
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13796 F:\Desk\Success Vivado\Verilog兴趣小组\RandomX_normal\RandomX_normal.xpr
+# Log file: F:/Desk/Success Vivado/Verilog兴趣小组/RandomX_normal/vivado.log
+# Journal file: F:/Desk/Success Vivado/Verilog兴趣小组/RandomX_normal\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:/Desk/Success Vivado/Verilog兴趣小组/RandomX_normal/RandomX_normal.xpr}
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/Desk/Success Vivado/Verilog兴趣小组/OExp02-IP2SOC/coe/D_mem.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xlinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 884.875 ; gain = 120.309
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 17 10:39:16 2021...

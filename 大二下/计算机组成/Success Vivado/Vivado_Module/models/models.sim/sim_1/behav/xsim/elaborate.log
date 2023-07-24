@@ -1,0 +1,32 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xlinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto c273bd7c25dc4383ae4f5a0d6237900a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_sim_behav xil_defaultlib.top_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-597] element index 31 into cin is out of bounds [F:/Desk/models/models.srcs/sources_1/imports/new/add_32.v:255]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.addr
+Compiling module xil_defaultlib.add_32
+Compiling module xil_defaultlib.adc
+Compiling module xil_defaultlib.ADC32
+Compiling module xil_defaultlib.adc32
+Compiling module xil_defaultlib.or32
+Compiling module xil_defaultlib.and32
+Compiling module xil_defaultlib.nor32
+Compiling module xil_defaultlib.xor32
+Compiling module xil_defaultlib.or_bit_32
+Compiling module xil_defaultlib.MUX2T1_5
+Compiling module xil_defaultlib.MUX4T1_5
+Compiling module xil_defaultlib.MUX2T1_32
+Compiling module xil_defaultlib.MUX4T1_32
+Compiling module xil_defaultlib.MUX8T1_8
+Compiling module xil_defaultlib.MUX8T1_32
+Compiling module xil_defaultlib.MUX2T1_64
+Compiling module xil_defaultlib.MUX2T1_8
+Compiling module xil_defaultlib.TOP
+Compiling module xil_defaultlib.top_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_sim_behav

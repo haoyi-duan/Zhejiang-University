@@ -1,0 +1,101 @@
+当前进程若访问了一个
+无权访问的段就会产生一个
+异常(General Protection Fault)
+导致cpu调用int 0Dh中断, 此时若int 0Dh
+没有对应的中断向量就会导致第2个异常(
+double fault)使得cpu调用int 08h中断,
+此时若int 08h中断向量也没有定义就会产
+生第3个异常(triple fault),这时cpu会产
+生一个reset信号使得计算机重启。
+
+lgdt fword ptr gdtr; fword ptr表示48位宽度。
+                   ; 32位保护模式下的远指针变量
+                   ; 也用fword ptr修饰, 其中
+                   ; 前32位为偏移地址, 后16位为
+                   ; 段地址。
+
+cs、ds、es、ss、fs、gs这些段寄存器各有一个
+影子寄存器(shadow register), 影子寄存器中保存
+了各个段的base、limit、access, 只要我们不对
+段寄存器作赋值, cpu会使用影子寄存器中的值对
+内存进行访问(无视段寄存器的当前值)。
+
+要是从32位的保护模式段直接跳回实模式段,会发生
+异常,因为cs的limit并没有修改成适合实模式的对应
+值,例如limit必须等于FFFF,同理ds、es的limit也要
+改成FFFF。
+
+假定当前cs.cpl=3, 要调用的目标函数的段的dpl=0,
+则必须要经过一个调用门(call gate)才可以, 否则直
+接调用会发生GPF; 当目标函数的段的dpl=3时, 既可以
+直接调用也可以通过调用门调用。假定当前cs.dpl=0,
+则它在任何情况下(直接调用或通过调用门)都不可以
+调用DPL=3的目标函数。
+在目标段为数据段的情况下, cs.cpl <= 目标段.dpl;
+当目标段为代码段的情况下, cs.cpl >= 目标段.dpl;
+当目标段为代码段的情况下, cs.cpl > 目标段.dpl时
+必须要通过调用门才能调用目标函数, 其中
+cs.cpl <= CallGate.dpl;
+
+调用门的描述符定义在gdt表中,格式如下:
+gdt+0 ...
+                +----目标函数的段地址即selector
+                |        +----参数个数
+                |        |    +----访问权限
+                |        |    |
+                =======  ==   ==
+gdt+8 78h, 56h, 10h,00h, 02h, ECh, 34h, 12h
+      --------                     --------
+      |                                |
+      |                                |
+      +----目标函数的偏移地址----------+
+
+访问权限ECh展开成二进制为:
+1 1 1 0  1 1 0 0
+- === -  =======
+| |   |  |  
+| |   |  +-------0Ch表示32位调用门
+| |   +---系统描述符
+| +---DPL=11
++---P;P=1表示存在
+
+假定用户代码的cs.cpl=3, CallGate.dpl=3, 
+CallGate->目标段.dpl=0, 则用户代码可以call目标
+段内的函数。目标函数如何阻止用户代码利用传给目
+标函数的指针让目标函数去访问用户代码无权访问的
+内存?
+char c;
+c = f(0, 30h); 函数f()的功能是返回30h:0指向的字节
+             ; 假定30h这个段的dpl=0
+here:
+当调用函数f()时, cpu做以下步骤:
+mov ss, tss.ss0 ;\从用户堆栈切换到ring0的
+mov esp, tss.esp;/堆栈空间;
+                ; tss是当前任务状态段, tss的首地址在寄存器tr中,
+                ; tss的8字节描述符在gdt表中;
+push ss         ; ebp+18h
+push esp        ; ebp+14
+push 30h        ; ebp+10h
+push 0          ; ebp+0Ch
+push cs         ; ebp+8
+push offset here; ebp+4
+jmp far ptr f
+
+f:              ; cs.cpl=0
+push ebp
+mov ebp, esp
+mov ax, [ebp+10h]
+mov cx, [ebp+8h]
+arpl ax, cx; 当ax.rpl < cx.rpl时, ax.rpl=cx.rpl
+           ; ax=33h
+mov es, ax ; 对es赋值时会检查以下权限:
+           ; ax.rpl <= 目标段(30h段).dpl &&
+           ; cs.cpl <= 目标段(30h段).dpl
+mov edi, [ebp+0Ch]
+mov al, es:[edi]
+pop ebp
+retf
+
+
+
+

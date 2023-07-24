@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Mar  7 21:14:17 2021
+# Process ID: 14376
+# Current directory: F:/Desk/OExp00/OExp00-muxctrl
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17880 F:\Desk\OExp00\OExp00-muxctrl\OExp00-muxctrl.xpr
+# Log file: F:/Desk/OExp00/OExp00-muxctrl/vivado.log
+# Journal file: F:/Desk/OExp00/OExp00-muxctrl\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Desk/OExp00/OExp00-muxctrl/OExp00-muxctrl.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/ASUS/Desktop/OExp00-muxctrl' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Desk/OExp00/OExp00-muxctrl/MUX'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xlinx/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+open_bd_design {F:/Desk/OExp00/OExp00-muxctrl/OExp00-muxctrl.srcs/sources_1/bd/OExp01_muxctrl/OExp01_muxctrl.bd}
+Adding cell -- xilinx.com:user:MUX2T1_5:1.0 - MUX2T1_5_0
+Adding cell -- xilinx.com:user:MUX2T1_5:1.0 - MUX2T1_5_1
+Adding cell -- xilinx.com:user:MUX4T1_5:1.0 - MUX4T1_5_1
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_2
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_3
+Adding cell -- xilinx.com:user:MUX8T1_8:1.0 - MUX8T1_8_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_3
+Successfully read diagram <OExp01_muxctrl> from BD file <F:/Desk/OExp00/OExp00-muxctrl/OExp00-muxctrl.srcs/sources_1/bd/OExp01_muxctrl/OExp01_muxctrl.bd>
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Mar  7 21:28:31 2021...

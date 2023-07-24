@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Apr  8 12:39:10 2021
+# Process ID: 29048
+# Current directory: F:/Desk/GPIO_5359
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24860 F:\Desk\GPIO_5359\GPIO_5359.xpr
+# Log file: F:/Desk/GPIO_5359/vivado.log
+# Journal file: F:/Desk/GPIO_5359\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Desk/GPIO_5359/GPIO_5359.xpr
+update_compile_order -fileset sources_1

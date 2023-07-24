@@ -1,0 +1,59 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port SEGCLR -pg 1 -y 170 -defaultsOSRD
+preplace port flash -pg 1 -y 420 -defaultsOSRD
+preplace port EN -pg 1 -y 100 -defaultsOSRD
+preplace port SEGCLK -pg 1 -y 110 -defaultsOSRD
+preplace port rst -pg 1 -y 80 -defaultsOSRD
+preplace port SEGEN -pg 1 -y 150 -defaultsOSRD
+preplace port clk_100mhz -pg 1 -y 60 -defaultsOSRD
+preplace port SEGDT -pg 1 -y 130 -defaultsOSRD
+preplace port Text -pg 1 -y 400 -defaultsOSRD
+preplace port Scan2 -pg 1 -y 440 -defaultsOSRD
+preplace port Start -pg 1 -y 380 -defaultsOSRD
+preplace portBus AN -pg 1 -y 470 -defaultsOSRD
+preplace portBus data1 -pg 1 -y 200 -defaultsOSRD
+preplace portBus data2 -pg 1 -y 220 -defaultsOSRD
+preplace portBus Data0 -pg 1 -y 180 -defaultsOSRD
+preplace portBus Scan10 -pg 1 -y 460 -defaultsOSRD
+preplace portBus SEGMENT -pg 1 -y 490 -defaultsOSRD
+preplace portBus data6 -pg 1 -y 300 -defaultsOSRD
+preplace portBus data7 -pg 1 -y 320 -defaultsOSRD
+preplace portBus Test -pg 1 -y 120 -defaultsOSRD
+preplace portBus LES -pg 1 -y 160 -defaultsOSRD
+preplace portBus points -pg 1 -y 140 -defaultsOSRD
+preplace inst U6 -pg 1 -lvl 2 -y 140 -defaultsOSRD
+preplace inst U61 -pg 1 -lvl 2 -y 480 -defaultsOSRD
+preplace inst U5 -pg 1 -lvl 1 -y 190 -defaultsOSRD
+preplace netloc flash_0_1 1 0 2 NJ 420 320
+preplace netloc data1_0_1 1 0 1 NJ
+preplace netloc U6_SEGEN 1 2 1 NJ
+preplace netloc data7_0_1 1 0 1 NJ
+preplace netloc clk_0_2 1 0 2 30 370 270J
+preplace netloc U6_segclrn 1 2 1 NJ
+preplace netloc U6_segsout 1 2 1 NJ
+preplace netloc Text_0_1 1 0 2 NJ 400 310
+preplace netloc Scan10_0_1 1 0 2 NJ 460 NJ
+preplace netloc U61_SEGMENT 1 2 1 NJ
+preplace netloc data2_0_1 1 0 1 20
+preplace netloc rst_0_1 1 0 2 40 10 330J
+preplace netloc points_0_1 1 0 1 NJ
+preplace netloc EN_0_1 1 0 1 NJ
+preplace netloc U5_Disp 1 1 1 330
+preplace netloc U61_AN 1 2 1 NJ
+preplace netloc Scan2 1 0 2 NJ 440 NJ
+preplace netloc U5_mapup 1 1 1 N
+preplace netloc U5_point 1 1 1 300
+preplace netloc data6_0_1 1 0 1 NJ
+preplace netloc Data0_0_1 1 0 1 NJ
+preplace netloc Test_0_1 1 0 1 NJ
+preplace netloc U6_segclk 1 2 1 NJ
+preplace netloc Start_0_1 1 0 2 NJ 380 290J
+preplace netloc LES_0_1 1 0 1 NJ
+preplace netloc U5_LE 1 1 1 280
+levelinfo -pg 1 0 160 460 600 -top 0 -bot 590
+",
+}
+

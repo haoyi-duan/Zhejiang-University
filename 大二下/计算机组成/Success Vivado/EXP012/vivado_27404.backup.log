@@ -1,0 +1,238 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jun  3 12:48:26 2021
+# Process ID: 27404
+# Current directory: F:/Desk/EXP010
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22132 F:\Desk\EXP010\OExp05_CPU.xpr
+# Log file: F:/Desk/EXP010/vivado.log
+# Journal file: F:/Desk/EXP010\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Desk/EXP010/OExp05_CPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xlinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 873.438 ; gain = 119.531
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+set_property PROGRAM.FILE {F:/Desk/EXP010/OExp05_CPU.runs/impl_1/OEXp05_CPU.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {F:/Desk/EXP010/OExp05_CPU.runs/impl_1/OEXp05_CPU.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1550.047 ; gain = 1.195
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+set_property PROGRAM.FILE {F:/Desk/EXP010/OExp05_CPU.runs/impl_1/OEXp05_CPU.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {F:/Desk/EXP010/OExp05_CPU.runs/impl_1/OEXp05_CPU.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1564.305 ; gain = 2.879
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+[Thu Jun  3 14:05:45 2021] Launched synth_1...
+Run output will be captured here: F:/Desk/EXP010/OExp05_CPU.runs/synth_1/runme.log
+[Thu Jun  3 14:05:45 2021] Launched impl_1...
+Run output will be captured here: F:/Desk/EXP010/OExp05_CPU.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Thu Jun  3 14:12:49 2021] Launched impl_1...
+Run output will be captured here: F:/Desk/EXP010/OExp05_CPU.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+set_property PROGRAM.FILE {F:/Desk/EXP010/OExp05_CPU.runs/impl_1/OEXp05_CPU.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {F:/Desk/EXP010/OExp05_CPU.runs/impl_1/OEXp05_CPU.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1685.465 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+[Thu Jun  3 14:15:32 2021] Launched synth_1...
+Run output will be captured here: F:/Desk/EXP010/OExp05_CPU.runs/synth_1/runme.log
+[Thu Jun  3 14:15:32 2021] Launched impl_1...
+Run output will be captured here: F:/Desk/EXP010/OExp05_CPU.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Thu Jun  3 14:22:51 2021] Launched impl_1...
+Run output will be captured here: F:/Desk/EXP010/OExp05_CPU.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 887 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7k160tffg676-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'M4/readn' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:2395]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U6/SEGEN' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:151453]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/AN[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:152847]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/AN[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:152855]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/AN[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:152863]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/AN[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:152871]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/SEGMENT[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:153247]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/SEGMENT[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:153255]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/SEGMENT[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:153263]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/SEGMENT[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:153271]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/SEGMENT[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:153279]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/SEGMENT[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:153287]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/SEGMENT[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:153295]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U61/SEGMENT[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:153303]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U7/LEDEN' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:154752]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U71/LED[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:156026]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U71/LED[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:156034]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U71/LED[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:156042]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U71/LED[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:156050]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U71/LED[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:156058]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U71/LED[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:156066]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U71/LED[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:156074]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U71/LED[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:156082]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/CR' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:158073]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/KCOL[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:159890]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/KCOL[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:159903]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/KCOL[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:159916]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/KCOL[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:159930]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/KROW[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:159939]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/KROW[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:159947]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/KROW[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:159955]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/KROW[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:159963]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/KROW[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:159971]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/RSTN' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:158186]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:160051]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[10]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:160151]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[11]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:160161]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[12]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:160171]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[13]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:160181]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[14]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:160191]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[15]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:160201]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:160061]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:160071]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:160081]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:160091]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:160101]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:160111]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:160121]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[8]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:160131]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/SW[9]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:160141]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U9/readn' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [F:/Desk/EXP010/OExp05_CPU.runs/impl_1/.Xil/Vivado-29232-LAPTOP-0HOK14LD/dcp2/OEXp05_CPU.edf:159203]
+Parsing XDC File [F:/Desk/EXP010/.Xil/Vivado-27404-LAPTOP-0HOK14LD/dcp0/OEXp05_CPU.xdc]
+Finished Parsing XDC File [F:/Desk/EXP010/.Xil/Vivado-27404-LAPTOP-0HOK14LD/dcp0/OEXp05_CPU.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.606 . Memory (MB): peak = 1985.570 ; gain = 11.762
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.606 . Memory (MB): peak = 1985.570 ; gain = 11.762
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 30 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+  RAM64M => RAM64M (inverted pins: WCLK) (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 20 instances
+  RAM64X1D => RAM64X1D (inverted pins: WCLK) (RAMD64E, RAMD64E): 4 instances
+
+open_run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 2169.953 ; gain = 484.488
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {F:/Desk/EXP010/OExp05_CPU.runs/impl_1/OEXp05_CPU.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2576.160 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {F:/Desk/EXP010/OExp05_CPU.runs/impl_1/OEXp05_CPU.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2579.207 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jun  3 14:26:45 2021...

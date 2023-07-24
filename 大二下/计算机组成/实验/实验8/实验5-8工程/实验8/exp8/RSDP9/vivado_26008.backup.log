@@ -1,0 +1,89 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Apr 12 18:09:13 2021
+# Process ID: 26008
+# Current directory: F:/Desk/RSDP9
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17176 F:\Desk\RSDP9\RSDP9.xpr
+# Log file: F:/Desk/RSDP9/vivado.log
+# Journal file: F:/Desk/RSDP9\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Desk/RSDP9/RSDP9.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xlinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 849.965 ; gain = 90.246
+update_compile_order -fileset sources_1
+import_files -norecurse {{F:/Desk/Success Vivado/models/models.srcs/sources_1/imports/new/MUX4T1_32.v}}
+update_compile_order -fileset sources_1
+close [ open F:/Desk/RSDP9/RSDP9.srcs/sources_1/new/MUX2T1_32.v w ]
+add_files F:/Desk/RSDP9/RSDP9.srcs/sources_1/new/MUX2T1_32.v
+update_compile_order -fileset sources_1
+close [ open F:/Desk/RSDP9/RSDP9.srcs/sources_1/new/ImmGen.v w ]
+add_files F:/Desk/RSDP9/RSDP9.srcs/sources_1/new/ImmGen.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+import_files -norecurse F:/Desk/RSDP9/RSDP9.srcs/sources_1/new/ImmGen.v
+set_property top RSDP9 [current_fileset]
+update_compile_order -fileset sources_1
+import_files -norecurse {{F:/Desk/Success Vivado/ALU_5359/ALU_5359.srcs/sources_1/imports/ALU_5359/addc_32/addc_32.srcs/sources_1/imports/new/ADC32.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 16
+[Mon Apr 12 23:31:28 2021] Launched synth_1...
+Run output will be captured here: F:/Desk/RSDP9/RSDP9.runs/synth_1/runme.log
+import_files -norecurse {{F:/Desk/Success Vivado/ALU_5359/ALU_5359.srcs/sources_1/imports/ALU_5359/addc_32/addc_32.srcs/sources_1/imports/new/adc.v}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Mon Apr 12 23:32:13 2021] Launched synth_1...
+Run output will be captured here: F:/Desk/RSDP9/RSDP9.runs/synth_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Mon Apr 12 23:34:58 2021] Launched synth_1...
+Run output will be captured here: F:/Desk/RSDP9/RSDP9.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+[Mon Apr 12 23:40:40 2021] Launched synth_1...
+Run output will be captured here: F:/Desk/RSDP9/RSDP9.runs/synth_1/runme.log
+[Mon Apr 12 23:40:40 2021] Launched impl_1...
+Run output will be captured here: F:/Desk/RSDP9/RSDP9.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+[Mon Apr 12 23:54:54 2021] Launched synth_1...
+Run output will be captured here: F:/Desk/RSDP9/RSDP9.runs/synth_1/runme.log
+[Mon Apr 12 23:54:54 2021] Launched impl_1...
+Run output will be captured here: F:/Desk/RSDP9/RSDP9.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+[Tue Apr 13 00:00:23 2021] Launched synth_1...
+Run output will be captured here: F:/Desk/RSDP9/RSDP9.runs/synth_1/runme.log
+[Tue Apr 13 00:00:23 2021] Launched impl_1...
+Run output will be captured here: F:/Desk/RSDP9/RSDP9.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 407 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'RSDP9' is not ideal for floorplanning, since the cellview 'regs' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7k160tffg676-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.365 . Memory (MB): peak = 1290.668 ; gain = 2.934
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.366 . Memory (MB): peak = 1290.668 ; gain = 2.934
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:28 ; elapsed = 00:00:14 . Memory (MB): peak = 1457.000 ; gain = 503.598
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 13 00:28:56 2021...

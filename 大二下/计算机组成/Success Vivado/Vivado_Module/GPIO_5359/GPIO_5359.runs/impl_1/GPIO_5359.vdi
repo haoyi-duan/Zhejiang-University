@@ -1,0 +1,132 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Mar 16 23:28:08 2021
+# Process ID: 20656
+# Current directory: F:/Desk/Success Vivado/GPIO_5359/GPIO_5359.runs/impl_1
+# Command line: vivado.exe -log GPIO_5359.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source GPIO_5359.tcl -notrace
+# Log file: F:/Desk/Success Vivado/GPIO_5359/GPIO_5359.runs/impl_1/GPIO_5359.vdi
+# Journal file: F:/Desk/Success Vivado/GPIO_5359/GPIO_5359.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source GPIO_5359.tcl -notrace
+Command: link_design -top GPIO_5359 -part xc7k160tffg676-2L
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 37 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7k160tffg676-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 612.566 ; gain = 330.102
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k160t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.394 . Memory (MB): peak = 628.191 ; gain = 15.625
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[63] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_63_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[16] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_16_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[17] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_17_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[18] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_18_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[19] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_19_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[20] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_20_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[21] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_21_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[22] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_22_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[23] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_23_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[24] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_24_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[25] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_25_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[26] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_26_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[27] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_27_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[28] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_28_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[29] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_29_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[30] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_30_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[31] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_31_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[32] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_32_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[33] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_33_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[34] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_34_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[35] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_35_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[36] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_36_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[37] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_37_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[38] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_38_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[39] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_39_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[40] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_40_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[41] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_41_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[42] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_42_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[43] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_43_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[44] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_44_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[45] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_45_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[46] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_46_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[47] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_47_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[48] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_48_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[49] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_49_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[50] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_50_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[51] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_51_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[52] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_52_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[53] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_53_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[54] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_54_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[55] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_55_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[56] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_56_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[57] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_57_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[58] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_58_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[59] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_59_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[60] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_60_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[61] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_61_rstpot
+WARNING: [Opt 31-155] Driverless net PTLED/P_Data[62] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: PTLED/buffer_62_rstpot
+INFO: [Opt 31-138] Pushed 16 inverter(s) to 16 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: f8fad36d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1207.320 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 16 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: f8fad36d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1207.320 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 164b97be8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1207.320 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 16 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 164b97be8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1207.320 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 164b97be8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1207.320 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1207.320 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+21 Infos, 48 Warnings, 0 Critical Warnings and 1 Errors encountered.
+opt_design failed
+ERROR: [Opt 31-67] Problem: A LUT5 cell in the design is missing a connection on input pin I0, which is used by the LUT equation. This pin has either been left unconnected in the design or the connection was removed due to the trimming of unused logic. The LUT cell name is: PTLED/buffer_63_rstpot.
+Resolution: Please review the preceding OPT INFO messages that detail what has been trimmed in the design to determine if the removal of unused logic is causing this error. If opt_design is being specified directly, it will need to be rerun with opt_design -verbose to generate detailed INFO messages about trimming.
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 16 23:28:27 2021...

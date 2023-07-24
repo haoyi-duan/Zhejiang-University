@@ -1,0 +1,47 @@
+{
+    "version": "2.0.0",
+    
+    "tasks": [
+        {
+            //"type": "cppbuild",
+            "group": "build",
+            "label": "CppBuild_mkfile",
+            "command": "mingw32-make",
+            "args": [
+                "file=${fileBasenameNoExtension}",
+                "cwd=${fileDirname}"
+            ],
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            //"type": "cppbuild",
+            //"group": "build",
+            "label": "Clean_mkfile",
+            "command": "make",
+            "args": [
+                "clean",
+                "file=${fileBasenameNoExtension}"
+            ],
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 生成活动文件",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            //"group": "build",
+            "detail": "编译器: D:\\Program_Files_(x86)\\MinGW_x64\\mingw64\\bin\\g++.exe"
+        }
+    ]
+}

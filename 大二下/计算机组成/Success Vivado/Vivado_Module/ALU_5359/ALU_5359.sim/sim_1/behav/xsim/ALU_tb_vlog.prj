@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../ALU_5359.srcs/sources_1/imports/ALU_5359/addc_32/addc_32.srcs/sources_1/imports/new/ADC32.v" \
+"../../../../ALU_5359.srcs/sources_1/new/ALU_5359.v" \
+"../../../../ALU_5359.srcs/sources_1/imports/ALU_5359/addc_32/addc_32.srcs/sources_1/imports/new/adc.v" \
+"../../../../ALU_5359.srcs/sim_1/imports/new/ALU_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

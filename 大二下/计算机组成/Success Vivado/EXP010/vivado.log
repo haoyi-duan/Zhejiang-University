@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jun 16 10:36:26 2021
+# Process ID: 30668
+# Current directory: F:/Desk/Success Vivado/EXP010
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30404 F:\Desk\Success Vivado\EXP010\OExp05_CPU.xpr
+# Log file: F:/Desk/Success Vivado/EXP010/vivado.log
+# Journal file: F:/Desk/Success Vivado/EXP010\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:/Desk/Success Vivado/EXP010/OExp05_CPU.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xlinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 852.664 ; gain = 99.250
+update_compile_order -fileset sources_1
+set_property top OEXp05_CPU [current_fileset]
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 16 10:43:42 2021...

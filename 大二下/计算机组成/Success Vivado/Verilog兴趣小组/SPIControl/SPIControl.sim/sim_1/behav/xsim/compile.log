@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/SPIControl/SPIControl.srcs/sources_1/new/yhf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yhf
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/SPIControl/SPIControl.srcs/sim_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi

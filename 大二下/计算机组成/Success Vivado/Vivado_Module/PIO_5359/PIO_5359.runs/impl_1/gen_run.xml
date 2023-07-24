@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7k160tffg676-2L" LaunchTime="1615907959">
+  <File Type="PWROPT-DCP" Name="PIO_5359_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="PIO_5359_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="PIO_5359.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="PIO_5359_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="PIO_5359_reports.tcl"/>
+  <File Type="BG-DRC" Name="PIO_5359.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="PIO_5359_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="PIO_5359_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="PIO_5359.hwdef"/>
+  <File Type="OPT-DCP" Name="PIO_5359_opt.dcp"/>
+  <File Type="OPT-DRC" Name="PIO_5359_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="PIO_5359_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="PIO_5359_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="PIO_5359_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="PIO_5359_placed.dcp"/>
+  <File Type="PLACE-IO" Name="PIO_5359_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="PIO_5359_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="PIO_5359_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="PIO_5359_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="PIO_5359_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="PIO_5359_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="PIO_5359_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="PIO_5359_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="PIO_5359_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="PIO_5359_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="PIO_5359_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="PIO_5359_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="PIO_5359.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="PIO_5359_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="PIO_5359_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="PIO_5359_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="PIO_5359_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="PIO_5359_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="PIO_5359_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="PIO_5359.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="PIO_5359_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="PIO_5359.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="PIO_5359_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="PIO_5359.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="PIO_5359_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="PIO_5359.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="PIO_5359_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="PIO_5359_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="PIO_5359_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="PIO_5359_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="PIO_5359_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="PIO_5359_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="PIO_5359_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="PIO_5359_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="PIO_5359.vdi"/>
+  <File Type="ROUTE-CLK" Name="PIO_5359_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="PIO_5359_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="PIO_5359_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="PIO_5359_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="PIO_5359_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="PIO_5359_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="PIO_5359.nky"/>
+  <File Type="BITSTR-BMM" Name="PIO_5359_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="PIO_5359.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="PIO_5359.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="PIO_5359.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/PIO_5359.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/BABA is you源代码/P2S.ngc">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../MyCollege/大二上/数字逻辑设计/3190105359_段皞一_BABA is you/BABA is you源代码/P2S.ngc"/>
+        <Attr Name="ImportTime" Val="1571296238"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/BABA is you源代码/P2S_IO.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../MyCollege/大二上/数字逻辑设计/3190105359_段皞一_BABA is you/BABA is you源代码/P2S_IO.v"/>
+        <Attr Name="ImportTime" Val="1571296238"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="PIO_5359"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

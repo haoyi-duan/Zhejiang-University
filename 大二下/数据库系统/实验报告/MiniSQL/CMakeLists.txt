@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.20)
+PROJECT(MINISQL)
+SET(CPPS API.cpp base.cpp bptree.cpp BufferManager.cpp IndexManager.cpp Interpreter.cpp RecordManager.cpp  Catalog.cpp)
+add_library(dependencies ${CPPS})
+add_executable(main.exe main.cpp)
+include_directories("./")
+target_link_libraries(main.exe dependencies)

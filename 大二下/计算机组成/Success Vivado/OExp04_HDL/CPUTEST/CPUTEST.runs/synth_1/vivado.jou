@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Mar 29 18:42:04 2021
+# Process ID: 13416
+# Current directory: F:/Desk/OExp04_BLOCK/CPUTEST/CPUTEST.runs/synth_1
+# Command line: vivado.exe -log CPUTEST.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPUTEST.tcl
+# Log file: F:/Desk/OExp04_BLOCK/CPUTEST/CPUTEST.runs/synth_1/CPUTEST.vds
+# Journal file: F:/Desk/OExp04_BLOCK/CPUTEST/CPUTEST.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source CPUTEST.tcl -notrace

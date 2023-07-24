@@ -1,0 +1,29 @@
+verilog xil_defaultlib  \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/b52a/Arraykeys.v" \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Arraykeys_0_0/sim/Exp1_GPIO_Arraykeys_0_0.v" \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/ebb1/EnterT32.v" \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_EnterT32_0_0/sim/Exp1_GPIO_EnterT32_0_0.v" \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/f071/SWOUT.v" \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_SWOUT_0_0/sim/Exp1_GPIO_SWOUT_0_0.v" \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_dist_mem_gen_0_1/sim/Exp1_GPIO_dist_mem_gen_0_1.v" \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/509e/PIO.v" \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_PIO_0_0/sim/Exp1_GPIO_PIO_0_0.v" \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/f4e4/GPIO.v" \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_GPIO_0_0/sim/Exp1_GPIO_GPIO_0_0.v" \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/341e/DSEGIO.v" \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_DSEGIO_0_0/sim/Exp1_GPIO_DSEGIO_0_0.v" \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/320d/Disp2Hex.v" \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Disp2Hex_0_0/sim/Exp1_GPIO_Disp2Hex_0_0.v" \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/320e/Display.v" \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Display_0_0/sim/Exp1_GPIO_Display_0_0.v" \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_util_vector_logic_0_0/sim/Exp1_GPIO_util_vector_logic_0_0.v" \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_blk_mem_gen_0_0/sim/Exp1_GPIO_blk_mem_gen_0_0.v" \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/d6be/Clkdiv.v" \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_Clkdiv_0_0/sim/Exp1_GPIO_Clkdiv_0_0.v" \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ipshared/fac0/DIVO.v" \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/ip/Exp1_GPIO_DIVO_0_0/sim/Exp1_GPIO_DIVO_0_0.v" \
+"../../../../Exp1_GPIO.srcs/sources_1/bd/Exp1_GPIO/sim/Exp1_GPIO.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

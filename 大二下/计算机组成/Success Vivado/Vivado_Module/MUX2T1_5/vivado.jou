@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Mar  6 22:48:00 2021
+# Process ID: 20704
+# Current directory: F:/Desk/MUX2T1_5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9056 F:\Desk\MUX2T1_5\MUX2T1_5.xpr
+# Log file: F:/Desk/MUX2T1_5/vivado.log
+# Journal file: F:/Desk/MUX2T1_5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Desk/MUX2T1_5/MUX2T1_5.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source MUX2T1_5_sim.tcl
+close_sim
+launch_simulation
+source MUX2T1_5_sim.tcl
+close_sim

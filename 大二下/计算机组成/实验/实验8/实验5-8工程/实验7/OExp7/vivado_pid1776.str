@@ -1,0 +1,1612 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 1776
+License: Customer
+
+Current time: 	Tue May 25 16:00:48 CST 2021
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 183 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	F:/Xlinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	F:/Xlinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	lenovo
+User home directory: C:/Users/lenovo
+User working directory: F:/Desk/exp7
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: F:/Xlinx/Vivado
+HDI_APPROOT: F:/Xlinx/Vivado/2017.4
+RDI_DATADIR: F:/Xlinx/Vivado/2017.4/data
+RDI_BINDIR: F:/Xlinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	F:/Xlinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	F:/Desk/exp7/vivado.log
+Vivado journal file location: 	F:/Desk/exp7/vivado.jou
+Engine tmp dir: 	F:/Desk/exp7/.Xil/Vivado-1776-LAPTOP-0HOK14LD
+
+GUI allocated memory:	202 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 571 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 41 MB (+41004kb) [00:00:06]
+// [Engine Memory]: 515 MB (+388246kb) [00:00:06]
+// Opening Vivado Project: F:\Desk\exp7\OExp05_CPU.xpr. Version: Vivado v2017.4 
+// bs (cj):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project F:/Desk/exp7/OExp05_CPU.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [GUI Memory]: 52 MB (+9213kb) [00:00:09]
+// [Engine Memory]: 571 MB (+32129kb) [00:00:09]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 58 MB (+2999kb) [00:00:12]
+// [Engine Memory]: 601 MB (+1037kb) [00:00:12]
+// [GUI Memory]: 67 MB (+6399kb) [00:00:13]
+// Tcl Message: open_project F:/Desk/exp7/OExp05_CPU.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xlinx/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 661 MB. GUI used memory: 39 MB. Current time: 5/25/21 4:00:54 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 896.438 ; gain = 117.559 
+// Project name: OExp05_CPU; location: F:/Desk/exp7; part: xc7k160tffg676-2L
+// [Engine Memory]: 664 MB (+34409kb) [00:00:15]
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 73 MB (+3331kb) [00:01:22]
+// [GUI Memory]: 78 MB (+1317kb) [00:01:27]
+// PAPropertyPanels.initPanels (OEXp05_CPU.v) elapsed time: 0.2s
+// Elapsed time: 85 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OEXp05_CPU (OEXp05_CPU.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OEXp05_CPU (OEXp05_CPU.v), U1 : RSCPU9 (RSCPU9.v)]", 2, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// Elapsed time: 25 seconds
+selectCodeEditor("OEXp05_CPU.v", 121, 235); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, cj) - Node
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bs (cj):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// [GUI Memory]: 90 MB (+7550kb) [00:02:16]
+dismissDialog("Open Hardware Manager"); // bs (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bs (cj):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2017.4   **** Build date : Dec 15 2017-21:08:27     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,211 MB. GUI used memory: 65 MB. Current time: 5/25/21 4:03:05 PM CST
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/Desk/exp7/OExp05_CPU.runs/impl_1/OEXp05_CPU.bit} [get_hw_devices xc7k160t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7k160t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 1,212 MB (+539815kb) [00:02:26]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bs (cj)
+// [GUI Memory]: 95 MB (+921kb) [00:02:36]
+// Elapsed time: 50 seconds
+selectCodeEditor("OEXp05_CPU.v", 328, 124); // cd (w, cj)
+selectCodeEditor("OEXp05_CPU.v", 96, 276); // cd (w, cj)
+selectCodeEditor("OEXp05_CPU.v", 44, 252); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,236 MB. GUI used memory: 47 MB. Current time: 5/25/21 4:04:11 PM CST
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7k160t_0"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+dismissDialog("Program Device"); // bA (cj)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7k160t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/Desk/exp7/OExp05_CPU.runs/impl_1/OEXp05_CPU.bit} [get_hw_devices xc7k160t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7k160t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1555.223 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 26 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cj)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// x (cj): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // x (cj)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OEXp05_CPU (OEXp05_CPU.v), U1 : RSCPU9 (RSCPU9.v)]", 2, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OEXp05_CPU (OEXp05_CPU.v), U1 : RSCPU9 (RSCPU9.v)]", 2, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,255 MB. GUI used memory: 47 MB. Current time: 5/25/21 4:05:01 PM CST
+// Elapsed time: 29 seconds
+selectCodeEditor("RSCPU9.v", 179, 47); // cd (w, cj)
+selectCodeEditor("RSCPU9.v", 153, 2); // cd (w, cj)
+selectCodeEditor("RSCPU9.v", 213, 133); // cd (w, cj)
+selectCodeEditor("RSCPU9.v", 213, 133); // cd (w, cj)
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OEXp05_CPU (OEXp05_CPU.v), U1 : RSCPU9 (RSCPU9.v), U1_1 : RSCU9 (RSCU9.v)]", 3, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OEXp05_CPU (OEXp05_CPU.v), U1 : RSCPU9 (RSCPU9.v), U1_1 : RSCU9 (RSCU9.v)]", 3, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Elapsed time: 30 seconds
+selectCodeEditor("RSCU9.v", 665, 96); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 19 seconds
+selectCodeEditor("RSCU9.v", 337, 102); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 158, 158); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("RSCU9.v", 359, 228); // cd (w, cj)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("RSCU9.v", 522, 178); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 1,279 MB (+7243kb) [00:06:41]
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 101 MB (+1853kb) [00:06:41]
+// Tcl Message: launch_runs impl_1 -jobs 16 
+// Tcl Message: [Tue May 25 16:07:21 2021] Launched synth_1... Run output will be captured here: F:/Desk/exp7/OExp05_CPU.runs/synth_1/runme.log [Tue May 25 16:07:21 2021] Launched impl_1... Run output will be captured here: F:/Desk/exp7/OExp05_CPU.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,279 MB. GUI used memory: 47 MB. Current time: 5/25/21 4:07:26 PM CST
+// Elapsed time: 97 seconds
+selectCodeEditor("RSCU9.v", 423, 188); // cd (w, cj)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 63 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OEXp05_CPU (OEXp05_CPU.v)]", 1); // B (D, cj)
+// TclEventType: RUN_COMPLETED
+// ah (cj): Implementation Completed: addNotify
+// Elapsed time: 62 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: [Tue May 25 16:11:08 2021] Launched impl_1... Run output will be captured here: F:/Desk/exp7/OExp05_CPU.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 58 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bs (cj):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// [Engine Memory]: 1,481 MB (+144757kb) [00:11:28]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,482 MB. GUI used memory: 48 MB. Current time: 5/25/21 4:12:11 PM CST
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,634 MB. GUI used memory: 47 MB. Current time: 5/25/21 4:12:14 PM CST
+// [Engine Memory]: 1,634 MB (+82486kb) [00:11:35]
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,767 MB (+54321kb) [00:11:35]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.2s
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 731 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2017.4 INFO: [Device 21-403] Loading part xc7k160tffg676-2L INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [F:/Desk/exp7/.Xil/Vivado-1776-LAPTOP-0HOK14LD/dcp0/OEXp05_CPU.xdc] Finished Parsing XDC File [F:/Desk/exp7/.Xil/Vivado-1776-LAPTOP-0HOK14LD/dcp0/OEXp05_CPU.xdc] Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.397 . Memory (MB): peak = 1934.441 ; gain = 7.977 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.398 . Memory (MB): peak = 1934.441 ; gain = 7.977 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 30 instances were transformed.   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances   RAM64M => RAM64M (inverted pins: WCLK) (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 20 instances   RAM64X1D => RAM64X1D (inverted pins: WCLK) (RAMD64E, RAMD64E): 4 instances  
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 2084.043 ; gain = 497.648 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 107 MB (+780kb) [00:11:38]
+// [GUI Memory]: 113 MB (+749kb) [00:11:39]
+// [GUI Memory]: 120 MB (+1177kb) [00:11:39]
+// [Engine Memory]: 1,858 MB (+2113kb) [00:11:40]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [GUI Memory]: 126 MB (+189kb) [00:11:40]
+// 'dO' command handler elapsed time: 13 seconds
+// [GUI Memory]: 137 MB (+4303kb) [00:11:41]
+// Elapsed time: 14 seconds
+dismissDialog("Open Implemented Design"); // bs (cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OEXp05_CPU.v", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OEXp05_CPU.v", 2); // k (j, cj)
+// [Engine Memory]: 1,960 MB (+9767kb) [00:11:46]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // k (j, cj)
+// [Engine Memory]: 2,137 MB (+82694kb) [00:11:47]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OEXp05_CPU.v", 2); // k (j, cj)
+// RouteApi::initDelayMediator elapsed time: 10.2s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// [Engine Memory]: 2,292 MB (+51060kb) [00:11:48]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RSCPU9.v", 3); // k (j, cj)
+// [GUI Memory]: 145 MB (+872kb) [00:11:49]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RSCU9.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RSCPU9.v", 3); // k (j, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,295 MB. GUI used memory: 98 MB. Current time: 5/25/21 4:12:31 PM CST
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RSCU9.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RSCPU9.v", 3); // k (j, cj)
+selectCodeEditor("RSCPU9.v", 311, 78); // cd (w, cj)
+// Elapsed time: 23 seconds
+selectCodeEditor("RSCPU9.v", 288, 186); // cd (w, cj)
+// Elapsed time: 32 seconds
+selectCodeEditor("RSCPU9.v", 75, 228); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 33 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OEXp05_CPU.v", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RSCU9.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RSCPU9.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OEXp05_CPU.v", 2); // k (j, cj)
+// Elapsed time: 19 seconds
+selectCodeEditor("OEXp05_CPU.v", 299, 152); // cd (w, cj)
+// Elapsed time: 25 seconds
+selectCodeEditor("OEXp05_CPU.v", 127, 215); // cd (w, cj)
+selectCodeEditor("OEXp05_CPU.v", 127, 215); // cd (w, cj)
+// Elapsed time: 12 seconds
+selectCodeEditor("OEXp05_CPU.v", 121, 219); // cd (w, cj)
+selectCodeEditor("OEXp05_CPU.v", 117, 233); // cd (w, cj)
+// Elapsed time: 17 seconds
+selectCodeEditor("OEXp05_CPU.v", 42, 248); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 33, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bs (cj):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bs (cj)
+// bs (cj):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2017.4   **** Build date : Dec 15 2017-21:08:27     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   
+// [GUI Memory]: 152 MB (+574kb) [00:15:09]
+dismissDialog("Auto Connect"); // bs (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, cj)
+// Elapsed time: 33 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bs (cj):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: [Tue May 25 16:16:34 2021] Launched synth_1... Run output will be captured here: F:/Desk/exp7/OExp05_CPU.runs/synth_1/runme.log [Tue May 25 16:16:34 2021] Launched impl_1... Run output will be captured here: F:/Desk/exp7/OExp05_CPU.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+selectCodeEditor("OEXp05_CPU.v", 57, 261); // cd (w, cj)
+// Elapsed time: 17 seconds
+selectCodeEditor("OEXp05_CPU.v", 223, 144); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RSCPU9.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RSCU9.v", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OEXp05_CPU.v", 0); // k (j, cj)
+selectCodeEditor("OEXp05_CPU.v", 132, 141); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 262 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectCodeEditor("OEXp05_CPU.v", 255, 280); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 31, true); // u (O, cj) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 31, true); // u (O, cj) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// bs (cj):  Auto Connect : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/Desk/exp7/OExp05_CPU.runs/impl_1/OEXp05_CPU.bit} [get_hw_devices xc7k160t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7k160t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bs (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7k160t_0"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+dismissDialog("Program Device"); // bA (cj)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7k160t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/Desk/exp7/OExp05_CPU.runs/impl_1/OEXp05_CPU.bit} [get_hw_devices xc7k160t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7k160t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2556.191 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bs (cj)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/201706300081 
+// n (cj): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 40 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cj)
+selectCodeEditor("OEXp05_CPU.v", 391, 117); // cd (w, cj)
+// [GUI Memory]: 163 MB (+2968kb) [00:23:33]
+// Elapsed time: 80 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RSCPU9.v", 1); // k (j, cj)
+selectCodeEditor("RSCPU9.v", 327, 139); // cd (w, cj)
+selectCodeEditor("RSCPU9.v", 195, 63); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cj)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// x (cj): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // x (cj)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+// bs (cj):  CLose Hardware Manager : addNotify
+dismissDialog("CLose Hardware Manager"); // bs (cj)
+selectCodeEditor("OEXp05_CPU.v", 190, 200); // cd (w, cj)
+// Elapsed time: 11 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cj)
+closeTask("Implementation", "Implemented Design", "DesignTask.RESULTS_ANALYSIS");
+// x (cj): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+// TclEventType: DESIGN_CLOSE
+// [GUI Memory]: 172 MB (+1539kb) [00:24:33]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,299 MB. GUI used memory: 78 MB. Current time: 5/25/21 4:25:13 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 2,299 MB. GUI used memory: 79 MB. Current time: 5/25/21 4:25:13 PM CST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: close_design 
+dismissDialog("Confirm Close"); // x (cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OEXp05_CPU (OEXp05_CPU.v), U2 : ROM (ROM.xci)]", 6, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OEXp05_CPU (OEXp05_CPU.v), U2 : ROM (ROM.xci)]", 6, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// r (cj): Re-customize IP: addNotify
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "RST & Initialization", 2); // cY (C, r)
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a (C, r)
+dismissFileChooser();
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a (C, r)
+setFileChooser("F:/Desk/exp7/coe/RISCV-DEMO9.coe");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Re-customize IP"); // r (cj)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.coefficient_file {F:/Desk/exp7/coe/RISCV-DEMO9.coe}] [get_ips ROM] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'f:/Desk/exp7/coe/RISCV-DEMO9.coe' provided. It will be converted relative to IP Instance files '../../../../coe/RISCV-DEMO9.coe' 
+// au (cj): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (au)
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OF_OUTPUT_PRODUCTS_DID_NOT_OK", "OK"); // JButton (A, G)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,316 MB. GUI used memory: 61 MB. Current time: 5/25/21 4:25:46 PM CST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OEXp05_CPU (OEXp05_CPU.v), U2 : ROM (ROM.xci)]", 6, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OEXp05_CPU (OEXp05_CPU.v), U2 : ROM (ROM.xci)]", 6, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (cj): Re-customize IP: addNotify
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "RST & Initialization", 2); // cY (C, r)
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a (C, r)
+// Elapsed time: 10 seconds
+setFileChooser("F:/Desk/exp7/coe/lab7_inst.coe");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Re-customize IP"); // r (cj)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.coefficient_file {F:/Desk/exp7/coe/lab7_inst.coe}] [get_ips ROM] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'f:/Desk/exp7/coe/lab7_inst.coe' provided. It will be converted relative to IP Instance files '../../../../coe/lab7_inst.coe' 
+// au (cj): Generate Output Products: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (au)
+// bs (cj):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  F:/Desk/exp7/OExp05_CPU.srcs/sources_1/ip/ROM/ROM.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ROM'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ROM'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files F:/Desk/exp7/OExp05_CPU.srcs/sources_1/ip/ROM/ROM.xci] -no_script -sync -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files F:/Desk/exp7/OExp05_CPU.srcs/sources_1/ip/ROM/ROM.xci] -directory F:/Desk/exp7/OExp05_CPU.ip_user_files/sim_scripts -ip_user_files_dir F:/Desk/exp7/OExp05_CPU.ip_user_files -ipstatic_source_dir F:/Desk/exp7/OExp05_CPU.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/Desk/exp7/OExp05_CPU.cache/compile_simlib/modelsim} {questa=F:/Desk/exp7/OExp05_CPU.cache/compile_simlib/questa} {riviera=F:/Desk/exp7/OExp05_CPU.cache/compile_simlib/riviera} {activehdl=F:/Desk/exp7/OExp05_CPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATION_OF_OUTPUT_PRODUCTS_COMPLETED_OK", "OK"); // JButton (A, G)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: [Tue May 25 16:26:09 2021] Launched synth_1... Run output will be captured here: F:/Desk/exp7/OExp05_CPU.runs/synth_1/runme.log [Tue May 25 16:26:09 2021] Launched impl_1... Run output will be captured here: F:/Desk/exp7/OExp05_CPU.runs/impl_1/runme.log 
+selectCodeEditor("RSCU9.v", 185, 181); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 572, 91); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 169, 111); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 578, 76); // cd (w, cj)
+// Elapsed time: 25 seconds
+selectCodeEditor("RSCU9.v", 590, 167); // cd (w, cj)
+// Elapsed time: 41 seconds
+selectCodeEditor("RSCU9.v", 742, 149); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 728, 163); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 710, 191); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 706, 215); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 706, 231); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 676, 226); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 658, 243); // cd (w, cj)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 89 seconds
+selectCodeEditor("RSCU9.v", 355, 172); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 757, 130); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 737, 173); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 701, 230); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 667, 257); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 631, 233); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 296, 265); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 242, 263); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 150, 256); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 102, 285); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 130, 259); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 104, 277); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 90, 295); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 66, 271); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 56, 303); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 72, 278); // cd (w, cj)
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 30 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN, "Open Implemented Design"); // a (N, ah)
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bs (cj):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bs (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bs (cj):  Auto Connect : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2017.4   **** Build date : Dec 15 2017-21:08:27     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   
+dismissDialog("Auto Connect"); // bs (cj)
+// Elapsed time: 18 seconds
+selectCodeEditor("OEXp05_CPU.v", 478, 180); // cd (w, cj)
+selectCodeEditor("OEXp05_CPU.v", 444, 220); // cd (w, cj)
+selectCodeEditor("OEXp05_CPU.v", 400, 269); // cd (w, cj)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Elapsed time: 42 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7k160t_0"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7k160t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/Desk/exp7/OExp05_CPU.runs/impl_1/OEXp05_CPU.bit} [get_hw_devices xc7k160t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7k160t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2556.191 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bs (cj)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/201706300081 
+// n (cj): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 594 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cj)
+// Elapsed time: 126 seconds
+selectCodeEditor("OEXp05_CPU.v", 155, 159); // cd (w, cj)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cj)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// x (cj): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // x (cj)
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: close_hw 
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SESSION_CLOSE
+// bs (cj):  CLose Hardware Manager : addNotify
+dismissDialog("CLose Hardware Manager"); // bs (cj)
+// Elapsed time: 11 seconds
+selectCodeEditor("RSCU9.v", 98, 213, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+// Elapsed time: 14 seconds
+selectCodeEditor("RSCU9.v", 578, 274); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OEXp05_CPU.v", 1); // k (j, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OEXp05_CPU (OEXp05_CPU.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OEXp05_CPU (OEXp05_CPU.v)]", 1, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OEXp05_CPU (OEXp05_CPU.v)]", 1); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OEXp05_CPU (OEXp05_CPU.v), U11 : VGA_TEST (VGATEST.v)]", 26, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OEXp05_CPU (OEXp05_CPU.v), U11 : VGA_TEST (VGATEST.v), FONT_8X16 : FONT8_16 (Font816.v)]", 27, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Elapsed time: 45 seconds
+selectCodeEditor("VGATEST.v", 329, 144); // cd (w, cj)
+// Elapsed time: 19 seconds
+selectCodeEditor("VGATEST.v", 206, 179); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 163, 141); // cd (w, cj)
+// Elapsed time: 17 seconds
+selectCodeEditor("VGATEST.v", 283, 155); // cd (w, cj)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RSCPU9.v", 2); // k (j, cj)
+// Elapsed time: 44 seconds
+selectCodeEditor("RSCPU9.v", 247, 214); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGATEST.v", 4); // k (j, cj)
+// Elapsed time: 13 seconds
+selectCodeEditor("VGATEST.v", 204, 124); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("VGATEST.v", 329, 131); // cd (w, cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 69 seconds
+selectCodeEditor("VGATEST.v", 349, 186); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 345, 211); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 341, 251); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 340, 278); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 421, 302); // cd (w, cj)
+// Elapsed time: 22 seconds
+selectCodeEditor("VGATEST.v", 236, 197); // cd (w, cj)
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RSCU9.v", 3); // k (j, cj)
+selectCodeEditor("RSCU9.v", 328, 184); // cd (w, cj)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGATEST.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RSCU9.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGATEST.v", 4); // k (j, cj)
+// Elapsed time: 13 seconds
+selectCodeEditor("VGATEST.v", 181, 86); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RSCU9.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGATEST.v", 4); // k (j, cj)
+selectCodeEditor("VGATEST.v", 279, 124); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 201, 124); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 16 seconds
+selectCodeEditor("VGATEST.v", 320, 107); // cd (w, cj)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RSCU9.v", 3); // k (j, cj)
+selectCodeEditor("RSCU9.v", 288, 90); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 290, 108); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 322, 103); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 290, 84); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 310, 99); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 291, 100); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 297, 101); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 332, 107); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 292, 104); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 328, 107); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("RSCU9.v", 296, 48); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 326, 107); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGATEST.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RSCU9.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGATEST.v", 4); // k (j, cj)
+// Elapsed time: 65 seconds
+selectCodeEditor("VGATEST.v", 151, 199); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 234, 199); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 263, 197); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RSCU9.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGATEST.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RSCU9.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGATEST.v", 4); // k (j, cj)
+selectCodeEditor("VGATEST.v", 384, 162); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 383, 207); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 384, 227); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 384, 238); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectCodeEditor("VGATEST.v", 353, 106); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RSCU9.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGATEST.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RSCU9.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGATEST.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RSCU9.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGATEST.v", 4); // k (j, cj)
+// Elapsed time: 19 seconds
+selectCodeEditor("VGATEST.v", 106, 107); // cd (w, cj)
+// Elapsed time: 25 seconds
+selectCodeEditor("VGATEST.v", 94, 118); // cd (w, cj)
+typeControlKey((HResource) null, "VGATEST.v", 'c'); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 157, 141); // cd (w, cj)
+typeControlKey((HResource) null, "VGATEST.v", 'v'); // cd (w, cj)
+typeControlKey((HResource) null, "VGATEST.v", 'v'); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RSCU9.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGATEST.v", 4); // k (j, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 58 seconds
+selectCodeEditor("VGATEST.v", 367, 161); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 293, 200); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 282, 199); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 285, 201, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("VGATEST.v", 290, 201); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 296, 200); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 281, 201); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 298, 196); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 276, 200); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 286, 198); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 301, 196); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 297, 199); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 291, 197); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,329 MB. GUI used memory: 64 MB. Current time: 5/25/21 4:55:46 PM CST
+selectCodeEditor("VGATEST.v", 296, 196); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 286, 199); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 281, 200); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 295, 201); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 280, 199); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 286, 199); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 280, 194); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 285, 191); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 287, 198); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 293, 196); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 279, 199); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 295, 197); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 292, 197, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("VGATEST.v", 284, 200); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 296, 194); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 286, 201); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 284, 201); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 300, 195); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 289, 198); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 280, 199); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 294, 196); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 291, 196, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("VGATEST.v", 282, 198); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 295, 195); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 287, 197); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 281, 199); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 291, 197); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 294, 196, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("VGATEST.v", 299, 194); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 283, 198); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 294, 196); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 290, 196); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 327, 198); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 216, 225); // cd (w, cj)
+// Elapsed time: 12 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("VGATEST.v", 266, 228); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 178, 242); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 331, 262); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 187, 277); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 341, 239); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 341, 249); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 341, 243); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 344, 233); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 347, 264); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 367, 223); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 355, 242); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 351, 259); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 363, 223); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 373, 195); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 361, 232); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 368, 192); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 370, 224); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 370, 192); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 370, 174); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 374, 210); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 374, 201); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 373, 171); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 375, 206); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 165, 177); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 363, 196); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 380, 165); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 380, 140); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 380, 127); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 382, 143); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 341, 132); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 338, 143); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 322, 139); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 318, 140); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 337, 140); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 329, 140); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 315, 140); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 323, 135); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 330, 134); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 339, 138); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 26 seconds
+selectCodeEditor("VGATEST.v", 113, 233); // cd (w, cj)
+// Elapsed time: 14 seconds
+selectCodeEditor("VGATEST.v", 112, 84); // cd (w, cj)
+typeControlKey((HResource) null, "VGATEST.v", 'c'); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 126, 252); // cd (w, cj)
+typeControlKey((HResource) null, "VGATEST.v", 'v'); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 213, 256); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 22 seconds
+selectCodeEditor("VGATEST.v", 46, 255); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 68, 226); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 45, 259); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 259, 266); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 45, 255); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 277, 257); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 50, 259); // cd (w, cj)
+typeControlKey((HResource) null, "VGATEST.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "VGATEST.v", 'c'); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 94, 280); // cd (w, cj)
+typeControlKey((HResource) null, "VGATEST.v", 'v'); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 95, 276); // cd (w, cj)
+// Elapsed time: 20 seconds
+selectCodeEditor("VGATEST.v", 342, 276); // cd (w, cj)
+// Elapsed time: 28 seconds
+selectCodeEditor("VGATEST.v", 207, 278); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 16 seconds
+selectCodeEditor("VGATEST.v", 351, 286); // cd (w, cj)
+// Elapsed time: 35 seconds
+selectCodeEditor("VGATEST.v", 245, 275); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 22 seconds
+selectCodeEditor("VGATEST.v", 227, 121); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 214, 159); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 219, 160); // cd (w, cj)
+// Elapsed time: 19 seconds
+selectCodeEditor("VGATEST.v", 236, 158); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 311, 132); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 452, 154); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 550, 151); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 821, 133); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 775, 143); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 694, 148); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 155, 145); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 218, 139); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 211, 140); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 175, 140); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 209, 139); // cd (w, cj)
+selectCodeEditor("VGATEST.v", 208, 135); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 33 seconds
+selectCodeEditor("VGATEST.v", 746, 141); // cd (w, cj)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 4); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 16 
+// Tcl Message: [Tue May 25 17:01:54 2021] Launched synth_1... Run output will be captured here: F:/Desk/exp7/OExp05_CPU.runs/synth_1/runme.log [Tue May 25 17:01:54 2021] Launched impl_1... Run output will be captured here: F:/Desk/exp7/OExp05_CPU.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs (cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RSCU9.v", 3); // k (j, cj)
+selectCodeEditor("RSCU9.v", 317, 272); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 334, 278); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 331, 249); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 342, 241); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 332, 228); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 322, 215); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 330, 202); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 348, 238); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 347, 251); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 685, 218); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 684, 205); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 686, 193); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 688, 183); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 676, 159); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 651, 156); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 652, 164); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 648, 163); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 655, 163); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 646, 162); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 685, 165); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 45, 162); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 705, 165); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 44, 161); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 70, 155); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 44, 160); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 33, 205); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 48, 159); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 40, 162); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 45, 161); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 386, 193); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 47, 161); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 675, 164); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 705, 149); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 699, 169); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 696, 189); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 693, 207); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 691, 228); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 655, 244); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectCodeEditor("RSCU9.v", 439, 222); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 395, 287); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 292, 259); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 260, 277); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 237, 307); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 152, 291); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 13, 297); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 2, 294); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 10, 291); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 6, 292); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 1, 288); // cd (w, cj)
+// Elapsed time: 14 seconds
+selectCodeEditor("RSCU9.v", 683, 246); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 528, 117); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 531, 88); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 432, 153); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 411, 114); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 44, 121); // cd (w, cj)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Elapsed time: 26 seconds
+selectCodeEditor("RSCU9.v", 698, 232); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 699, 224); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 703, 205); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 703, 181); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 709, 153); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 723, 116); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 728, 104); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 725, 152); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 708, 207); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 716, 224); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 715, 198); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 714, 167); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 720, 148); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 721, 126); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 725, 103); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 725, 83); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 735, 137); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 731, 105); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 708, 128); // cd (w, cj)
+// TclEventType: RUN_STEP_COMPLETED
+selectCodeEditor("RSCU9.v", 708, 155); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 700, 191); // cd (w, cj)
+selectCodeEditor("RSCU9.v", 701, 219); // cd (w, cj)
+// TclEventType: RUN_COMPLETED
+// ah (cj): Implementation Completed: addNotify
+// Elapsed time: 78 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: [Tue May 25 17:05:41 2021] Launched impl_1... Run output will be captured here: F:/Desk/exp7/OExp05_CPU.runs/impl_1/runme.log 
+selectCodeEditor("RSCU9.v", 686, 181); // cd (w, cj)
+// Elapsed time: 19 seconds
+selectCodeEditor("RSCU9.v", 660, 178); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 17 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bs (cj):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bs (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bs (cj):  Auto Connect : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2017.4   **** Build date : Dec 15 2017-21:08:27     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   
+dismissDialog("Auto Connect"); // bs (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+selectCodeEditor("OEXp05_CPU.v", 224, 289); // cd (w, cj)
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bs (cj):  Auto Connect : addNotify
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/Desk/exp7/OExp05_CPU.runs/impl_1/OEXp05_CPU.bit} [get_hw_devices xc7k160t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7k160t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bs (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7k160t_0"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+dismissDialog("Program Device"); // bA (cj)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7k160t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/Desk/exp7/OExp05_CPU.runs/impl_1/OEXp05_CPU.bit} [get_hw_devices xc7k160t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7k160t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2556.191 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bs (cj)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/201706300081 
+// n (cj): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE

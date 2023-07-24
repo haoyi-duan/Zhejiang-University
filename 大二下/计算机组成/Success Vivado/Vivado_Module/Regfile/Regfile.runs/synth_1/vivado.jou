@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Mar 30 16:31:29 2021
+# Process ID: 3476
+# Current directory: F:/Desk/Success Vivado/Regfile/Regfile.runs/synth_1
+# Command line: vivado.exe -log regs.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source regs.tcl
+# Log file: F:/Desk/Success Vivado/Regfile/Regfile.runs/synth_1/regs.vds
+# Journal file: F:/Desk/Success Vivado/Regfile/Regfile.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source regs.tcl -notrace

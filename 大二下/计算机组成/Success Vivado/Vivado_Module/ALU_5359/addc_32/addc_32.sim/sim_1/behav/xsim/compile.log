@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/addc_32/addc_32.srcs/sources_1/imports/new/ADC32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADC32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/addc_32/addc_32.srcs/sources_1/imports/new/adc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adc
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/addc_32/addc_32.srcs/sim_1/imports/new/ADC_32_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADC_32_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Desk/addc_32/addc_32.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

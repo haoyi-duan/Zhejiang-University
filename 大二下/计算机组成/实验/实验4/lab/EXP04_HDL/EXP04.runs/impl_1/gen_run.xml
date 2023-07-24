@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7k160tffg676-2L" LaunchTime="1624429611">
+  <File Type="PWROPT-DCP" Name="IPSOC_HDL_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="IPSOC_HDL_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="IPSOC_HDL.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="IPSOC_HDL_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="IPSOC_HDL_reports.tcl"/>
+  <File Type="BG-DRC" Name="IPSOC_HDL.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="IPSOC_HDL_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="IPSOC_HDL_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="IPSOC_HDL.hwdef"/>
+  <File Type="OPT-DCP" Name="IPSOC_HDL_opt.dcp"/>
+  <File Type="OPT-DRC" Name="IPSOC_HDL_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="IPSOC_HDL_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="IPSOC_HDL_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="IPSOC_HDL_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="IPSOC_HDL_placed.dcp"/>
+  <File Type="PLACE-IO" Name="IPSOC_HDL_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="IPSOC_HDL_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="IPSOC_HDL_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="IPSOC_HDL_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="IPSOC_HDL_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="IPSOC_HDL_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="IPSOC_HDL_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="IPSOC_HDL_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="IPSOC_HDL_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="IPSOC_HDL_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="IPSOC_HDL_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="IPSOC_HDL_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="IPSOC_HDL.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="IPSOC_HDL_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="IPSOC_HDL_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="IPSOC_HDL_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="IPSOC_HDL_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="IPSOC_HDL_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="IPSOC_HDL_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="IPSOC_HDL.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="IPSOC_HDL_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="IPSOC_HDL.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="IPSOC_HDL_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="IPSOC_HDL.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="IPSOC_HDL_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="IPSOC_HDL.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="IPSOC_HDL_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="IPSOC_HDL_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="IPSOC_HDL_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="IPSOC_HDL_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="IPSOC_HDL_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="IPSOC_HDL_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="IPSOC_HDL_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="IPSOC_HDL_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="IPSOC_HDL.vdi"/>
+  <File Type="ROUTE-CLK" Name="IPSOC_HDL_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="IPSOC_HDL_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="IPSOC_HDL_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="IPSOC_HDL_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="IPSOC_HDL_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="IPSOC_HDL_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="IPSOC_HDL.nky"/>
+  <File Type="BITSTR-BMM" Name="IPSOC_HDL_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="IPSOC_HDL.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="IPSOC_HDL.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="IPSOC_HDL.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/IO/EnterT32.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IO/EnterT32.edf"/>
+        <Attr Name="ImportTime" Val="1614413795"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/IO/Arraykeys.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IO/Arraykeys.edf"/>
+        <Attr Name="ImportTime" Val="1614519068"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/IO/PIO.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IO/PIO.edf"/>
+        <Attr Name="ImportTime" Val="1615435525"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/IO/GPIO.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IO/GPIO.edf"/>
+        <Attr Name="ImportTime" Val="1615435102"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/IO/Disp2Hex.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IO/Disp2Hex.edf"/>
+        <Attr Name="ImportTime" Val="1614414497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/IO/Display.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IO/Display.edf"/>
+        <Attr Name="ImportTime" Val="1614413002"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/IO/DSEGIO.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IO/DSEGIO.edf"/>
+        <Attr Name="ImportTime" Val="1616122293"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/IO/MIOBUS.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IO/MIOBUS.edf"/>
+        <Attr Name="ImportTime" Val="1615437745"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/RAM_B/RAM_B.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/ROM_D/ROM_D.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/RSCPU9/RSDP9.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/RSCPU9/RSDP9.edf"/>
+        <Attr Name="ImportTime" Val="1616691342"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/RSCPU9/RSCU9.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/RSCPU9/RSCU9.edf"/>
+        <Attr Name="ImportTime" Val="1616216314"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/IO/Arraykeys.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IO/Arraykeys.v"/>
+        <Attr Name="ImportTime" Val="1614519150"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/DEBUG/CPUTEST.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/DEBUG/CPUTEST.v"/>
+        <Attr Name="ImportTime" Val="1616991536"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/IO/Clkdiv.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IO/Clkdiv.v"/>
+        <Attr Name="ImportTime" Val="1616943970"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/IO/Counter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IO/Counter.v"/>
+        <Attr Name="ImportTime" Val="1615992826"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/IO/DSEGIO.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IO/DSEGIO.v"/>
+        <Attr Name="ImportTime" Val="1616122309"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/IO/Disp2Hex.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IO/Disp2Hex.v"/>
+        <Attr Name="ImportTime" Val="1614414524"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/IO/Display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IO/Display.v"/>
+        <Attr Name="ImportTime" Val="1614413102"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/IO/EnterT32.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IO/EnterT32.v"/>
+        <Attr Name="ImportTime" Val="1614413826"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/DEBUG/VGA/Font816.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/DEBUG/VGA/Font816.v"/>
+        <Attr Name="ImportTime" Val="1615025789"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/IO/GPIO.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IO/GPIO.v"/>
+        <Attr Name="ImportTime" Val="1615435152"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/IO/MIOBUS.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IO/MIOBUS.v"/>
+        <Attr Name="ImportTime" Val="1615437770"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/IO/PIO.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/IO/PIO.v"/>
+        <Attr Name="ImportTime" Val="1615435537"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/RSCPU9/RSCPU9.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/RSCPU9/RSCPU9.v"/>
+        <Attr Name="ImportTime" Val="1616946867"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/RSCPU9/RSCU9.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/RSCPU9/RSCU9.v"/>
+        <Attr Name="ImportTime" Val="1616216333"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/RSCPU9/RSDP9.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/RSCPU9/RSDP9.v"/>
+        <Attr Name="ImportTime" Val="1616691368"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/DEBUG/VGA/VGATEST.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/DEBUG/VGA/VGATEST.v"/>
+        <Attr Name="ImportTime" Val="1616942607"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/DEBUG/VGA/vga.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/DEBUG/VGA/vga.v"/>
+        <Attr Name="ImportTime" Val="1616728990"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/IPSOC_HDL.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/coe/RISCV-DEMO9.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/coe/D_mem.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/IO/MSCPUE.edf">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/IO/MSCPUE.edf"/>
+        <Attr Name="ImportTime" Val="1615461750"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/IO/P2S.edf">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/IO/P2S.edf"/>
+        <Attr Name="ImportTime" Val="1614414859"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/IO/MSCPUE.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/IO/MSCPUE.v"/>
+        <Attr Name="ImportTime" Val="1615461846"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/DEBUG/MEMTEST/MEMTEST.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/DEBUG/MEMTEST/MEMTEST.v"/>
+        <Attr Name="ImportTime" Val="1616822345"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EXP04/IO/P2S.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/IO/P2S.v"/>
+        <Attr Name="ImportTime" Val="1614414893"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="IPSOC_HDL"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/coe/CSTE_V20.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/coe/CSTE_V20.xdc"/>
+        <Attr Name="ImportTime" Val="1615038257"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

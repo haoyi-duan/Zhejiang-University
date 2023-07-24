@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Apr 20 22:57:54 2021
+# Process ID: 828
+# Current directory: F:/Desk/Success Vivado/Exp1_GPIO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18452 F:\Desk\Success Vivado\Exp1_GPIO\Exp1_GPIO.xpr
+# Log file: F:/Desk/Success Vivado/Exp1_GPIO/vivado.log
+# Journal file: F:/Desk/Success Vivado/Exp1_GPIO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:/Desk/Success Vivado/Exp1_GPIO/Exp1_GPIO.xpr}
+update_compile_order -fileset sources_1
