@@ -1,0 +1,9 @@
+tmp/
+tmp/*.tsv
+wandb/
+*.fuse*
+*.pyc
+config/*.pyc
+utils/*.pyc
+config/__pycache__
+utils/__pycache__

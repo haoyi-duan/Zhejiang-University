@@ -1,0 +1,17 @@
+bert-basic 89.42 .%
+bert-basic-ourweight 89.5 .%
+bert-multihead 88.88 .%
+bert-CNN 85.59 .%
+
+roberta-basic 91.38 .%
+roberta-basic-ourweight 91.86 .%
+roberta-multihead 91.9 .%
+roberta-CNN 89.31 .%
+
+xlmRoberta-basic 91.09 .%
+xlmRoberta-basic-ourweight 90.67 .%
+xlmRoberta-multihead 90.49 .%
+xlmRoberta-CNN 88.59 .%
+
+hole-vote 92.50 .%
+best-vote 93.54 .%
